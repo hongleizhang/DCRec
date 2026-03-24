@@ -17,8 +17,8 @@ Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 - A Scenario-Oriented Survey of Federated Recommender Systems: Techniques, Challenges, and Future Directions, Arxiv, 2025. [[PDF]](https://arxiv.org/abs/2508.19620), [[CODE]](https://github.com/SmilesLab-XJTU/Survey-FedRec).
 
 
-## On-Cloud Recommendation (OCRec)
+## On-Cloud Recommendation
 
-## On-Device Recommendation (ODRec)
+## On-Device Recommendation
 
-## Device-Cloud Recommendation (DCRec)
+## Device-Cloud Recommendation
