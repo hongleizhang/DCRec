@@ -1,8 +1,6 @@
 # DCRec
 Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 
-[](figs/framework.png)
-
 ## Surveys
 
 ### Device-Cloud Collaboration for Artificial Intelligence
@@ -20,6 +18,8 @@ Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 - Personalized Recommendation Models in Federated Settings: A Survey, IEEE TKDE, 2025. [[PDF]](https://ieeexplore.ieee.org/abstract/document/11151823).
 - A Scenario-Oriented Survey of Federated Recommender Systems: Techniques, Challenges, and Future Directions, Arxiv, 2025. [[PDF]](https://arxiv.org/abs/2508.19620), [[CODE]](https://github.com/SmilesLab-XJTU/Survey-FedRec).
 
+
+![](/figs/framework.png)
 
 ## On-Cloud Recommendation
 
