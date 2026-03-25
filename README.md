@@ -1,6 +1,8 @@
 # DCRec
 Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 
+[](figs/framework.png)
+
 ## Surveys
 
 ### Device-Cloud Collaboration for Artificial Intelligence
