@@ -19,9 +19,8 @@ note
   * *Asymmetric (Distillation-based, 异构蒸馏/迁移型)*：云端大网络（大Embedding/大LLM）+ 端侧小网络（轻量级双塔/SLM/实时重排模块），异构模型之间的知识自上而下或双向传递（如KD, Soft-labels）。
   * *Split/Offloading-based (切分/卸载型)*：深度计算图的物理截断与接力（如Split Learning, 边缘重排）。
 
-<!-- ![1774978651812](image/Architecture/1774978651812.png) -->
-![1775005464195](image/Architecture/1775005464195.png)
-![1774978772455](image/Architecture/1774978772455.png)
+![tree_taxonomy](figs/tree_taxonomy.png)
+![3D_taxonomy](figs/3D_taxonomy.png)
 
 ---
 
