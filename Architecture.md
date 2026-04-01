@@ -1,9 +1,5 @@
 # Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 
-note
-历程加入llm
-参数量演进
-
 ### Part 1: 多维度分类法设计 (The Proposed Taxonomy)
 
 * **(Why) Dimension 1: Objective-Oriented Paradigm (目标导向范式)**
@@ -45,7 +41,7 @@ note
 * **1.3 The Paradigm Shift: Device-Cloud Collaboration**
   * **要点**：正式提出“端云协同推荐（Device-Cloud Recommendation）”这一终极范式。强调该范式的核心在于**Co-training & Co-inference**，完美中和了云与端的优缺点。
   * **过渡**：然而，该领域的现有研究庞杂且缺乏统一界定，引出本文的贡献。
-![1774977597498](image/TOTO/1774977597498.png)
+![framework](figs/framework.png)
 
 **2. Preliminaries and Taxonomy**
 
