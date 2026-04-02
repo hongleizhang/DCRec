@@ -61,6 +61,7 @@ Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 - Model-Agnostic Decentralized Collaborative Learning for On-Device POI Recommendation, SIGIR, 2023. [[PDF]](https://arxiv.org/abs/2304.03947).
 - Efficient On-device Session-based Recommendation, ACM TOIS, 2023. [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3580364).
 - Personalized Elastic Embedding Learning for On-device Recommendation, IEEE TKDE, 2024. [[PDF]](https://arxiv.org/pdf/2306.10532).
+- On-device Content-based Recommendation with Single-shot Embedding Pruning: A Cooperative Game Perspective, WWW, 2025. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3696410.3714921).
 - On-Device Large Language Models for Sequential Recommendation, WSDM, 2026. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3773966.3777961).
 
 ## Device-Cloud Recommendation
