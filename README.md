@@ -26,6 +26,3 @@ Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 ## On-Device Recommendation
 
 ## Device-Cloud Recommendation
-
-
-![](/figs/structure.png)
