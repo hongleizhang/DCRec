@@ -3,7 +3,7 @@ Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 
 ![](/figs/framework.png)
 
-## 📖 Related Surveys
+## 📖Related Surveys
 
 ### Device-Cloud Collaboration for Artificial Intelligence
 
@@ -21,7 +21,7 @@ Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 - A Scenario-Oriented Survey of Federated Recommender Systems: Techniques, Challenges, and Future Directions, Arxiv, 2025. [[PDF]](https://arxiv.org/abs/2508.19620), [[CODE]](https://github.com/SmilesLab-XJTU/Survey-FedRec).
 
 
-## 🗄️ On-Cloud Recommendation
+## 🗄️On-Cloud Recommendation
 
 ### Classic Collaborative Filtering
 
@@ -51,7 +51,7 @@ Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 - RecMind: Large Language Model Powered Agent For Recommendation, NAACL Findings, 2024. [[PDF]](https://aclanthology.org/2024.findings-naacl.271.pdf).
 - Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations, Arxiv, 2023. [[PDF]](https://arxiv.org/abs/2308.16505).
 
-## 📱 On-Device Recommendation
+## 📱On-Device Recommendation
 
 ### Model Compression Mechanisms
 
@@ -74,4 +74,4 @@ Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 - Cost-Effective OnDevice Sequential Recommendation with Spiking Neural Networks, IJCAI, 2025. [[PDF]](https://www.ijcai.org/proceedings/2025/0398.pdf).
 - On-Device Large Language Models for Sequential Recommendation, WSDM, 2026. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3773966.3777961).
 
-## 🔄 Device-Cloud Recommendation
+## 🔄Device-Cloud Recommendation
