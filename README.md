@@ -53,7 +53,7 @@ Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 
 ## 📱On-Device Recommendation
 
-### Model Compression Mechanisms
+### General Lightweight Mechanisms
 
 - Learnable Embedding Sizes for Recommender Systems, ICLR, 2021. [[PDF]](https://arxiv.org/abs/2101.07577), [[CODE]](https://github.com/ssui-liu/learnable-embed-sizes-for-RecSys).
 - Learning to Embed Categorical Features without Embedding Tables for Recommendation, KDD, 2021. [[PDF]](https://arxiv.org/abs/2010.10784).
