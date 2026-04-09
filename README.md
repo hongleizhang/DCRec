@@ -1,7 +1,7 @@
 # DCRec
 Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 
-From Cloud-Centric to Device-Cloud Intelligence: Personalization and Collaboration for Recommendation in the Foundation Model Era
+From Cloud-Centric to Device-Cloud Intelligence: Personalization and Collaboration for Recommendation in the LLM Era
 
 Notes：
 
