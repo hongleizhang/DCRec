@@ -56,7 +56,7 @@ Our contributions can be highlighted along two dimensions, namely personalizatio
 - BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer, CIKM, 2019. [[PDF]](https://arxiv.org/abs/1904.06690).
 - LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/10.1145/3397271.3401063).
 
-### Foundation-driven Generative and Cognitive Architectures
+### Foundation model-driven Generative and Cognitive Architectures
 
 - Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5), RecSys, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3523227.3546767).
 - Recommender Systems with Generative Retrieval, NeurIPS, 2023. [[PDF]](http://arxiv.org/abs/2305.05065).
