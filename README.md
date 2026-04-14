@@ -2,8 +2,6 @@
 
 Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 
-From Cloud-Centric to Device-Cloud Intelligence: Personalization and Collaboration for Recommendation in the LLM Era
-
 Notes：
 
 Three distinctive characteristics/challenges in recommender system scenarios:
@@ -58,7 +56,7 @@ Our contributions can be highlighted along two dimensions, namely personalizatio
 
 ### Large Semantic Alignment Architectures
 
-- Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5), RecSys, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3523227.3546767).
+- Recommendation as Language Processing: A Unified Pretrain, Personalized Prompt & Predict Paradigm, RecSys, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3523227.3546767).
 - Recommender Systems with Generative Retrieval, NeurIPS, 2023. [[PDF]](http://arxiv.org/abs/2305.05065).
 - Diffusion Recommender Model, SIGIR, 2023. [[PDF]](https://dl.acm.org/doi/10.1145/3539618.3591663).
 - TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation, RecSys, 2023. [[PDF]](http://arxiv.org/abs/2305.00447).
