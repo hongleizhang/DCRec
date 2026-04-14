@@ -26,6 +26,7 @@ Our contributions can be highlighted along two dimensions, namely personalizatio
 - On-Device Recommender Systems: A Comprehensive Survey, DSE, 2025. [[PDF]](https://link.springer.com/article/10.1007/s41019-025-00308-8).
 - A Survey on Federated Recommendation Systems, IEEE TNNLS, 2024. [[PDF]](https://link.springer.com/article/10.1007/s41019-025-00308-8).
 - A Scenario-Oriented Survey of Federated Recommender Systems: Techniques, Challenges, and Future Directions, Arxiv, 2025. [[PDF]](https://arxiv.org/abs/2508.19620).
+- Distributed Learning for Next-Gen Recommender Systems: A Survey, IPCID, 2025. [[PDF]](https://link.springer.com/chapter/10.1007/978-3-032-12481-4_7).
 - Personalized Recommendation Models in Federated Settings: A Survey, IEEE TKDE, 2025. [[PDF]](https://ieeexplore.ieee.org/abstract/document/10423793/).
 
 ## 🗄️On-Cloud Recommendation
