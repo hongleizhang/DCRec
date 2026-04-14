@@ -6,7 +6,7 @@ Three distinctive characteristics/challenges in device-cloud recommender system 
 - the prevalence of recommendation-specific model structures centered on embedding tables, and
 - the extremely large scale of user devices.
 
-Our contributions can be highlighted along two dimensions, namely personalization and collaboration, while existing surveys have primarily focused on personalization. For the collaboration part, the distinctive collaborative mechanisms can be introduced from the perspective of the three unique characteristics of recommender system scenarios mentioned above.
+Our contributions can be highlighted along two dimensions, namely personalization and collaboration, while existing surveys have primarily focused on personalization. For the collaboration part, the distinctive collaborative mechanisms can be introduced from the perspective of the three unique characteristics mentioned above.
 
 ![](/figs/framework.png)
 
