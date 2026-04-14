@@ -1,6 +1,4 @@
-# DCRec
-
-Device-Cloud Personalization and Collaboration in Recommendation: A Survey
+# DCRec: Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 
 Notes：
 
