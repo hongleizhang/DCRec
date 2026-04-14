@@ -1,12 +1,12 @@
 # DCRec: Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 
-Three distinctive characteristics/challenges in recommender system scenarios:
+Three distinctive characteristics/challenges in device-cloud recommender system scenarios:
 
-- inherent data heterogeneity,
-- the prevalence of recommendation-specific model architectures centered on embedding tables, and
+- naturally data heterogeneity,
+- the prevalence of recommendation-specific model structures centered on embedding tables, and
 - the extremely large scale of user devices.
 
-Our contributions can be highlighted along two dimensions, namely personalization and collaboration, while existing surveys have primarily focused on personalization. For the collaboration part, the distinctive collaborative mechanisms can be introduced from the perspective of the three unique characteristics of recommender system scenarios.
+Our contributions can be highlighted along two dimensions, namely personalization and collaboration, while existing surveys have primarily focused on personalization. For the collaboration part, the distinctive collaborative mechanisms can be introduced from the perspective of the three unique characteristics of recommender system scenarios mentioned above.
 
 ![](/figs/framework.png)
 
