@@ -62,9 +62,16 @@
 
 ### General Lightweight Methods
 
+- Ranking Distillation: Learning Compact Ranking Models with High Performance for Recommender System, KDD, 2018. [[PDF]](https://arxiv.org/abs/1809.07428).
+- PQ-VAE: Efficient Recommendation Using Quantized Embeddings, RecSys (Late-Breaking Results), 2019. [[PDF]](https://ceur-ws.org/Vol-2431/paper10.pdf).
+- Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems, KDD, 2020. [[PDF]](https://arxiv.org/abs/1909.02107).
+- Binary Code based Hash Embedding for Web-scale Applications, CIKM, 2021. [[PDF]](https://arxiv.org/abs/2109.02471).
 - Learnable Embedding Sizes for Recommender Systems, ICLR, 2021. [[PDF]](https://arxiv.org/abs/2101.07577), [[CODE]](https://github.com/ssui-liu/learnable-embed-sizes-for-RecSys).
+- TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models, MLSys, 2021. [[PDF]](https://arxiv.org/abs/2101.11714), [[CODE]](https://github.com/facebookresearch/FBTT-Embedding).
 - Learning to Embed Categorical Features without Embedding Tables for Recommendation, KDD, 2021. [[PDF]](https://arxiv.org/abs/2010.10784).
 - Single-shot Embedding Dimension Search in Recommender System, SIGIR, 2022. [[PDF]](https://dl.acm.org/doi/epdf/10.1145/3477495.3532060).
+- Unbiased Knowledge Distillation for Recommendation, WSDM, 2023. [[PDF]](https://arxiv.org/abs/2211.14729), [[CODE]](https://github.com/chengang95/UnKD).
+- Budgeted Embedding Table For Recommender Systems, WSDM, 2024. [[PDF]](https://arxiv.org/abs/2310.14884), [[CODE]](https://github.com/qykcq/Budgeted-Embedding-Table-For-Recommender-Systems).
 
 ### Efficient Adaptation Solutions
 
