@@ -1,7 +1,5 @@
 # DCRec: Device-Cloud Personalization and Collaboration in Recommendation: A Survey
 
-Notes：
-
 Three distinctive characteristics/challenges in recommender system scenarios:
 
 - inherent data heterogeneity,
@@ -26,8 +24,9 @@ Our contributions can be highlighted along two dimensions, namely personalizatio
 
 - Distributed Recommendation Systems: Survey and Research Directions, ACM TOIS, 2024. [[PDF]](https://dl.acm.org/doi/epdf/10.1145/3694783).
 - On-Device Recommender Systems: A Comprehensive Survey, DSE, 2025. [[PDF]](https://link.springer.com/article/10.1007/s41019-025-00308-8).
-- Personalized Recommendation Models in Federated Settings: A Survey, IEEE TKDE, 2025. [[PDF]](https://ieeexplore.ieee.org/abstract/document/11151823).
-- A Scenario-Oriented Survey of Federated Recommender Systems: Techniques, Challenges, and Future Directions, Arxiv, 2025. [[PDF]](https://arxiv.org/abs/2508.19620), [[CODE]](https://github.com/SmilesLab-XJTU/Survey-FedRec).
+- A Survey on Federated Recommendation Systems, IEEE TNNLS, 2024. [[PDF]](https://link.springer.com/article/10.1007/s41019-025-00308-8).
+- A Scenario-Oriented Survey of Federated Recommender Systems: Techniques, Challenges, and Future Directions, Arxiv, 2025. [[PDF]](https://arxiv.org/abs/2508.19620).
+- Personalized Recommendation Models in Federated Settings: A Survey, IEEE TKDE, 2025. [[PDF]](https://ieeexplore.ieee.org/abstract/document/10423793/).
 
 ## 🗄️On-Cloud Recommendation
 
