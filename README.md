@@ -56,6 +56,7 @@
 - Session-Based Recommendation with Graph Neural Networks, AAAI, 2019. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/3804).
 - BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer, CIKM, 2019. [[PDF]](https://arxiv.org/abs/1904.06690).
 - LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/10.1145/3397271.3401063).
+- Self-supervised Graph Learning for Recommendation, SIGIR, 2021. [[PDF]](https://wujcan.github.io/papers/sigir21-sgl.pdf), [[CODE]](https://github.com/wujcan/SGL-TensorFlow).
 - LT-OCF: Learnable-Time ODE-based Collaborative Filtering, CIKM, 2021. [[PDF]](https://dl.acm.org/doi/10.1145/3459637.3482449).
 
 ### Large Semantic Alignment Models
