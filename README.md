@@ -36,9 +36,16 @@
 - BPR: Bayesian Personalized Ranking from Implicit Feedback, UAI, 2009. [[PDF]](https://arxiv.org/abs/1205.2618), [[CODE]](https://github.com/gamboviol/bpr).
 - Factor in the neighbors: Scalable and accurate collaborative filtering, ACM TKDD, 2010. [[PDF]](https://dl.acm.org/doi/abs/10.1145/1644873.1644874), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - Factorization Machines, ICDM, 2010. [[PDF]](https://analyticsconsultores.com.mx/wp-content/uploads/2019/03/Factorization-Machines-Steffen-Rendle-Osaka-University-2010.pdf), [[CODE]](https://github.com/coreylynch/pyFM).
+- Recommender Systems with Social Regularization, WSDM, 2011. [[PDF]](https://dennyzhou.github.io/papers/RSR.pdf), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
+- SLIM: Sparse Linear Methods for Top-N Recommender Systems, ICDM, 2011. [[PDF]](https://ieeexplore.ieee.org/document/6137254), [[CODE]](https://github.com/KarypisLab/SLIM).
+- CLiMF: Learning to Maximize Reciprocal Rank with Collaborative Less-is-More Filtering, RecSys, 2012. [[PDF]](https://dl.acm.org/doi/10.1145/2365952.2365981), [[CODE]](https://github.com/gamboviol/climf).
+- FISM: Factored Item Similarity Models for Top-N Recommender Systems, KDD, 2013. [[PDF]](https://chbrown.github.io/kdd-2013-usb/kdd/p659.pdf), [[CODE]](https://github.com/hegongshan/factored_item_similarity_models).
+- Logistic Matrix Factorization for Implicit Feedback Data, NIPS, 2014. [[PDF]](https://web.stanford.edu/~rezab/nips2014workshop/submits/logmat.pdf), [[CODE]](https://github.com/MrChrisJohnson/logistic-mf).
 
 ### Deep Representation Learning Models
 
+- Deep Content-based Music Recommendation, NeurIPS, 2013. [[PDF]](https://papers.neurips.cc/paper/5004-deep-content-based-music-recommendation.pdf).
+- Collaborative Deep Learning for Recommender Systems, KDD, 2015. [[PDF]](https://arxiv.org/pdf/1409.2944), [[CODE]](https://github.com/js05212/CDL).
 - Deep Neural Networks for YouTube Recommendations, RecSys, 2016. [[PDF]](https://dl.acm.org/doi/10.1145/2959100.2959190).
 - Wide & Deep Learning for Recommender Systems, RecSys DLRS, 2016. [[PDF]](https://arxiv.org/abs/1606.07792).
 - Neural Collaborative Filtering, WWW, 2017. [[PDF]](https://arxiv.org/abs/1708.05031).
