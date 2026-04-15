@@ -29,9 +29,12 @@
 
 - GroupLens: An Open Architecture for Collaborative Filtering of Netnews, ACM CSCW, 1994. [[PDF]](https://dl.acm.org/doi/10.1145/192844.192905), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - Item-based Collaborative Filtering Recommendation Algorithms, WWW, 2001. [[PDF]](https://dl.acm.org/doi/10.1145/371920.372071), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
+- Probabilistic Matrix Factorization, NIPS, 2007. [[PDF]](https://proceedings.neurips.cc/paper_files/paper/2007/file/d7322ed717dedf1eb4e6e52a37ea7bcd-Paper.pdf), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - Collaborative Filtering for Implicit Feedback Datasets, ICDM, 2008. [[PDF]](http://ieeexplore.ieee.org/document/4781121/), [[CODE]](https://github.com/benfred/implicit).
+- Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model, KDD, 2008. [[PDF]](https://people.engr.tamu.edu/huangrh/Spring16/papers_course/matrix_factorization.pdf), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - Matrix Factorization Techniques for Recommender Systems, IEEE Computer, 2009. [[PDF]](https://ieeexplore.ieee.org/document/5197422), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - BPR: Bayesian Personalized Ranking from Implicit Feedback, UAI, 2009. [[PDF]](https://arxiv.org/abs/1205.2618), [[CODE]](https://github.com/gamboviol/bpr).
+- Factor in the neighbors: Scalable and accurate collaborative filtering, ACM TKDD, 2010. [[PDF]](https://dl.acm.org/doi/abs/10.1145/1644873.1644874), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - Factorization Machines, ICDM, 2010. [[PDF]](https://analyticsconsultores.com.mx/wp-content/uploads/2019/03/Factorization-Machines-Steffen-Rendle-Osaka-University-2010.pdf), [[CODE]](https://github.com/coreylynch/pyFM).
 
 ### Deep Representation Learning Models
