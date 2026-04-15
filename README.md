@@ -1,8 +1,8 @@
-# DCRec: Device-Cloud Personalization and Collaboration in Recommendation: A Systematic Survey in the LLM Era
+# Device-Cloud Personalization and Collaboration in Recommendation: A Systematic Survey in the LLM Era
 
 **Abstract** (Draft): Recommender systems are undergoing a paradigm shift from purely on-cloud intelligence to device-cloud collaborative intelligence. Traditional on-cloud recommendation has evolved from shallow collaborative filtering and deep embedding models to large language model-driven frameworks, benefiting from strong contextual personalization and world knowledge. However, such schemes increasingly face three major challenges: high latency that limits responsiveness to real-time user preferences, privacy risks arising from centralized data storage, and the growing computational cost of large-scale inference. In parallel, on-device recommendation has emerged as a promising solution for low-latency and real-time personalization through efficient adaptation techniques such as quantization, pruning, and knowledge distillation. Nevertheless, its effectiveness is constrained by limited computation and storage resources, the difficulty of accommodating massive item spaces, and the lack of cross-user collaborative signals. These complementary strengths and limitations have given rise to device-cloud recommendation (DCRec), a new paradigm that integrates cloud-side contextual personalization with device-side real-time personalization through collaborative training and inference. In this survey, we present a novel taxonomy of this emerging field from the dual perspectives of personalization and collaboration, with particular emphasis on three distinctive challenges: natural data heterogeneity, recommendation-specific embedding-centric model structures, and the massive scale of distributed user devices. We further summarize representative methods, evaluation settings, and open research directions, with the aim of providing a structured foundation for the development of next-generation recommender systems in terms of adaptability, privacy preservation, and efficiency.
 
-![](/figs/framework.png)
+![framework](/figs/framework.png)
 
 ## 📖Related Surveys
 
@@ -46,18 +46,18 @@
 - Restricted Boltzmann Machines for Collaborative Filtering, ICML, 2007. [[PDF]](https://dl.acm.org/doi/10.1145/1273496.1273596).
 - Deep Content-based Music Recommendation, NeurIPS, 2013. [[PDF]](https://papers.neurips.cc/paper/5004-deep-content-based-music-recommendation.pdf).
 - Collaborative Deep Learning for Recommender Systems, KDD, 2015. [[PDF]](https://arxiv.org/pdf/1409.2944), [[CODE]](https://github.com/js05212/CDL).
-- Deep Neural Networks for YouTube Recommendations, RecSys, 2016. [[PDF]](https://dl.acm.org/doi/10.1145/2959100.2959190).
 - VBPR: Visual Bayesian Personalized Ranking from Implicit Feedback, AAAI, 2016. [[PDF]](https://dl.acm.org/doi/10.5555/3015812.3015834).
+- Deep Neural Networks for YouTube Recommendations, RecSys, 2016. [[PDF]](https://dl.acm.org/doi/10.1145/2959100.2959190).
 - Wide & Deep Learning for Recommender Systems, RecSys DLRS, 2016. [[PDF]](https://arxiv.org/abs/1606.07792).
-- Neural Collaborative Filtering, WWW, 2017. [[PDF]](https://arxiv.org/abs/1708.05031).
 - DeepFM: A Factorization-Machine based Neural Network for CTR Prediction, IJCAI, 2017. [[PDF]](https://arxiv.org/abs/1703.04247).
-- Deep Interest Network for Click-Through Rate Prediction, KDD, 2018. [[PDF]](https://arxiv.org/abs/1706.06978).
-- SASRec: Self-attentive Sequential Recommendation, ICDM, 2018. [[PDF]](https://peerj.com/articles/cs-1701.pdf).
-- Session-Based Recommendation with Graph Neural Networks, AAAI, 2019. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/3804).
-- BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer, CIKM, 2019. [[PDF]](https://arxiv.org/abs/1904.06690).
-- LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/10.1145/3397271.3401063).
+- Neural Collaborative Filtering, WWW, 2017. [[PDF]](https://arxiv.org/abs/1708.05031), [[CODE]](https://github.com/hexiangnan/neural_collaborative_filtering).
+- Deep Interest Network for Click-Through Rate Prediction, KDD, 2018. [[PDF]](https://arxiv.org/abs/1706.06978), [[CODE]](https://github.com/zhougr1993/DeepInterestNetwork).
+- Self-Attentive Sequential Recommendation, ICDM, 2018. [[PDF]](https://ieeexplore.ieee.org/abstract/document/8594844), [[CODE]](https://github.com/kang205/SASRec).
+- Session-Based Recommendation with Graph Neural Networks, AAAI, 2019. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/3804), [[CODE]](https://github.com/CRIPAC-DIG/SR-GNN).
+- BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer, CIKM, 2019. [[PDF]](https://arxiv.org/abs/1904.06690), [[CODE]](https://github.com/FeiSun/BERT4Rec).
+- LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/10.1145/3397271.3401063), [[CODE]](https://github.com/gusye1234/LightGCN-PyTorch).
 - Self-supervised Graph Learning for Recommendation, SIGIR, 2021. [[PDF]](https://wujcan.github.io/papers/sigir21-sgl.pdf), [[CODE]](https://github.com/wujcan/SGL-TensorFlow).
-- LT-OCF: Learnable-Time ODE-based Collaborative Filtering, CIKM, 2021. [[PDF]](https://dl.acm.org/doi/10.1145/3459637.3482449).
+- LT-OCF: Learnable-Time ODE-based Collaborative Filtering, CIKM, 2021. [[PDF]](https://dl.acm.org/doi/10.1145/3459637.3482449), [[CODE]](https://github.com/jeongwhanchoi/LT-OCF).
 
 ### Large Semantic Alignment Models
 
