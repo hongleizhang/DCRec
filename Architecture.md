@@ -2,115 +2,77 @@
 
 ### OD-Rec `Efficient Adaptation Solutions` 的可能的多种分类
 
-这批文献涵盖了端侧推荐系统（On-Device Recommendation）发展过程中，为了实现 **高效端侧适配与个性化（Efficient Adaptation Solutions）** 的多个经典与前沿工作。
+针对您提供的 16 篇关于 **Efficient Adaptation Solutions**（端侧个性化适配）的论文，我从**协同交互模式**、**适配粒度**、以及**适配驱动目标**三个维度为您进行分类。
 
-针对这些工作，我为你提供**4种不同切入点的分类方式**，每种方式分为2-3个子类，以帮助你从多维角度梳理这篇综述或论文的分类结构：
-
----
-
-### 切入点一：按“系统协同架构”分类（基于端侧与外部的交互方式）
-
-这种分类方式关注的是：端侧模型在进行个性化适配时，是完全依靠自己、依赖云端协助，还是与其他设备进行交互。
-
-* **1. 云端-设备协同适配 (Cloud-Device Collaborative Adaptation)**
-  * **特点**：利用云端强大的计算能力提取全局知识，并将其下发、蒸馏或同步到端侧，端侧再结合本地实时数据进行微调与个性化。
-  * **包含文献**：
-    * *EdgeRec (2020)* - 云端训练全局模型，边缘/端侧进行实时重排适配。
-    * *Real-time Short Video Rec (2022)* - 端侧提取实时特征，云端协同完成短视频推荐。
-    * *MPDA (2022)* - 利用云端协调进行大规模的领域自适应（Domain Adaption），帮助端侧个性化。
-    * *OD-Rec (2022)* & *EODRec (2023)* - 通过云端到端侧的自监督/知识蒸馏进行适配。
-    * *ODUpdate (2023)* - 针对云端到端侧的模型更新/补丁传输进行通信高效的适配。
-    * *Shaver (2025)* - 端云博弈视角的Embedding单次裁剪与协同适配。
-* **2. 去中心化/设备间协作 (Decentralized / Peer-to-Peer Collaboration)**
-  * **特点**：不依赖中心化云服务器，设备与设备之间（或通过联邦学习范式）直接共享参数或知识，实现群智协同与适配。
-  * **包含文献**：
-    * *PocketLens (2004)* - 早期的P2P去中心化推荐架构。
-    * *MACG (2023)* - 模型无关的去中心化协作学习（用于POI推荐）。
-    * *DCLR (2024)* - 带自适应参考数据的去中心化协作学习。
-    * *Federated Unlearning (2023)* - 联邦学习架构下的端侧遗忘与适配。
-* **3. 本地独立自主适配 (Local Autonomous Adaptation)**
-  * **特点**：主要依赖端侧本地的数据和算力，进行模型结构的弹性调整或本地自闭环的训练推理。
-  * **包含文献**：
-    * *DeepRec (2021)* - 纯端侧深度学习训练，保护隐私的序列推荐。
-    * *Learning Elastic Embeddings (2021)* & *Personalized Elastic Embedding (2024)* - 纯粹根据当前设备的内存和用户活跃度，弹性分配本地Embedding大小。
-    * *SNN (2025)* - 利用脉冲神经网络在端侧本地实现极低功耗的序列适配。
-    * *On-device LLMs (2026)* - 端侧大语言模型在本地的推荐自适应。
+每种分类方式都涵盖了所有论文，并将其划分为 2-3 个核心类别。
 
 ---
 
-### 切入点二：按“适配的技术对象”分类（基于对模型的哪部分进行改造）
+### 维度一：按协同交互模式分类 (Interaction & Topology)
 
-这种分类方式关注：为了让模型适应端侧有限的资源和个性化需求，研究者重点“动了模型里的什么”。
+这一维度关注的是端侧模型是如何与云端或其他设备进行交互以实现适配的。
 
-* **1. 表征与结构弹性适配 (Representation & Architecture Tailoring)**
-  * **特点**：聚焦于调整模型大小、Embedding维度或网络架构，使其动态匹配端侧硬件约束与个性化数据容量。
-  * **包含文献**：
-    * *Learning Elastic Embeddings (2021)* - 动态弹性Embedding。
-    * *Personalized Elastic Embedding (2024)* - 个性化弹性Embedding。
-    * *Shaver (2025)* - Embedding的单次剪枝（Pruning）。
-    * *SNN (2025)* - 引入脉冲神经网络（改变底层神经元计算架构）。
-    * *On-device LLMs (2026)* - 大模型的端侧量化与指令微调适配架构。
-* **2. 参数更新与知识迁移 (Parameter Updating & Knowledge Transfer)**
-  * **特点**：网络结构通常相对固定，重点在于如何将全局知识（云端/其他设备）高效、轻量地迁移和更新到本地参数中。
-  * **包含文献**：
-    * *OD-Rec (2022)* & *EODRec (2023)* - 基于自监督与蒸馏的知识迁移。
-    * *MPDA (2022)* - 基于元学习和领域自适应的参数个性化。
-    * *ODUpdate (2023)* - 高效的模型参数更新策略。
-    * *MACG (2023)* & *DCLR (2024)* - 去中心化场景下的知识与参数聚合。
-* **3. 实时特征与计算流转 (Real-time Feature & Computation Routing)**
-  * **特点**：不对模型架构做破坏性修改，而是利用端侧贴近用户的优势，将实时特征提取或最后的排序层（Ranking）放在端侧动态计算。
-  * **包含文献**：
-    * *EdgeRec (2020)* - 边缘重排系统。
-    * *Real-time Short Video Rec (2022)* - 实时特征的端侧计算流。
-    * *DeepRec (2021)* - 基于本地实时行为的序列更新流。
+1. **云端协同适配 (Cloud-Edge Collaborative Adaptation)**：
+    这类工作依赖云端提供全局模型或参考信息，端侧在此基础上进行微调、重排或局部更新。这是目前主流的工业界方案。
+    * **涵盖论文**：EdgeRec (2020), DeepRec (2021), Elastic Embeddings (KDD 2021), Real-time Short Video (2022), MPDA (2022), OD-Rec (2022), ODUpdate (2023), EODRec (2023), Elastic Embedding (TKDE 2024), Shaver (2025), SNN (2025), LLM for SeqRec (2026)。
+2. **去中心化/联邦协同适配 (Decentralized & Federated Adaptation)**：
+    这类工作强调设备与设备之间（P2P）的协作，或者在联邦学习框架下进行不依赖中心化原始数据的个性化适配。
+    * **涵盖论文**：PocketLens (2004), Federated Unlearning (2023), Model-Agnostic Decentralized (SIGIR 2023), Adaptive Reference Data (WWW 2024)。
 
 ---
 
-### 切入点三：按“核心优化痛点/动机”分类（基于为何要进行端侧适配）
+### 维度二：按适配对象的粒度分类 (Adaptation Granularity)
 
-这种分类非常适合用于论文的 Motivation 部分，说明现有端侧适配方案分别解决了什么痛点。
+这一维度关注的是模型中哪一部分在端侧进行了个性化的改动。
 
-* **1. 资源与通信瓶颈优化 (Resource & Communication Efficiency)**
-  * **特点**：端侧存储有限、带宽昂贵。此类工作重点在于如何用最少的通信量或最小的显存占用完成本地适配。
-  * **包含文献**：
-    * *ODUpdate (2023)* - 降低端云同步时的通信开销。
-    * *Learning Elastic Embeddings (2021)* & *Personalized Elastic Embedding (2024)* - 解决设备内存差异，优化存储。
-    * *Shaver (2025)* - 解决端侧大词表导致的内存爆炸问题。
-    * *MACG (2023)* & *DCLR (2024)* - 降低去中心化协作时的通信成本。
-    * *SNN (2025)* - 解决端侧计算能耗（Cost-Effective）过高的问题。
-* **2. 隐私保护与数据合规 (Privacy, Security & Unlearning)**
-  * **特点**：用户的交互数据高度敏感。此类工作适配的初衷是将数据留在本地，或按需遗忘。
-  * **包含文献**：
-    * *DeepRec (2021)* - 主打隐私保护的本地深度学习。
-    * *PocketLens (2004)* - 早期的隐私保护去中心化探索。
-    * *Federated Unlearning (2023)* - 解决端侧用户要求“删除个人某些历史足迹”的机器遗忘问题。
-* **3. 极致实时感知与个性化延迟 (Real-time Perception & Ultra-low Latency)**
-  * **特点**：云端推荐存在网络延迟。此类工作是为了让模型在毫秒级捕捉用户意图（如刷短视频、刚点击商品）而进行的端侧适配。
-  * **包含文献**：
-    * *EdgeRec (2020)*
-    * *Real-time Short Video Rec (2022)*
-    * *MPDA (2022)*
-    * *OD-Rec (2022)* & *EODRec (2023)*
-    * *On-device LLMs (2026)* - 通过本地LLM进行即时的序列意图理解。
+1. **特征/嵌入层适配 (Feature & Embedding Adaptation)**：
+    核心在于如何处理海量的 Embedding。通过弹性伸缩、剪枝或个性化 Embedding 映射来适配端侧有限的存储和特定的用户偏好。
+    * **涵盖论文**：Elastic Embeddings (KDD 2021), Elastic Embedding (TKDE 2024), Shaver (2025), EdgeRec (2020), Real-time Short Video (2022)。
+2. **模型参数与结构适配 (Model Weight & Architecture Adaptation)**：
+    不仅调整特征，还通过端侧微调（Fine-tuning）、知识蒸馏、甚至是更换神经网络组件（如 SNN 或 LLM 的适配器）来改变模型的预测逻辑。
+    * **涵盖论文**：PocketLens (2004), DeepRec (2021), MPDA (2022), OD-Rec (2022), Federated Unlearning (2023), Model-Agnostic Decentralized (2023), ODUpdate (2023), EODRec (2023), Adaptive Reference Data (2024), SNN (2025), LLM for SeqRec (2026)。
 
 ---
 
-### 切入点四：按“推荐的具体应用场景”分类
+### 维度三：按适配的驱动目标分类 (Primary Adaptation Driver)
 
-如果你的综述/分类主要想按具体业务场景来分门别类，这个切入点最直观。
+这一维度关注的是适配过程主要是为了解决什么核心矛盾。
 
-* **1. 序列与会话推荐 (Sequential & Session-based Recommendation)**
-  * **特点**：高度依赖用户的短期连续行为，非常适合在端侧捕获实时点击流。
-  * **包含文献**：*DeepRec (2021)*, *OD-Rec (2022)*, *ODUpdate (2023)*, *EODRec (2023)*, *SNN (2025)*, *On-device LLMs (2026)*。
-* **2. 空间与兴趣点推荐 (Spatial & POI Recommendation)**
-  * **特点**：强依赖地理位置（GPS等），位置信息高度敏感，非常契合端侧和去中心化架构。
-  * **包含文献**：*MACG (2023)*, *DCLR (2024)*。
-* **3. 通用信息流与视频/内容推荐 (General Feed / Short Video / Content-based Rec)**
-  * **特点**：特征维度广，常常包含多模态或海量商品，强调特征工程、重排和Embedding的适配。
-  * **包含文献**：*PocketLens (2004)*, *EdgeRec (2020)*, *Learning Elastic Embeddings (2021)*, *Real-time Short Video (2022)*, *MPDA (2022)*, *Federated Unlearning (2023)*, *Personalized Elastic Embedding (2024)*, *Shaver (2025)*。
+1. **资源约束驱动 (Resource-Constrained Efficiency)**：
+    适配的主要目的是为了在端侧极度有限的计算、存储或带宽条件下，尽可能保持模型性能。
+    * **涵盖论文**：Elastic Embeddings (KDD 2021), Elastic Embedding (TKDE 2024), Shaver (2025), SNN (2025), ODUpdate (2023), EODRec (2023), EdgeRec (2020), Real-time Short Video (2022)。
+2. **数据/偏好漂移驱动 (Data & Preference Personalization)**：
+    适配的主要目的是为了捕捉端侧实时的、个性化的用户行为，或解决用户之间的数据异构性（Non-IID）及隐私问题。
+    * **涵盖论文**：PocketLens (2004), DeepRec (2021), MPDA (2022), OD-Rec (2022), Federated Unlearning (2023), Model-Agnostic Decentralized (2023), Adaptive Reference Data (2024), LLM for SeqRec (2026)。
 
-**建议：**
-如果你是在写一篇 Survey 或者引言部分的 Related Work，**“切入点一（按协同架构）”** 和 **“切入点二（按适配技术手段）”** 是最具学术深度和逻辑性的分法，能够很好地将 General Lightweight Methods（偏系统级压缩）与 Efficient Adaptation Solutions（偏算法级动态定制）区分开来。
+---
+
+### 总结对照表
+
+| 论文名称 (年份) | 交互模式 (S1) | 适配粒度 (S2) | 驱动目标 (S3) |
+| :--- | :--- | :--- | :--- |
+| **PocketLens** (2004) | 去中心化 | 模型参数 | 数据/偏好 |
+| **EdgeRec** (2020) | 云端协同 | 特征/嵌入 | 资源约束 |
+| **DeepRec** (2021) | 云端协同 | 模型参数 | 数据/偏好 |
+| **Elastic Embeddings** (2021) | 云端协同 | 特征/嵌入 | 资源约束 |
+| **Short Video Rec** (2022) | 云端协同 | 特征/嵌入 | 资源约束 |
+| **MPDA** (2022) | 云端协同 | 模型参数 | 数据/偏好 |
+| **OD-Rec** (2022) | 云端协同 | 模型参数 | 数据/偏好 |
+| **Federated Unlearning** (2023) | 去中心化 | 模型参数 | 数据/偏好 |
+| **Model-Agnostic Decent.** (2023) | 去中心化 | 模型参数 | 数据/偏好 |
+| **ODUpdate** (2023) | 云端协同 | 模型参数 | 资源约束 |
+| **EODRec** (2023) | 云端协同 | 模型参数 | 资源约束 |
+| **Adaptive Ref Data** (2024) | 去中心化 | 模型参数 | 数据/偏好 |
+| **Personalized Elastic** (2024) | 云端协同 | 特征/嵌入 | 资源约束 |
+| **Shaver** (2025) | 云端协同 | 特征/嵌入 | 资源约束 |
+| **SNN Rec** (2025) | 云端协同 | 模型参数 | 资源约束 |
+| **LLM for SeqRec** (2026) | 云端协同 | 模型参数 | 数据/偏好 |
+
+**建议使用说明：**
+
+* 如果你的论文侧重于**端侧系统架构**，建议使用“交互模式”进行分类。
+* 如果侧重于**模型压缩与搜索**，建议使用“适配粒度”进行分类。
+* 如果侧重于**算法应用场景**（如实时性、隐私、低能耗），建议使用“驱动目标”进行分类。
 
 ### Part 1: 多维度分类法设计 (The Proposed Taxonomy)
 
