@@ -25,6 +25,8 @@
 
 ## 🗄️On-Cloud Recommendation
 
+![framework](/figs/oncloud_rec.png)
+
 ### Shallow Collaborative Filtering Models
 
 - GroupLens: An Open Architecture for Collaborative Filtering of Netnews, ACM CSCW, 1994. [[PDF]](https://dl.acm.org/doi/10.1145/192844.192905), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
