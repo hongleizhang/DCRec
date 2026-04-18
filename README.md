@@ -115,7 +115,7 @@
 
 ### Computation Allocation Mechanisms
 > Computation allocation is primarily enabled by **Distributed Recommendation**.
-- TiVo: making show recommendations using a distributed collaborative filtering architecture, KDD, 2004. [[PDF]](https://dl.acm.org/doi/abs/10.1145/1014052.1014097).
+- TiVo: Making Show Recommendations Using A Distributed Collaborative Filtering Architecture, KDD, 2004. [[PDF]](https://dl.acm.org/doi/abs/10.1145/1014052.1014097).
 - Distributed Rating Prediction in User Generated Content Streams, RecSys, 2011. [[PDF]](https://dl.acm.org/doi/abs/10.1145/2043932.2043948).
 - Distributed Collaborative Filtering with Singular Ratings for Large-Scale Recommendation, Journal of Systems and Software, 2014. [[PDF]](https://www.sciencedirect.com/science/article/abs/pii/S0164121214001150).
 - Decentralized Recommender Systems, Arxiv, 2015. [[PDF]](https://arxiv.org/abs/1503.01647).
