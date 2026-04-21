@@ -92,29 +92,39 @@
 
 ### Efficient Adaptation Solutions
 
-- PocketLens: Toward a Personal Recommender System, ACM TOIS, 2004. [[PDF]](https://dl.acm.org/doi/10.1145/1010614.1010618).
-- EdgeRec: Recommender System on Edge in Mobile Taobao, CIKM, 2020. [[PDF]](https://arxiv.org/abs/2005.08416).
-- DeepRec: On-Device Deep Learning for Privacy-preserving Sequential Recommendation in Mobile Commerce, WWW, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3442381.3449942), [[CODE]](https://github.com/hanjialiang/DeepRec).
+#### Adaptation for Resources and Efficiency
+
 - Learning Elastic Embeddings for Customizing On-Device Recommenders, KDD, 2021. [[PDF]](https://arxiv.org/abs/2106.02223).
-- Real-time Short Video Recommendation on Mobile Devices, CIKM, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3511808.3557065).
-- On-Device Learning for Model Personalization with Large-Scale Cloud-Coordinated Domain Adaption, KDD, 2022. [[PDF]](https://doi.org/10.1145/3534678.3539263), [[CODE]](https://github.com/mikudehuane/MPDA).
 - On-Device Next-item Recommendation with Self-supervised Knowledge Distillation, SIGIR, 2022. [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3477495.3531775), [[CODE]](https://github.com/xiaxin1998/OD-Rec).
-- Federated Unlearning for On-Device Recommendation, WSDM, 2023. [[PDF]](https://arxiv.org/abs/2210.10958).
-- Model-Agnostic Decentralized Collaborative Learning for On-Device POI Recommendation, SIGIR, 2023. [[PDF]](https://arxiv.org/abs/2304.03947).
-- Towards Communication-Efficient Model Updating for On-Device Session-Based Recommendation, CIKM, 2023. [[PDF]](https://arxiv.org/abs/2308.12777), [[CODE]](https://github.com/xiaxin1998/ODUpdate).
 - Efficient On-Device Session-based Recommendation, ACM TOIS, 2023. [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3580364), [[CODE]](https://github.com/xiaxin1998/EODRec).
-- Decentralized Collaborative Learning with Adaptive Reference Data for On-Device POI Recommendation, WWW, 2024. [[PDF]](https://arxiv.org/abs/2401.13448).
+- Towards Communication-Efficient Model Updating for On-Device Session-Based Recommendation, CIKM, 2023. [[PDF]](https://arxiv.org/abs/2308.12777), [[CODE]](https://github.com/xiaxin1998/ODUpdate).
 - Personalized Elastic Embedding Learning for On-Device Recommendation, IEEE TKDE, 2024. [[PDF]](https://arxiv.org/pdf/2306.10532).
 - On-Device Content-based Recommendation with Single-shot Embedding Pruning: A Cooperative Game Perspective, WWW, 2025. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3696410.3714921), [[CODE]](https://github.com/chenxing1999/shaver).
 - Cost-Effective On-Device Sequential Recommendation with Spiking Neural Networks, IJCAI, 2025. [[PDF]](https://www.ijcai.org/proceedings/2025/0398.pdf).
 - On-Device Large Language Models for Sequential Recommendation, WSDM, 2026. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3773966.3777961).
+
+#### Adaptation for Real-time Interests and Heterogeneous Data
+
+- EdgeRec: Recommender System on Edge in Mobile Taobao, CIKM, 2020. [[PDF]](https://arxiv.org/abs/2005.08416).
+- On-Device Learning for Model Personalization with Large-Scale Cloud-Coordinated Domain Adaption, KDD, 2022. [[PDF]](https://doi.org/10.1145/3534678.3539263), [[CODE]](https://github.com/mikudehuane/MPDA).
+- Real-time Short Video Recommendation on Mobile Devices, CIKM, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3511808.3557065).
+
+#### Adaptation for Privacy and Governance
+
+- PocketLens: Toward a Personal Recommender System, ACM TOIS, 2004. [[PDF]](https://dl.acm.org/doi/10.1145/1010614.1010618).
+- DeepRec: On-Device Deep Learning for Privacy-preserving Sequential Recommendation in Mobile Commerce, WWW, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3442381.3449942), [[CODE]](https://github.com/hanjialiang/DeepRec).
+- Federated Unlearning for On-Device Recommendation, WSDM, 2023. [[PDF]](https://arxiv.org/abs/2210.10958).
+- Model-Agnostic Decentralized Collaborative Learning for On-Device POI Recommendation, SIGIR, 2023. [[PDF]](https://arxiv.org/abs/2304.03947).
+- Decentralized Collaborative Learning with Adaptive Reference Data for On-Device POI Recommendation, WWW, 2024. [[PDF]](https://arxiv.org/abs/2401.13448).
 
 ## 🔄Device-Cloud Collaborative Recommendation
 
 ![framework](/figs/collaboration_mechanisms.png)
 
 ### Computation Allocation Mechanisms
+>
 > Computation allocation is primarily enabled by **Distributed Recommendation**.
+
 - TiVo: Making Show Recommendations Using A Distributed Collaborative Filtering Architecture, KDD, 2004. [[PDF]](https://dl.acm.org/doi/abs/10.1145/1014052.1014097).
 - Distributed Rating Prediction in User Generated Content Streams, RecSys, 2011. [[PDF]](https://dl.acm.org/doi/abs/10.1145/2043932.2043948).
 - Distributed Collaborative Filtering with Singular Ratings for Large-Scale Recommendation, Journal of Systems and Software, 2014. [[PDF]](https://www.sciencedirect.com/science/article/abs/pii/S0164121214001150).
@@ -151,9 +161,12 @@
 - NestPipe: Large-Scale Recommendation Training on 1,500+ Accelerators via Nested Pipelining, ArXiv, 2026. [[PDF]](https://arxiv.org/abs/2604.06956).
 
 ### Model Sharing Mechanisms
+>
 > Model sharing is primarily enabled by **Federated Recommendation**:
 (1) ***Foundational Exploration***: basic model and scenarios, privacy and efficiency optimization; (2) ***Personalization Enhancement***: global aggregation and local adaptation; (3) ***Advanced Integration***: cross-domain, multi-modal and foundation models.
+
 #### Foundational Exploration
+
 - Federated Collaborative Filtering for Privacy-Preserving Personalized Recommendation System, Arxiv, 2019. [[PDF]](https://arxiv.org/abs/1901.09888).
 - Federated Recommendation System via Differential Privacy, IEEE ISIT, 2020. [[PDF]](https://ieeexplore.ieee.org/abstract/document/9174297).
 - Meta Matrix Factorization for Federated Rating Predictions, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3397271.3401081), [[CODE]](https://github.com/TempSDU/MetaMF).
@@ -183,6 +196,7 @@
 - From Transfer to Collaboration: A Federated Framework for Cross-Market Sequential Recommendation, Arxiv, 2026. [[PDF]](https://arxiv.org/abs/2604.13573).
 
 #### Personalization Enhancement
+
 - Hierarchical Personalized Federated Learning for User Modeling, WWW, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3442381.3449926), [[CODE]](https://github.com/bigdata-ustc/hierarchical-personalized-federated-learning).
 - ReFRS: Resource-efficient Federated Recommender System for Dynamic and Diversified User Preferences, ACM TOIS, 2023. [[PDF]](https://dl.acm.org/doi/full/10.1145/3560486).
 - Dual Personalization on Federated Recommendation, IJCAI, 2023. [[PDF]](https://www.ijcai.org/proceedings/2023/0507), [[CODE]](https://github.com/Zhangcx19/IJCAI-23-PFedRec).
@@ -208,6 +222,7 @@
 - Breaking the Aggregation Bottleneck in Federated Recommendation: A Personalized Model Merging Approach, AAAI, 2026. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/38472), [[CODE]](https://github.com/jundongchen13/FedEM).
 
 #### Advanced Integration
+
 - FedCDR: Federated Cross-Domain Recommendation for Privacy-Preserving Rating Prediction, CIKM, 2022. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3511808.3557320).
 - Win-Win: A Privacy-Preserving Federated Framework for Dual-Target Cross-Domain Recommendation, AAAI, 2023. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/25531).
 - Manipulating Visually-aware Federated Recommender Systems and Its Countermeasures, ACM TOIS, 2023. [[PDF]](https://dl.acm.org/doi/full/10.1145/3630005).
@@ -221,7 +236,9 @@
 - TransFR: Transferable Federated Recommendation with Adapter Tuning on Pre-trained Language Models, AAAI, 2026. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/40048), [[CODE]](https://github.com/hongleizhang/TransFR).
 
 ### Task Orchestration Mechanisms
+>
 > Task orchestration is primarily enabled by **Device-Cloud Recommendation**.
+
 - Device-Cloud Collaborative Learning for Recommendation, KDD, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3447548.3467097).
 - Device-Cloud Collaborative Recommendation via Meta Controller, KDD, 2022. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3534678.3539181).
 - On-Device Learning for Model Personalization with Large-Scale Cloud-Coordinated Domain Adaption, KDD, 2022. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3534678.3539263), [[CODE]](https://github.com/mikudehuane/MPDA).
