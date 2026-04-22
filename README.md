@@ -129,7 +129,7 @@
 
 ## 🔄Device-Cloud Collaborative Recommendation
 
-![framework](/figs/collaboration_mechanisms.png)
+![framework](/figs/devicecloud_rec.png)
 
 ### Computation Allocation Mechanisms
 >
