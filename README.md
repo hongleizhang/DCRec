@@ -79,6 +79,9 @@
 ![framework](/figs/ondevice_rec.png)
 
 ### General Lightweight Methods
+>
+> General lightweight methods aim to make on-device recommender models deployable under tight **memory** or **compute** budgets while preserving accuracy, mainly via:
+(1) ***Embedding Compression***: quantize/factorize embeddings (e.g., PQ, tensor trains) to shrink storage and speed up lookup; (2) ***Adaptive Embedding Design***: allocate embedding capacity by feature importance or replace tables with lightweight generators to match constraints; (3) ***Knowledge Distillation***: transfer ranking/sequential behaviors from large teachers to compact students with minimal performance loss.
 
 #### Embedding Compression
 
@@ -101,6 +104,9 @@
 - EKD4Rec: Ensemble Knowledge Distillation from LLM-based Models to Traditional Sequential Recommenders, WWW, 2025. [[PDF]](https://dl.acm.org/doi/10.1145/3701716.3715527).
 
 ### Efficient Adaptation Solutions
+>
+> Efficient adaptation solutions focus on **updating and personalizing** recommenders on-device under practical constraints, typically along:
+(1) ***Privacy-Oriented Adaptation***: keep data local and use federated or decentralized learning and unlearning to adapt without exposing user data; (2) ***Latency-Oriented Adaptation***: design fast on-device updates to meet real-time serving requirements and data heterogeneity; (3) ***Resources-Oriented Adaptation***: tailor model size, update frequency, and communication to device compute/memory/energy.
 
 #### Privacy-Oriented Adaptation
 
