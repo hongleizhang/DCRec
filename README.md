@@ -80,8 +80,8 @@
 
 ### General Lightweight Methods
 >
-> General lightweight methods aim to make on-device recommender models deployable under tight **memory** or **compute** budgets while preserving accuracy, mainly via:
-(1) ***Embedding Compression***: quantize/factorize embeddings (e.g., PQ, tensor trains) to shrink storage and speed up lookup; (2) ***Adaptive Embedding Design***: allocate embedding capacity by feature importance or replace tables with lightweight generators to match constraints; (3) ***Knowledge Distillation***: transfer ranking/sequential behaviors from large teachers to compact students with minimal performance loss.
+> General lightweight methods focus on **static model slimming for deployable on-device inference**, where the dominant bottleneck is often the embedding table, mainly via:
+(1) ***Embedding Compression***: quantize/factorize embeddings (e.g., PQ, complementary partitions, tensor trains) to shrink storage and accelerate lookups; (2) ***Adaptive Embedding Design***: allocate embedding capacity non-uniformly (search/prune mixed dimensions) or replace tables with lightweight embedding generators to fit constraints; (3) ***Knowledge Distillation***: transfer ranking/sequential knowledge from large (often cloud) teachers to compact on-device students with minimal quality loss.
 
 #### Embedding Compression
 
@@ -105,8 +105,8 @@
 
 ### Efficient Adaptation Solutions
 >
-> Efficient adaptation solutions focus on **updating and personalizing** recommenders on-device under practical constraints, typically along:
-(1) ***Privacy-Oriented Adaptation***: keep data local and use federated or decentralized learning and unlearning to adapt without exposing user data; (2) ***Latency-Oriented Adaptation***: design fast on-device updates to meet real-time serving requirements and data heterogeneity; (3) ***Resources-Oriented Adaptation***: tailor model size, update frequency, and communication to device compute/memory/energy.
+> Efficient adaptation solutions focus on **personalized adaptation** (updating after deployment) while respecting real-world constraints, typically along:
+(1) ***Privacy-Oriented Adaptation***: keep data local and adapt via federated/decentralized learning (and unlearning) without exposing raw user data; (2) ***Latency-Oriented Adaptation***: design fast inference and update pipelines that react to short-term drift under strict serving budgets; (3) ***Resources-Oriented Adaptation***: tailor model size, update scope/frequency, and communication to device compute/memory/energy and network limits.
 
 #### Privacy-Oriented Adaptation
 
