@@ -76,6 +76,8 @@
 
 ## 📱On-Device Recommendation
 
+![framework](/figs/ondevice_rec.png)
+
 ### General Lightweight Methods
 
 #### Encoding-Level Compression
