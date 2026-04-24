@@ -81,16 +81,16 @@
 ### General Lightweight Methods
 >
 > General lightweight methods focus on **static model slimming for deployable on-device inference**, where the dominant bottleneck is often the embedding table, mainly via:
-(1) ***Embedding Compression***: quantize/factorize embeddings (e.g., PQ, complementary partitions, tensor trains) to shrink storage and accelerate lookups; (2) ***Adaptive Embedding Design***: allocate embedding capacity non-uniformly (search/prune mixed dimensions) or replace tables with lightweight embedding generators to fit constraints; (3) ***Knowledge Distillation***: transfer ranking/sequential knowledge from large (often cloud) teachers to compact on-device students with minimal quality loss.
+(1) ***Model Compression***: quantize/factorize embeddings (e.g., PQ, complementary partitions, tensor trains) to shrink storage and accelerate lookups; (2) ***Embedding Optimization***: allocate embedding capacity non-uniformly (search/prune mixed dimensions) or replace tables with lightweight embedding generators to fit constraints; (3) ***Knowledge Distillation***: transfer ranking/sequential knowledge from large (often cloud) teachers to compact on-device students with minimal quality loss.
 
-#### Embedding Compression
+#### Model Compression
 
 - PQ-VAE: Efficient Recommendation Using Quantized Embeddings, RecSys, 2019. [[PDF]](https://ceur-ws.org/Vol-2431/paper10.pdf).
 - Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems, KDD, 2020. [[PDF]](https://arxiv.org/abs/1909.02107).
 - TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models, MLSys, 2021. [[PDF]](https://arxiv.org/abs/2101.11714), [[CODE]](https://github.com/facebookresearch/FBTT-Embedding).
 - Compress, Cross and Scale: Multi-Level Compression Cross Networks for Efficient Scaling in Recommender Systems, 2026. [[PDF]](https://arxiv.org/pdf/2602.12041), [[CODE]](https://github.com/shishishu/MLCC).
 
-#### Adaptive Embedding Design
+#### Embedding Optimization
 
 - Learnable Embedding Sizes for Recommender Systems, ICLR, 2021. [[PDF]](https://arxiv.org/abs/2101.07577), [[CODE]](https://github.com/ssui-liu/learnable-embed-sizes-for-RecSys).
 - Learning to Embed Categorical Features without Embedding Tables for Recommendation, KDD, 2021. [[PDF]](https://arxiv.org/abs/2010.10784).
