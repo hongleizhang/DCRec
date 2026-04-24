@@ -106,7 +106,7 @@
 ### Efficient Adaptation Solutions
 >
 > Efficient adaptation solutions focus on **personalized adaptation** (updating after deployment) while respecting real-world constraints, typically along:
-(1) ***Privacy-Oriented Adaptation***: keep data local and adapt via federated/decentralized learning (and unlearning) without exposing raw user data; (2) ***Latency-Oriented Adaptation***: design fast inference and update pipelines that react to short-term drift under strict serving budgets; (3) ***Resources-Oriented Adaptation***: tailor model size, update scope/frequency, and communication to device compute/memory/energy and network limits.
+(1) ***Privacy-Oriented Adaptation***: keep data local and adapt via federated/decentralized learning (and unlearning) without exposing raw user data; (2) ***Latency-Oriented Adaptation***: design fast inference and update pipelines that react to short-term drift under strict serving budgets; (3) ***Resource-Oriented Adaptation***: tailor model size, update scope/frequency, and communication to device compute/memory/energy and network limits.
 
 #### Privacy-Oriented Adaptation
 
@@ -122,7 +122,7 @@
 - On-Device Learning for Model Personalization with Large-Scale Cloud-Coordinated Domain Adaption, KDD, 2022. [[PDF]](https://doi.org/10.1145/3534678.3539263), [[CODE]](https://github.com/mikudehuane/MPDA).
 - Real-time Short Video Recommendation on Mobile Devices, CIKM, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3511808.3557065).
 
-#### Resources-Oriented Adaptation
+#### Resource-Oriented Adaptation
 
 - Learning Elastic Embeddings for Customizing On-Device Recommenders, KDD, 2021. [[PDF]](https://arxiv.org/abs/2106.02223).
 - On-Device Next-item Recommendation with Self-supervised Knowledge Distillation, SIGIR, 2022. [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3477495.3531775), [[CODE]](https://github.com/xiaxin1998/OD-Rec).
