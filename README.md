@@ -81,13 +81,7 @@
 ### General Lightweight Methods
 >
 > General lightweight methods focus on **static model slimming for deployable on-device inference**, where the dominant bottleneck is often the embedding table, mainly via:
-(1) ***Model Compression***: quantize/factorize embeddings (e.g., PQ, complementary partitions, tensor trains) to shrink storage and accelerate lookups; (2) ***Embedding Slimming***: allocate embedding capacity non-uniformly (search/prune mixed dimensions) or replace tables with lightweight embedding generators to fit constraints; (3) ***Knowledge Distillation***: transfer ranking/sequential knowledge from large (often cloud) teachers to compact on-device students with minimal quality loss.
-
-#### Model Compression
-
-- PQ-VAE: Efficient Recommendation Using Quantized Embeddings, RecSys, 2019. [[PDF]](https://ceur-ws.org/Vol-2431/paper10.pdf).
-- TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models, MLSys, 2021. [[PDF]](https://arxiv.org/abs/2101.11714), [[CODE]](https://github.com/facebookresearch/FBTT-Embedding).
-- Compress, Cross and Scale: Multi-Level Compression Cross Networks for Efficient Scaling in Recommender Systems, 2026. [[PDF]](https://arxiv.org/pdf/2602.12041), [[CODE]](https://github.com/shishishu/MLCC).
+(1) ***Embedding Slimming***: allocate embedding capacity non-uniformly (search/prune mixed dimensions) or replace tables with lightweight embedding generators to fit constraints; (2) ***Knowledge Distillation***: transfer ranking/sequential knowledge from large (often cloud) teachers to compact on-device students with minimal quality loss; (3) ***Model Compression***: quantize/factorize mechanisms (e.g., PQ, complementary partitions, tensor trains) to shrink storage and accelerate lookups.
 
 #### Embedding Slimming
 
@@ -102,6 +96,13 @@
 - Ranking Distillation: Learning Compact Ranking Models with High Performance for Recommender System, KDD, 2018. [[PDF]](https://arxiv.org/abs/1809.07428).
 - Unbiased Knowledge Distillation for Recommendation, WSDM, 2023. [[PDF]](https://arxiv.org/abs/2211.14729), [[CODE]](https://github.com/chengang95/UnKD).
 - EKD4Rec: Ensemble Knowledge Distillation from LLM-based Models to Traditional Sequential Recommenders, WWW, 2025. [[PDF]](https://dl.acm.org/doi/10.1145/3701716.3715527).
+
+#### Model Compression
+
+- PQ-VAE: Efficient Recommendation Using Quantized Embeddings, RecSys, 2019. [[PDF]](https://ceur-ws.org/Vol-2431/paper10.pdf).
+- TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models, MLSys, 2021. [[PDF]](https://arxiv.org/abs/2101.11714), [[CODE]](https://github.com/facebookresearch/FBTT-Embedding).
+- Compress, Cross and Scale: Multi-Level Compression Cross Networks for Efficient Scaling in Recommender Systems, 2026. [[PDF]](https://arxiv.org/pdf/2602.12041), [[CODE]](https://github.com/shishishu/MLCC).
+
 
 ### Efficient Adaptation Solutions
 >
