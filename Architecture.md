@@ -1,4 +1,4 @@
-# Device-Cloud Personalization and Collaboration in Recommender Systems: A Systematic Survey in Large Model Era
+# Device-Cloud Personalization and Collaboration in Recommender Systems: A Systematic Survey in the Large-Model Era
 
 > **Architecture v2.0**
 > OC/OD 各设一章提供完整背景；DC 拆分为 Taxonomy + 三大机制 + 评估共五章，确保主体聚焦 DC。
@@ -11,7 +11,7 @@
 - **核心要素确认**：
   1. **Problem**: 推荐系统正从纯云架构转向端云协同智能。OC 面临延迟/隐私/成本瓶颈，OD 受限于存储/算力/协同信号。
   2. **Taxonomy**: 提出按协同目标（collaborative objective）的三机制主分类——Computation Allocation / Model Sharing / Task Orchestration——配合明确的归属规则与辅助标签系统。Dual-Loop Personalization 作为贯穿全文的跨切面设计原则统一三种机制。
-  3. **Coverage**: 系统综述 200+ 篇文献，覆盖 OC 三代演进、OD 部署与适配技术、以及 DCRec 的三维协同机制。
+  3. **Coverage**: 系统综述 200+ 篇文献（检索窗口 2004-2026.04，覆盖 OC 三代演进、OD 部署与适配技术、以及 DCRec 的三维协同机制。
   4. **Directions**: 展望 LLM 时代的前沿方向（投机解码、Federated PEFT、Agentic 协作、On-Device RAG）。
 - **关键词建议**：Device-Cloud Collaborative Recommendation, Federated Recommendation, On-Device Recommendation, Large Language Models, Personalization.
 
@@ -46,7 +46,36 @@
 
 > **目标**：6-7 页（含 Related Surveys 节），交代推荐系统背景、与已有综述的定位差异、OC/OD 瓶颈、DC 范式动机、本文 2D Taxonomy 概览、Contributions 列表、全文组织结构。
 
-### 1.1 Related Surveys and Positioning
+### 1.1 Scope, Related Surveys, and Survey Methodology
+
+<!-- > **TKDE 要求**：Systematic Survey 必须交代文献检索与筛选的方法学骨架，包括检索库、检索式、时间范围、筛选流程与排除标准。不交代这些会直接削弱可信度和可复现性。
+
+#### 1.1.1 Survey Protocol and Paper Selection Criteria
+
+- **检索库与检索策略**：
+  - 检索数据库：DBLP, Google Scholar, Semantic Scholar, ACM Digital Library, IEEE Xplore。
+  - 核心检索词组合：("device-cloud" OR "cloud-edge" OR "cloud-device") AND ("recommendation" OR "recommender system")；单独检索的辅助方向："federated recommendation", "on-device recommendation", "distributed recommendation", "decentralized recommendation"。
+  - 检索时间窗口：**2004 年 1 月 – 2026 年 4 月**（TiVo 为最早可追溯的去中心化推荐工业系统，2026 年 4 月为本文检索截止日）。
+  - 去重后初始命中：约 800–1000 篇。
+
+- **筛选流程**（三层过滤）：
+  1. **Title-level screening**：排除明显不相关的文献（如纯边缘计算调度无推荐、纯推荐无端云协作元素）。通过率约 60%。
+  2. **Abstract-level screening**：排除仅将"端"作为数据采集界面而无实质性协同机制的工作。通过率约 50%。
+  3. **Full-text review**：按 DCRec 纳入标准（见 1.5）确认每篇论文是否符合本文 scope，并标注其主分类（Ch5/6/7）与辅助标签。最终纳入 **200+ 篇**。
+
+- **纳入 / 排除标注协议**：
+  - 每篇论文记录：主分类（Computation / Model / Task）、辅助标签（如 `[Computation: Early Exit]`）、方法名、年份、主要优化目标、模型结构（如有）、评估数据集、关键指标。
+  - 多作者独立标注 + 交叉验证（描述实际流程即可，不必复制 data-science 级 rigor）。
+
+- **可复现性**：
+  - 附录或 arXiv 版本中提供最终纳入的完整文献列表（按 README.md 的三级分类组织）及相应的检索窗口声明，供审稿人核查覆盖完整性。
+
+- **局限性声明**：
+  - 检索以英文文献为主，可能遗漏部分中文/非英语社区的 DC 推荐工作。
+  - 部分 2025–2026 的 arXiv preprint 截止日前尚未经过同行评审，纳入时以标题/摘要判断其 topic fit，不代表 endorsement。
+  - 工业界工作（如 EdgeRec, DCCL 等）多以系统设计报告而非开源复现形式存在，实验对比受限于已公开信息。 -->
+
+#### 1.1.2 Related Surveys
 
 1. **端云协同 AI 综述（非推荐专属）**：
    - Edge-Cloud Polarization and Collaboration (TKDE 2023)：端云协同 AI 宏观视角，不聚焦推荐。
@@ -63,9 +92,9 @@
    - Personalized Recommendation Models in Federated Settings (TKDE 2025)：联邦个性化推荐，聚焦模型个性化策略。
 
 - **本文独特定位**（建议附一张 Coverage Map 对比表）：
-    1. **To our knowledge, the first survey to treat DCRec as a standalone paradigm**：已有综述要么只覆盖端云协同 AI（不聚焦推荐），要么只覆盖推荐系统的某一片段。本文首次将 On-Cloud + On-Device + Device-Cloud 三重范式统一在单篇综述中。
-    2. **提出按协同目标的主分类法**：已有综述多为一维分类。本文按 collaborative objective 将 DCRec 方法分为 Computation Allocation / Model Sharing / Task Orchestration 三个互斥的主分类，并制定明确的归属仲裁规则与辅助标签系统。
-    3. **覆盖完整的 DC 协同谱**：不仅包括隐私优先的联邦推荐，也包括性能优先的协同推理、LLM 时代的语义协同等更广泛的 DC 范式。
+    1. **涵盖范围**：已有综述要么只覆盖端云协同 AI（不聚焦推荐），要么只覆盖推荐系统的某一片段。本文将 On-Cloud + On-Device + Device-Cloud 三重范式统一在一篇综述中。
+    2. **分类贡献**：已有综述多为一维分类。本文按 collaborative objective 将 DCRec 方法分为三个互斥的主分类，并制定明确的归属仲裁规则与辅助标签系统。
+    3. **覆盖完整度**：不仅包括隐私优先的联邦推荐，也包括性能优先的协同推理、LLM 时代的语义协同等更广泛的 DC 范式。
 
 ### 1.2 Recommender Systems: From Centralized to Decentralized
 
@@ -102,10 +131,11 @@
 - **写作要点**：
   - 给出 DCRec 的**正式定义**：在推荐任务中，端侧与云侧**共同参与**推荐流水线的推理/训练/更新，并通过显式协同机制交换信息（候选集、软标签、表示、参数、梯度、策略等），以在全局协同信号与本地实时个性化之间达成折中。
   - 给出**纳入标准表**：
-    - 存在云-端双向信息流动
+    - 存在云-端双向信息流动（参数、梯度、候选集、软标签、置信度信号等）
     - 云端和端侧在推荐流程中承担互补角色
-    - 端侧参与最终的推荐推理或排序决策
+    - 端侧在推荐流程中承担实质性角色：模型训练（如 FedRec 中的本地 SGD）、推荐推理（如端侧重排）、或排序决策（如最终展示列表的选择）
     - 协同机制对精度、延迟或隐私有可量化贡献
+  - **与 FedRec 的兼容性说明**：上述第三条中"模型训练"的纳入明确覆盖了那些核心贡献在训练与聚合、而非端侧最终 serving 的联邦推荐工作。这些工作在本文 Ch6 中被视为 Model Sharing 的主体文献群——它们的端侧角色是"在本地数据上训练模型并将参数/梯度贡献给全局聚合"，这满足"端侧承担实质性角色"的标准。
   - 阐明 DCRec 与 Federated Rec 的关系：我们认为 FedRec 可以视作 DCRec 在强隐私约束下的特例——当 $\mathcal{D}^{\text{cloud}}=\emptyset$ 且协同信息仅限于梯度/参数聚合时，DCRec 退化为联邦推荐。DCRec 还覆盖 Performance-first、Cost-first 等更宽松约束下的协作目标（如云召回+端重排、LLM 协同推理）。
   - 过渡句：本文从 Personalization 和 Collaboration 双视角出发，提出统一的分类框架。
 
@@ -113,11 +143,11 @@
 
 - **写作要点**：
   - **Contributions**（4-5 条）：
-     1. To our knowledge, the first systematic survey that treats device-cloud collaborative recommendation as a standalone paradigm, covering 200+ papers.
-     2. A primary classification of DCRec methods into three mechanisms based on collaborative objective (Computation Allocation / Model Sharing / Task Orchestration), with explicit placement rules and auxiliary tags for cross-dimensional methods.
-     3. A comprehensive review organized by this classification, covering the full spectrum from infrastructure-level computation distribution to application-level task orchestration.
-     4. Summarization of evaluation benchmarks, simulation platforms, and datasets for DCRec research.
-     5. Identification of key open directions in the large model era (speculative decoding, federated PEFT, agentic collaboration, on-device RAG).
+     <!-- 1. To the best of our knowledge and within the defined search scope (2004–2026.04), the first dedicated survey that treats device-cloud collaborative recommendation as a standalone paradigm, covering 200+ papers. -->
+     1. A primary classification of DCRec methods into three mechanisms based on collaborative objective (Computation Allocation / Model Sharing / Task Orchestration), with explicit placement rules and auxiliary tags for cross-dimensional methods.
+     2. A comprehensive review organized by this classification, covering the full spectrum from infrastructure-level computation distribution to application-level task orchestration.
+     3. Summarization of evaluation benchmarks, simulation platforms, and datasets for DCRec research.
+     4. Identification of key open directions in the large-model era, structured as evidence-backed trends vs. speculative outlook.
   - **Paper Organization 段落**：明确声明 Ch2-3 为背景、Ch4-7 为核心、Ch8-9 为支撑，避免审稿人对结构产生"DC 只是三分之一"的误解。
 
 ---
@@ -348,7 +378,7 @@
 
 ---
 
-## Chapter 4. Preliminary of Device-Cloud Collaborative Recommendation
+## Chapter 4. Preliminaries of Device-Cloud Collaborative Recommendation
 
 > **目标**：10-12 页，DC 部分的总纲。给出形式化定义、三维分类法、三大核心挑战、双循环个性化范式。这一章是全文的"概念骨架"，所有后续章节的方法都应该溯源于此分类框架。
 >
@@ -456,7 +486,7 @@
 > 几乎所有 DCRec 方法都不同程度地采用了双循环模式，因此它适合作为统一理解 DC 个性化机制的概念透镜，但不适合作为可操作的分类标准。
 
 - **写作要点**：
-  - **慢循环（Slow Loop / Cloud-Stide）**：基于全局数据，小时至天级更新周期。提供：
+  - **慢循环（Slow Loop / Cloud-Side）**：基于全局数据，小时至天级更新周期。提供：
     - 全局协同信号的初始模型参数（如 FedAvg 聚合结果）
     - 海量候选集的粗筛结果
     - 跨用户的泛化知识与探索策略
@@ -595,15 +625,13 @@
 
 > **章节引言**：第一阶段的联邦推荐工作主要回答"能不能做"——在用户数据不出设备的前提下，能否训练出与集中式可比的推荐模型？
 
-- 基础联邦推荐方法对比
-
-  | 方法 | 模型类型 | 隐私机制 | 安全攻击面 | 聚合策略 | 精度 vs 集中式 | 代表工作 |
-  |:---|:---|:---|:---|:---|:---|:---|
-  | FedMF | MF | DP / SecAgg | 梯度泄露 | 加权平均 | -3~8% | FedMF, MetaMF, LightFR |
-  | FedNCF | MLP | DP | 梯度+Embedding | FedAvg | -5~12% | FedNCF |
-  | FedGNN | GNN | 匿名子图扩展 | 图结构推断 | FedAvg | -8~15% | FedGNN, FedPerGNN |
-  | DP-Secure | 多种 | DP + SecAgg | 聚合结果推断 | 安全聚合 | -10~20% | PrivateRec, PrivFR |
-  | Attack-Resilient | 多种 | Byzantine 鲁棒 | 投毒攻击 | 鲁棒聚合 | -3~10% | Byzantine Robust FedRec |
+| 方法 | 模型类型 | 隐私机制 | 安全攻击面 | 聚合策略 | 精度 vs 集中式 | 代表工作 |
+|:---|:---|:---|:---|:---|:---|:---|
+| FedMF | MF | DP / SecAgg | 梯度泄露 | 加权平均 | -3~8% | FedMF, MetaMF, LightFR |
+| FedNCF | MLP | DP | 梯度+Embedding | FedAvg | -5~12% | FedNCF |
+| FedGNN | GNN | 匿名子图扩展 | 图结构推断 | FedAvg | -8~15% | FedGNN, FedPerGNN |
+| DP-Secure | 多种 | DP + SecAgg | 聚合结果推断 | 安全聚合 | -10~20% | PrivateRec, PrivFR |
+| Attack-Resilient | 多种 | Byzantine 鲁棒 | 投毒攻击 | 鲁棒聚合 | -3~10% | Byzantine Robust FedRec |
 
 #### 6.1.1 Federated Matrix Factorization
 
@@ -918,7 +946,7 @@
     - **TensorFlow Federated / PySyft**：学术界常用的 FL 仿真工具。
   - 推荐专用仿真器：
     - **EdgeRecSim**（非公开，工业内部）：淘宝端侧推荐仿真。
-    - **DCRec-Bench**（identified need）：目前缺乏统一的 DC 推荐基准；本文将该需求识别为重要的社区方向（见 Ch9.1.3），而非已交付的 artifact。
+    - **DCRec-Bench**（identified need）：目前缺乏统一的 DC 推荐基准；该社区基础设施缺口在 Ch8.4 中详述，而非已交付的 artifact。
   - 仿真 vs 真实部署的差异：用户行为模拟的逼真度、网络条件的简化、设备异质性的建模不足。
   - 建议：在已有的 FL 平台基础上，增加推荐特有的仿真组件（用户行为序列生成器、物品冷启动模拟器、Embedding 存储模拟器）。
 
@@ -937,6 +965,17 @@
     - 按时序分割：旧数据放云端、新数据放端侧（模拟日志回流延迟）。
   - 当前数据集的核心不足：缺乏真实的设备异构信息（设备型号、网络类型、电量状态等），导致仿真结果与真实部署差距显著。
 
+### 8.4 The Benchmark Gap: A Community Infrastructure Agenda
+
+- **写作要点**：
+  - **动机**：当前 DCRec 研究各自采用不同的数据集、模拟器、指标，实验可复现性和方法间的公平比较严重不足。Ch8.1-8.3 综述了现有碎片化的实验生态。
+  - **注意定位**：这不是 Ch9.1 中那些已有文献簇支撑的 "Emerging Trends"，而是由社区碎片化状态倒推出来的基础设施需求。We frame this as a gap the community needs to fill, not as a trend that is already accumulating papers.
+  - **方向**：
+    - 标准化数据集分割方案（User-split + Time-split 的复合策略）。
+    - 统一的仿真环境配置（网络带宽/延迟/丢包率、设备算力/内存档位）。
+    - 多维度评估体系（推荐精度 + 通信成本 + 端侧资源 + 隐私保护的联合报告）。
+  - **预期影响**：加速领域收敛、降低新方法进入的门槛、促进学术界与工业界的对齐。
+
 ---
 
 ## Chapter 9. Challenges and Future Directions
@@ -945,7 +984,7 @@
 >
 > **写作原则**：
 >
-> - Part A 每个方向必须有 ≥3 篇已发表的代表性工作作为证据支撑。
+> - Part A 每个方向必须有 ≥3 篇已发表的代表性工作作为证据支撑（共 2 个方向；基础设施类 gap 已移至 Ch8.4）。
 > - Part B 每个方向必须标注当前文献状态（"已有初步探索" / "推荐场景尚属空白" / "纯技术构想"），并与 Part A 形成阶梯。
 
 ### 9.1 Emerging Trends with Established Literature
@@ -967,15 +1006,6 @@
   2. 多模态特征（图像/文本/视频）如何作为"端云共享公共空间"来降低隐私敏感度？
   3. 如何将 VLM/LLM 的基础语义能力注入联邦框架而不破坏数据本地化约束？
 - **与 Ch6.3 的关系**：Ch6.3 综述了该方向已有方法；此处聚焦于社区仍未解决的系统性挑战。
-
-#### 9.1.3 Unified Evaluation and Benchmark for DCRec
-
-- **文献支撑**：当前领域缺乏统一基准——不同方法在不同数据集/模拟器上报告不可比的指标。Ch8 综述了现有碎片化的实验生态。
-- **方向**：
-  - 标准化数据集分割方案（User-split + Time-split 的复合策略）。
-  - 统一的仿真环境配置（网络带宽/延迟/丢包率、设备算力/内存档位）。
-  - 多维度评估体系（推荐精度 + 通信成本 + 端侧资源 + 隐私保护的联合报告）。
-- **预期影响**：加速领域收敛、降低新方法进入的门槛、促进学术界与工业界的对齐。
 
 ### 9.2 Speculative Outlook: Paradigm Shifts in Early Stages
 
