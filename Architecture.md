@@ -348,7 +348,7 @@
 
 ---
 
-## Chapter 4. Device-Cloud Collaborative Recommendation: Framework and Taxonomy
+## Chapter 4. Preliminary of Device-Cloud Collaborative Recommendation
 
 > **目标**：10-12 页，DC 部分的总纲。给出形式化定义、三维分类法、三大核心挑战、双循环个性化范式。这一章是全文的"概念骨架"，所有后续章节的方法都应该溯源于此分类框架。
 >
@@ -495,7 +495,8 @@
 | Bounded Async | 中心化 | 半同步 | 中 | Staleness bound | 中 | Ekko |
 | Slow-Fast | 混合 | 双层 | 低（选择性同步） | Fast loop 独立 | 强 | MC2-SF, Hybrid Parallel |
 | Comm-Efficient | 中心化/混合 | 多种 | 低（压缩/量化） | 依赖底层 | 中 | CoLR-FedRec, DEST |
-| Early Exit | 混合 | 按需 | 极低（仅疑难请求） | N/A | 强 | Meta Controller |
+
+> **注**：Meta Controller 等以任务级路由决策为核心创新的方法归入 Ch7（Task Orchestration）。Early Exit 作为一种计算卸载 pattern 的基本概念在本节讨论；具体系统实现在 Ch7.1.2 详述。
 
 ### 5.1 Distributed Training Paradigms
 
@@ -550,22 +551,23 @@
 
 - **写作要点**：
   - 工业界事实标准：云端负责在海量候选库中粗筛（召回+粗排），产出 Top-K 候选下发；端侧结合实时上下文物特征和最新交互行为进行细粒度重排。
-  - 代表性工作：EdgeRec（Mobile Taobao 端侧重排）、On-Device Integrated Re-ranking（KDD 2023, 异质行为建模的端侧重排）。
+  - 从计算分配视角看，这本质是一种 **推理阶段的分治策略**——将计算密集的候选筛选放在云端，将延迟敏感的个性化排序放在端侧。代表性的完整流水线系统如 EdgeRec、DCCL 在 Ch7.1.1 从任务编排角度详述。
   - 通信开销分析：每次请求下发 K 个候选的 Embedding/特征 ≈ K × D × 4 bytes。K 通常数十到数百，D 通常 64-256。在 4G/5G 网络下可接受。
 
 #### 5.4.2 Dynamic Early Exit and Computation Offloading
 
 - **写作要点**：
-  - 动机：并非所有请求都需要云端大模型处理。简单请求端侧处理、复杂请求升级到云端。
-  - 代表机制：Meta Controller（KDD 2022, 云端 Meta Controller 判断哪些请求需要升级到云端）。
-  - 提前退出策略：端侧模型附带 Confidence Estimator，当模型对当前推荐的置信度低于阈值时，向云端发起辅助推理请求。
+  - 动机：并非所有请求都需要云端大模型处理。简单请求端侧处理、复杂请求升级到云端——这本质上是一个推理时计算负载的动态分配问题。
+  - 通用机制：端侧模型附带 Confidence Estimator，当模型对当前推荐的置信度低于阈值时，向云端发起辅助推理请求。
   - 挑战：何时退出/升级的决策本身也有开销，且可能影响用户体验的延迟感知。
+  - **交叉引用**：Meta Controller（KDD 2022）是该模式的代表性实例，但其核心创新在于 **任务级的路由决策协议**，详见 Ch7.1.2。
 
 ### 5.5 Chapter Summary
 
 - **写作要点**：
   - 计算分配机制解决了 DCRec 的基础设施层问题："如何高效地在端与云之间分配推荐计算"。
   - 关键趋势：从集中式 → 分布式 → 智能调度的演进路径。
+  - **边界说明**：当系统的主要优化目标从"计算放在哪"转变为"推荐任务如何分工"时，该方法应归入 Ch7（Task Orchestration）。典型的例子包括端云协同推理的完整流水线设计（EdgeRec, DCCL）和请求路由策略（Meta Controller）——它们依赖 Ch5 中的计算分配模式作为基础设施，但其核心创新在 Ch7 中展开。
   - 与下一章的衔接：计算分配解决了"在哪里算"，但如果端和云的模型不是同一套、或者模型需要持续同步，就需要模型共享机制（Ch6）。
 
 ---
@@ -583,9 +585,9 @@
 >
 > **机制形式化**：在 Ch4.1 的统一框架中，Model Sharing 的特化形式为——
 >
-> - 核心约束：$\mathcal{D}^{\text{cloud}} = \emptyset$（云端无原始数据访问权）。
+> - **核心约束**：$\mathcal{D}^{\text{cloud}}$ 不包含原始私有用户交互数据（raw individual user-item interaction logs）。这是 Model Sharing 与纯云端推荐（Ch2）的本质界限——云端可以访问公共信息（物品属性、多模态特征、跨域聚合统计）、可以调用外部 LLM 服务（如 FELLAS 中的云端 LLM），但无法直接翻阅某个用户的行为流水。形式上，$\mathcal{D}^{\text{cloud}} = \mathcal{D}^{\text{public}} \cup \mathcal{D}^{\text{aggregated}}$，其中 $\mathcal{D}^{\text{public}}$ 包括物品内容特征与多模态表示，$\mathcal{D}^{\text{aggregated}}$ 包括去个性化的聚合统计量（如物品流行度、跨用户协同模式）。
 > - $\mathcal{R}(\theta_u, \Phi)$ 的具体形式：$R(\theta_u, \Phi) = \lambda \cdot d(\theta_u, \Phi)$，即端侧模型与云侧全局模型之间的某种距离度量。FedAvg 中 $d(\cdot)$ 为 $\ell_2$ 加权平均；个性化联邦中 $d(\cdot)$ 为带用户特定残差或聚类约束的距离。
-> - 与 Ch4 的对接：$\theta_u$ 的参数空间分解为共享部分 $\theta_u^{\text{shared}} \subset \Phi$ 与私有部分 $\theta_u^{\text{private}}$。隐私-精度-通信的三元权衡通过 $\dim(\theta_u^{\text{shared}})$ 的大小和 $\lambda$ 的强度来调节。
+> - 与 Ch4 的对接：$\theta_u$ 的参数空间分解为共享部分 $\theta_u^{\text{shared}} \subset \Phi$ 与私有部分 $\theta_u^{\text{private}}$。隐私-精度-通信的三元权衡通过 $\dim(\theta_u^{\text{shared}})$ 的大小和 $\lambda$ 的强度来调节。当 $\mathcal{D}^{\text{public}}$ 维度增大（如多模态特征、LLM 语义增强），FedRec 可在不触碰用户隐私数据的前提下提升模型表达能力——这正是 Ch6.3 的逻辑基础。
 >
 > **与 Ch4 的衔接**：本机制对应 Ch4.2 主分类的第二类——核心优化目标是**模型参数/知识在端云之间的流动与聚合**。Ch6 主要应对 Ch4.3.4 交叉矩阵第 2 列中的挑战：数据异质性（Client Drift → 个性化聚合）、Embedding 安全同步、及分布式规模（部分参与/通信失败）。与 Ch5 的计算分配不同，本机制的前提是端侧运行推荐模型且存在显式的端云参数同步。
 
@@ -916,7 +918,7 @@
     - **TensorFlow Federated / PySyft**：学术界常用的 FL 仿真工具。
   - 推荐专用仿真器：
     - **EdgeRecSim**（非公开，工业内部）：淘宝端侧推荐仿真。
-    - **DCRec-Bench**（identified need）：目前缺乏统一的 DC 推荐基准；本文将该需求识别为重要的社区方向（见 Ch9.5），而非已交付的 artifact。
+    - **DCRec-Bench**（identified need）：目前缺乏统一的 DC 推荐基准；本文将该需求识别为重要的社区方向（见 Ch9.1.3），而非已交付的 artifact。
   - 仿真 vs 真实部署的差异：用户行为模拟的逼真度、网络条件的简化、设备异质性的建模不足。
   - 建议：在已有的 FL 平台基础上，增加推荐特有的仿真组件（用户行为序列生成器、物品冷启动模拟器、Embedding 存储模拟器）。
 
@@ -939,72 +941,73 @@
 
 ## Chapter 9. Challenges and Future Directions
 
-> **目标**：5-6 页。分为两类方向：(1) 对现有方法的改进方向 (2) LLM 时代催生的全新范式。
+> **目标**：5-6 页。分两层结构——Part A 回答"领域已经出现哪些稳定的前沿趋势"，Part B 回答"更远期的范式变革可能是什么"。避免将所有方向平铺在同一层级，让审稿人觉得本文在替领域定义未来而非总结已有趋势。
 >
-> **写作原则**：每条方向需回答"为什么是未来"（动机）、"现在做到什么程度了"（现状）、"需要什么突破"（挑战）。
+> **写作原则**：
+>
+> - Part A 每个方向必须有 ≥3 篇已发表的代表性工作作为证据支撑。
+> - Part B 每个方向必须标注当前文献状态（"已有初步探索" / "推荐场景尚属空白" / "纯技术构想"），并与 Part A 形成阶梯。
 
-### 9.1 Speculative Decoding for On-Device LLM Inference
+### 9.1 Emerging Trends with Established Literature
 
-- **写作要点**：
-  - 动机：LLM 自回归生成的延迟（百毫秒到秒级）无法满足在线推荐（<50ms）。投机解码是端云协作加速 LLM 推理的自然方案。
-  - 技术构想：端侧部署微型 LLM（0.1-0.5B）作为 Draft Model 快速生成候选物品序列；云端 LLM（8-70B）进行批处理验证。
-  - 推荐场景的独特优势：推荐中的"物品"是有限词汇表（Item Vocab），可以在 Draft Model 中专门优化 Item 令牌的预测准确性。
-  - 当前状态：投机解码在通用文本生成中已有成功实践，在推荐场景中尚属空白。
-  - 挑战：Draft-Target 的接受率在推荐场景中的特性、KV Cache 的端云共享与卸载、串行验证的延迟上限。
+> 本节收录已有稳定文献簇支撑的方向，每条趋势均有明确的研究社群和可追溯的工作线索。
 
-### 9.2 Parameter-Efficient Federated Fine-Tuning for Recommendation
+#### 9.1.1 Parameter-Efficient Federated Fine-Tuning for Recommendation
 
-- **写作要点**：
-  - 动机：端侧无法对数十亿参数的基础模型进行全参微调。PEFT（LoRA/Adapter/Prompt Tuning）只更新 <1% 的参数，天然适合端侧联邦学习。
-  - 技术构想：云端冻结 FM，端侧仅微调轻量 Adapter 模块。云端定期聚合个性化 Adapter 进行全局知识融合 → Federated LoRA。
-  - 当前进展：FedPA (IJCAI 2024)、TransFR (AAAI 2026) 已初步探索，但尚未系统化。
-  - 挑战：
-    - LoRA rank 与通信效率/表达能力的最优权衡。
-    - 不同用户/域的 LoRA 模块如何有效聚合（LoRA 空间是非欧的，简单加权平均可能不合理）。
-    - 端侧推理时 Adapter 与基础模型的融合延迟。
+- **文献支撑**：FedPA (IJCAI 2024)、TransFR (AAAI 2026)、MRFF (AAAI 2025)、GFMFR (WWW 2026)——已形成 "FM + FedRec + PEFT" 的稳定研究线。
+- **动机**：端侧无法对数十亿参数的基础模型进行全参微调。PEFT（LoRA/Adapter/Prompt Tuning）只更新 <1% 的参数，天然适合端侧联邦学习。
+- **当前进展**：初步探索已证明可行性，但尚未系统化。
+- **挑战**：LoRA rank 与通信效率/表达能力的最优权衡；非欧空间中 LoRA 模块的有效聚合；端侧推理时 Adapter 与基础模型的融合延迟。
 
-### 9.3 Agentic Collaboration: Multi-Agent Cloud-Device Recommendation
+#### 9.1.2 Cross-Domain and Multi-Modal Federated Recommendation
 
-- **写作要点**：
-  - 这是未来 3-5 年最宏大的方向：端云协同从"张量交换"升级为"智能体对话"。
-  - 技术构想：
-    - 云侧 Global Orchestrator Agent：掌握全域物品图谱、趋势检测、探索策略规划。
-    - 端侧 Personal Assistant Agent：掌握用户隐私偏好、本地上下文、设备状态。
-    - 交互方式：自然语言/结构化 Prompt（而非梯度/参数）。
-  - 优势：模型架构完全解耦（云端 LLM 可以是任意厂商的）、天然可解释（交互日志 = 自然语言日志）、隐私更优（不传输模型参数）。
-  - 当前进展：CDA4Rec (2025)、MemRec (2026) 已展示 Agent 在推荐中的潜力，但距离端云 Agentic 协作还有显著差距。
-  - 挑战：Agent 间通信协议的标准化、意图理解的可靠性、多轮对话延迟的可控性、Agent 幻觉的抑制。
+- **文献支撑**：FedCDR (CIKM 2022)、Win-Win (AAAI 2023)、PFCR (WWW 2024)、FedVLR (AAAI 2026)、GFMFR (WWW 2026)、FFMSR (TOIS 2025)——社区正从单域 FedRec 向跨域/多模态方向系统化扩展。
+- **方向**：
+  1. 跨域联邦如何在隐私约束下利用互补的跨域用户行为？
+  2. 多模态特征（图像/文本/视频）如何作为"端云共享公共空间"来降低隐私敏感度？
+  3. 如何将 VLM/LLM 的基础语义能力注入联邦框架而不破坏数据本地化约束？
+- **与 Ch6.3 的关系**：Ch6.3 综述了该方向已有方法；此处聚焦于社区仍未解决的系统性挑战。
 
-### 9.4 Synchronized On-Device RAG
+#### 9.1.3 Unified Evaluation and Benchmark for DCRec
 
-- **写作要点**：
-  - 动机：RAG 是 LLM 推荐中缓解幻觉的关键技术，但纯云端 RAG 需要检索千万级 Item Vector，成本高且无法感知端侧最新状态。
-  - 技术构想：Cloud-Device Distributed RAG。
-    - 云端维护全量物品向量数据库（Vector DB）。
-    - 端侧基于用户近期画像，动态预加载一个微型个性化子索引（Sub-Index），本地缓存近期热门且匹配用户兴趣的物品 Embedding。
-    - 推理时优先本地 RAG 检索；Cache Miss 时向云端发起检索。
-  - 端侧的优势：本地 RAG 索引天然包含了用户最新交互（无需日志回流）。解决了 LLM 推荐的"新鲜度 + 幻觉"双重问题。
-  - 挑战：子索引的更新策略（何时刷新、刷新多少）、同步的通信成本、端侧向量检索的延迟（近似近邻搜索在资源受限设备上的性能）。
+- **文献支撑**：当前领域缺乏统一基准——不同方法在不同数据集/模拟器上报告不可比的指标。Ch8 综述了现有碎片化的实验生态。
+- **方向**：
+  - 标准化数据集分割方案（User-split + Time-split 的复合策略）。
+  - 统一的仿真环境配置（网络带宽/延迟/丢包率、设备算力/内存档位）。
+  - 多维度评估体系（推荐精度 + 通信成本 + 端侧资源 + 隐私保护的联合报告）。
+- **预期影响**：加速领域收敛、降低新方法进入的门槛、促进学术界与工业界的对齐。
 
-### 9.5 Unified Evaluation and Benchmark for DCRec
+### 9.2 Speculative Outlook: Paradigm Shifts in Early Stages
 
-- **写作要点**：
-  - 动机：当前 DCRec 研究各自采用不同的数据集、模拟器、指标，实验可复现性和方法间的公平比较严重不足。
-  - 建议：构建 DCRec-Bench —— 统一的 DC 推荐评估基准。
-    - 标准化数据集分割方案（User-split + Time-split 的复合策略）。
-    - 统一的仿真环境配置（网络带宽/延迟/丢包率、设备算力/内存档位）。
-    - 多维度评估体系（推荐精度 + 通信成本 + 端侧资源 + 隐私保护的联合报告）。
-  - 预期影响：加速领域收敛、降低新方法进入的门槛、促进学术界与工业界的对齐。
+> 本节收录目前处于"概念验证"或"技术构想"阶段的方向。每个方向的文献证据尚不足以形成稳
 
-### 9.6 Beyond Recommendation: General Cloud-Device Collaborative Intelligence
+定研究线，但代表了 LLM 时代可能重塑 DCRec 基础范式的变革潜力。
 
-- **写作要点**：
-  - DCRec 的许多技术贡献（PEFT Fed、Slow-Fast Learning、端云 Agent 协作）可以溢出到更广泛的端云 AI 场景。
-  - 潜在迁移场景：
-    - 端云协同的个性化教育（数学题的难度和类型因人而异）。
-    - 端云协同的健康监测（个人生理数据隐私 + 全局医学知识）。
-    - 端云协同的自动驾驶（本地实时决策 + 云端全局地图/交通规划）。
-  - 呼吁：DCRec 社区的研究者为更广泛的端云协作智能提供方法论。
+#### 9.2.1 Speculative Decoding for On-Device LLM Inference
+
+- **文献状态**：投机解码在通用文本生成中已有成功实践（Leviathan et al. 2023），在推荐场景中**尚无公开发表的工作**。
+- **技术构想**：端侧部署微型 LLM（0.1-0.5B）作为 Draft Model 快速生成候选物品序列；云端 LLM（8-70B）进行批处理验证。
+- **推荐场景的独特优势**：物品空间是有限词汇表，Draft Model 可专门优化 Item 令牌预测。
+- **挑战**：Draft-Target 接受率在推荐场景的特性、KV Cache 的端云共享与卸载、串行验证的延迟上限。
+
+#### 9.2.2 Agentic Collaboration: Multi-Agent Cloud-Device Recommendation
+
+- **文献状态**：已有初步探索（CDA4Rec 2025, MemRec 2026），但距成熟的端云 Agentic 框架仍有显著差距。目前属于"概念验证"阶段。
+- **技术构想**：云侧 Global Orchestrator Agent + 端侧 Personal Assistant Agent，通过自然语言/结构化 Prompt 协商推荐，而非传输梯度/参数。
+- **长期优势**：模型架构完全解耦、天然可解释、隐私更优。
+- **近期挑战**：Agent 间通信协议标准化、意图理解可靠性、多轮对话延迟可控性、Agent 幻觉抑制。
+
+#### 9.2.3 Synchronized On-Device RAG
+
+- **文献状态**：尚无公开发表的端云分布式 RAG 推荐工作。当前属于技术构想，受通用端云 RAG 讨论启发。
+- **技术构想**：云端维护全量物品向量数据库；端侧基于用户近期画像动态预加载个性化子索引；推理时优先本地 RAG 检索，Cache Miss 时回源云端。
+- **挑战**：子索引更新策略、同步通信成本、端侧近似近邻搜索性能。
+
+#### 9.2.4 Beyond Recommendation: General Cloud-Device Collaborative Intelligence
+
+- **文献状态**：本文的方法论贡献（PEFT Fed、Slow-Fast Learning、端云任务编排）可溢出到更广泛的端云 AI 场景。以下为推理性展望，非实证结论。
+- **潜在迁移**：个性化教育（端侧学习行为/云侧全局课程图谱）、健康监测（本地生理数据隐私/云侧医学知识库）、自动驾驶（本地实时决策/云端全局地图规划）。
+- **呼吁**：DCRec 社区为更广泛的端云协作智能提供可迁移的方法论框架。
 
 ---
 
@@ -1015,7 +1018,7 @@
 ### 10.1 Summary of Contributions
 
 - **写作要点**：
-  - 重申本文对端云协同推荐领域的系统性梳理：从 OC 和 OD 的背景出发 → 提出 DCRec 统一框架 → 按 Computation-Model-Task 三维机制分类 → 系统综述 200+ 篇文献 → 指出 LLM 时代的前沿方向。
+  - 重申本文对端云协同推荐领域的系统性梳理：从 OC 和 OD 的背景出发 → 提出按协同目标的三机制主分类（Computation / Model / Task）→ 制定明确的归属仲裁规则与辅助标签 → 系统综述 200+ 篇文献 → 识别 LLM 时代的前沿趋势与远期范式变革。
   - 强调"双循环个性化"作为全文的概念主线。
 
 ### 10.2 Key Takeaways
@@ -1024,7 +1027,7 @@
   1. DCRec 是推荐系统的必然演进方向——OC 的隐私与延迟瓶颈 + OD 的协同信号与候选空间瓶颈，使得端云结构化协同成为系统性最优方案。
   2. 端云协同的核心是分工，不是简单的"同时存在"——每种机制都定义了明确的分工逻辑。
   3. LLM 不仅增强了推荐能力，更重构了协同范式——从参数共享到语义协作。
-  4. 工业实践领先于学术理论——工业界（淘宝、快手等）已有成熟 DC 系统，学术界需要建立统一的理论和评价体系。
+  4. 工业实践提供了丰富的系统参照——工业界（淘宝、快手等）已有端侧重排、端云协同推理等生产系统，学术界需要建立与这些实践对应的理论框架和评价体系。
 
 ### 10.3 Closing Remarks
 
