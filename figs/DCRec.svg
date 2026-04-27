@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 DCRec.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		width="8.29381in" height="10.0148in" viewBox="0 0 597.154 721.066" xml:space="preserve" color-interpolation-filters="sRGB"
+		class="st16">
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#000000;stroke-width:1.5}
+		.st2 {fill:#ffffcc;stroke:#000000;stroke-width:1.5}
+		.st3 {fill:#000000;font-family:Times New Roman;font-size:1.16666em}
+		.st4 {fill:#f2cece;stroke:#000000;stroke-dasharray:10.5,7.5;stroke-width:1.5}
+		.st5 {fill:#ccffcc;stroke:#000000;stroke-dasharray:10.5,7.5;stroke-width:1.5}
+		.st6 {fill:#ccffff;stroke:#000000;stroke-dasharray:10.5,7.5;stroke-width:1.5}
+		.st7 {fill:#ffffcc;stroke:#000000;stroke-dasharray:10.5,7.5;stroke-width:1.5}
+		.st8 {fill:#ffffcc;stroke:#000000;stroke-dasharray:10.5,7.5,0.01,7.5;stroke-width:1.5}
+		.st9 {fill:#f2cece;stroke:#000000;stroke-dasharray:10.5,7.5,0.01,7.5;stroke-width:1.5}
+		.st10 {fill:#ccffcc;stroke:#000000;stroke-dasharray:10.5,7.5,0.01,7.5;stroke-width:1.5}
+		.st11 {fill:#ccffff;stroke:#000000;stroke-dasharray:10.5,7.5,0.01,7.5;stroke-width:1.5}
+		.st12 {fill:#ccffcc;stroke:#000000;stroke-width:1.5}
+		.st13 {font-size:1em}
+		.st14 {fill:#f2cece;stroke:#000000;stroke-width:1.5}
+		.st15 {fill:#ccffff;stroke:#000000;stroke-width:1.5}
+		.st16 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g>
+		<title>DCRec</title>
+		<g id="shape62-1" transform="translate(19.4995,-19.5)">
+			<title>圆角矩形</title>
+			<path d="M28.35 721.07 L529.81 721.07 A28.346 28.346 -180 0 0 558.16 692.72 L558.16 67.35 A28.346 28.346 -180 0 0 529.81
+						 39 L28.35 39 A28.346 28.346 -180 0 0 0 67.35 L0 692.72 A28.346 28.346 -180 0 0 28.35 721.07 Z" class="st1"/>
+		</g>
+		<g id="shape35-3" transform="translate(59.2957,-44.0665)">
+			<title>圆角矩形.35</title>
+			<desc>Collaboration</desc>
+			<path d="M8.5 721.07 L76.54 721.07 A8.5038 8.5038 -180 0 0 85.04 712.56 L85.04 160.95 A8.5038 8.5038 -180 0 0 76.54 152.44
+						 L8.5 152.44 A8.5038 8.5038 -180 0 0 0 160.95 L0 712.56 A8.5038 8.5038 -180 0 0 8.5 721.07 Z" class="st2"/>
+			<text x="4.03" y="440.96" class="st3">Collaboration</text>		</g>
+		<g id="shape36-6" transform="translate(183.028,-436.248)">
+			<title>圆角矩形.36</title>
+			<desc>Computing</desc>
+			<path d="M8.5 721.07 L76.54 721.07 A8.5038 8.5038 -180 0 0 85.04 712.56 L85.04 553.32 A8.5038 8.5038 -180 0 0 76.54 544.82
+						 L8.5 544.82 A8.5038 8.5038 -180 0 0 0 553.32 L0 712.56 A8.5038 8.5038 -180 0 0 8.5 721.07 Z" class="st4"/>
+			<text x="11.02" y="637.14" class="st3">Computing</text>		</g>
+		<g id="shape37-9" transform="translate(183.028,-240.157)">
+			<title>圆角矩形.37</title>
+			<desc>Model</desc>
+			<path d="M8.5 721.07 L76.54 721.07 A8.5038 8.5038 -180 0 0 85.04 712.56 L85.04 553.32 A8.5038 8.5038 -180 0 0 76.54 544.82
+						 L8.5 544.82 A8.5038 8.5038 -180 0 0 0 553.32 L0 712.56 A8.5038 8.5038 -180 0 0 8.5 721.07 Z" class="st5"/>
+			<text x="24.24" y="637.14" class="st3">Model</text>		</g>
+		<g id="shape38-12" transform="translate(183.028,-44.0665)">
+			<title>圆角矩形.38</title>
+			<desc>Task</desc>
+			<path d="M8.5 721.07 L76.54 721.07 A8.5038 8.5038 -180 0 0 85.04 712.56 L85.04 553.32 A8.5038 8.5038 -180 0 0 76.54 544.82
+						 L8.5 544.82 A8.5038 8.5038 -180 0 0 0 553.32 L0 712.56 A8.5038 8.5038 -180 0 0 8.5 721.07 Z" class="st6"/>
+			<text x="28.91" y="637.14" class="st3">Task</text>		</g>
+		<g id="shape39-15" transform="translate(183.028,-632.338)">
+			<title>圆角矩形.39</title>
+			<desc>Entity</desc>
+			<path d="M8.5 721.07 L76.54 721.07 A8.5038 8.5038 -180 0 0 85.04 712.56 L85.04 684.91 A8.5038 8.5038 -180 0 0 76.54 676.4
+						 L8.5 676.4 A8.5038 8.5038 -180 0 0 0 684.91 L0 712.56 A8.5038 8.5038 -180 0 0 8.5 721.07 Z" class="st7"/>
+			<text x="25.41" y="702.94" class="st3">Entity</text>		</g>
+		<g id="shape44-18" transform="translate(301.729,-632.338)">
+			<title>圆角矩形.44</title>
+			<desc>Mechanism</desc>
+			<path d="M8.5 721.07 L76.54 721.07 A8.5038 8.5038 -180 0 0 85.04 712.56 L85.04 684.91 A8.5038 8.5038 -180 0 0 76.54 676.4
+						 L8.5 676.4 A8.5038 8.5038 -180 0 0 0 684.91 L0 712.56 A8.5038 8.5038 -180 0 0 8.5 721.07 Z" class="st8"/>
+			<text x="9.86" y="702.94" class="st3">Mechanism</text>		</g>
+		<g id="shape45-21" transform="translate(301.729,-436.248)">
+			<title>圆角矩形.45</title>
+			<desc>Allocation</desc>
+			<path d="M8.5 721.07 L76.54 721.07 A8.5038 8.5038 -180 0 0 85.04 712.56 L85.04 553.32 A8.5038 8.5038 -180 0 0 76.54 544.82
+						 L8.5 544.82 A8.5038 8.5038 -180 0 0 0 553.32 L0 712.56 A8.5038 8.5038 -180 0 0 8.5 721.07 Z" class="st9"/>
+			<text x="12.97" y="637.14" class="st3">Allocation</text>		</g>
+		<g id="shape46-24" transform="translate(301.729,-240.157)">
+			<title>圆角矩形.46</title>
+			<desc>Sharing</desc>
+			<path d="M8.5 721.07 L76.54 721.07 A8.5038 8.5038 -180 0 0 85.04 712.56 L85.04 553.32 A8.5038 8.5038 -180 0 0 76.54 544.82
+						 L8.5 544.82 A8.5038 8.5038 -180 0 0 0 553.32 L0 712.56 A8.5038 8.5038 -180 0 0 8.5 721.07 Z" class="st10"/>
+			<text x="20.74" y="637.14" class="st3">Sharing</text>		</g>
+		<g id="shape47-27" transform="translate(301.729,-44.0665)">
+			<title>圆角矩形.47</title>
+			<desc>Orchestration</desc>
+			<path d="M8.5 721.07 L76.54 721.07 A8.5038 8.5038 -180 0 0 85.04 712.56 L85.04 553.32 A8.5038 8.5038 -180 0 0 76.54 544.82
+						 L8.5 544.82 A8.5038 8.5038 -180 0 0 0 553.32 L0 712.56 A8.5038 8.5038 -180 0 0 8.5 721.07 Z" class="st11"/>
+			<text x="4.42" y="637.14" class="st3">Orchestration</text>		</g>
+		<g id="shape48-30" transform="translate(420.43,-632.338)">
+			<title>圆角矩形.48</title>
+			<desc>Taxonomy</desc>
+			<path d="M11.59 721.07 L104.34 721.07 A11.5927 11.5927 -180 0 0 115.93 709.47 L115.93 688 A11.5927 11.5927 -180 0 0 104.34
+						 676.4 L11.59 676.4 A11.5927 11.5927 -180 0 0 -0 688 L0 709.47 A11.5927 11.5927 -180 0 0 11.59 721.07 Z"
+					class="st2"/>
+			<text x="27.64" y="702.94" class="st3">Taxonomy</text>		</g>
+		<g id="shape52-33" transform="translate(420.43,-363.689)">
+			<title>圆角矩形.52</title>
+			<desc>Foundational Exploration</desc>
+			<path d="M11.59 721.07 L104.34 721.07 A11.5927 11.5927 -180 0 0 115.93 709.47 L115.93 681.53 A11.5927 11.5927 -180 0
+						 0 104.34 669.94 L11.59 669.94 A11.5927 11.5927 -180 0 0 -0 681.53 L0 709.47 A11.5927 11.5927 -180 0 0 11.59
+						 721.07 Z" class="st12"/>
+			<text x="21.02" y="691.3" class="st3">Foundational <tspan x="24.92" dy="1.2em" class="st13">Exploration</tspan></text>		</g>
+		<g id="shape53-37" transform="translate(420.43,-302.716)">
+			<title>圆角矩形.53</title>
+			<desc>Personalization Enhancement</desc>
+			<path d="M11.59 721.07 L104.34 721.07 A11.5927 11.5927 -180 0 0 115.93 709.47 L115.93 681.53 A11.5927 11.5927 -180 0
+						 0 104.34 669.94 L11.59 669.94 A11.5927 11.5927 -180 0 0 0 681.53 L0 709.47 A11.5927 11.5927 -180 0 0 11.59
+						 721.07 Z" class="st12"/>
+			<text x="14.81" y="691.3" class="st3">Personalization <tspan x="19.87" dy="1.2em" class="st13">Enhancement</tspan></text>		</g>
+		<g id="shape54-41" transform="translate(420.43,-240.157)">
+			<title>圆角矩形.54</title>
+			<desc>Advanced Integration</desc>
+			<path d="M11.59 721.07 L104.34 721.07 A11.5927 11.5927 -180 0 0 115.93 709.47 L115.93 681.53 A11.5927 11.5927 -180 0
+						 0 104.34 669.94 L11.59 669.94 A11.5927 11.5927 -180 0 0 0 681.53 L0 709.47 A11.5927 11.5927 -180 0 0 11.59
+						 721.07 Z" class="st12"/>
+			<text x="29.59" y="691.3" class="st3">Advanced <tspan x="27.25" dy="1.2em" class="st13">Integration</tspan></text>		</g>
+		<g id="shape55-45" transform="translate(420.43,-535.086)">
+			<title>圆角矩形.55</title>
+			<desc>Centralized Distribution</desc>
+			<path d="M11.59 721.07 L104.34 721.07 A11.5927 11.5927 -180 0 0 115.93 709.47 L115.93 655.25 A11.5927 11.5927 -180 0
+						 0 104.34 643.66 L11.59 643.66 A11.5927 11.5927 -180 0 0 0 655.25 L0 709.47 A11.5927 11.5927 -180 0 0 11.59
+						 721.07 Z" class="st14"/>
+			<text x="25.7" y="678.16" class="st3">Centralized <tspan x="24.13" dy="1.2em" class="st13">Distribut</tspan>ion</text>		</g>
+		<g id="shape56-49" transform="translate(420.43,-436.248)">
+			<title>圆角矩形.56</title>
+			<desc>Decentralized Distribution</desc>
+			<path d="M11.59 721.07 L104.34 721.07 A11.5927 11.5927 -180 0 0 115.93 709.47 L115.93 655.25 A11.5927 11.5927 -180 0
+						 0 104.34 643.66 L11.59 643.66 A11.5927 11.5927 -180 0 0 0 655.25 L0 709.47 A11.5927 11.5927 -180 0 0 11.59
+						 721.07 Z" class="st14"/>
+			<text x="19.1" y="678.16" class="st3">Decentralized <tspan x="24.13" dy="1.2em" class="st13">Distribu</tspan>tion</text>		</g>
+		<g id="shape58-53" transform="translate(420.43,-169.185)">
+			<title>圆角矩形.58</title>
+			<desc>Collaborative Lightweighting</desc>
+			<path d="M11.59 721.07 L104.34 721.07 A11.5927 11.5927 -180 0 0 115.93 709.47 L115.93 681.53 A11.5927 11.5927 -180 0
+						 0 104.34 669.94 L11.59 669.94 A11.5927 11.5927 -180 0 0 0 681.53 L0 709.47 A11.5927 11.5927 -180 0 0 11.59
+						 721.07 Z" class="st15"/>
+			<text x="19.86" y="691.3" class="st3">Collaborative <tspan x="14.8" dy="1.2em" class="st13">Lightweighting</tspan></text>		</g>
+		<g id="shape59-57" transform="translate(420.43,-106.626)">
+			<title>圆角矩形.59</title>
+			<desc>Collaborative Training</desc>
+			<path d="M11.59 721.07 L104.34 721.07 A11.5927 11.5927 -180 0 0 115.93 709.47 L115.93 681.53 A11.5927 11.5927 -180 0
+						 0 104.34 669.94 L11.59 669.94 A11.5927 11.5927 -180 0 0 0 681.53 L0 709.47 A11.5927 11.5927 -180 0 0 11.59
+						 721.07 Z" class="st15"/>
+			<text x="19.86" y="691.3" class="st3">Collaborative <tspan x="33.86" dy="1.2em" class="st13">Training</tspan></text>		</g>
+		<g id="shape60-61" transform="translate(420.43,-44.0665)">
+			<title>圆角矩形.60</title>
+			<desc>Collaborative Inference</desc>
+			<path d="M11.59 721.07 L104.34 721.07 A11.5927 11.5927 -180 0 0 115.93 709.47 L115.93 681.53 A11.5927 11.5927 -180 0
+						 0 104.34 669.94 L11.59 669.94 A11.5927 11.5927 -180 0 0 0 681.53 L0 709.47 A11.5927 11.5927 -180 0 0 11.59
+						 721.07 Z" class="st15"/>
+			<text x="19.86" y="691.3" class="st3">Collaborative <tspan x="31.54" dy="1.2em" class="st13">Inference</tspan></text>		</g>
+	</g>
+</svg>
