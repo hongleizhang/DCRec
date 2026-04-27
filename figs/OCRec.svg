@@ -2,21 +2,22 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- 由 Microsoft Visio, SVG Export 生成 OCRec.svg OCRec -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
-		width="8.21665in" height="6.22602in" viewBox="0 0 591.598 448.274" xml:space="preserve" color-interpolation-filters="sRGB"
-		class="st11">
+		width="8.92146in" height="6.79353in" viewBox="0 0 642.345 489.134" xml:space="preserve" color-interpolation-filters="sRGB"
+		class="st12">
 	<style type="text/css">
 	<![CDATA[
-		.st1 {fill:#ccffff;stroke:#000000;stroke-width:1}
-		.st2 {fill:#000000;font-family:Times New Roman;font-size:0.833336em}
-		.st3 {font-size:1em}
-		.st4 {fill:#ffccff;stroke:#000000;stroke-width:1}
-		.st5 {fill:#ffffcc;stroke:#000000;stroke-width:1}
-		.st6 {fill:none;stroke:none;stroke-width:1}
-		.st7 {fill:#000000;font-family:Times New Roman;font-size:1.00001em}
-		.st8 {fill:#ccffcc;stroke:#000000;stroke-width:1}
-		.st9 {marker-end:url(#mrkr4-81);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
-		.st10 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.28409090909091}
-		.st11 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+		.st1 {fill:#ffffff;stroke:#000000;stroke-width:1}
+		.st2 {fill:#ccffff;stroke:#000000;stroke-width:1}
+		.st3 {fill:#000000;font-family:Times New Roman;font-size:0.833336em}
+		.st4 {font-size:1em}
+		.st5 {fill:#ffccff;stroke:#000000;stroke-width:1}
+		.st6 {fill:#ffffcc;stroke:#000000;stroke-width:1}
+		.st7 {fill:none;stroke:none;stroke-width:1}
+		.st8 {fill:#000000;font-family:Times New Roman;font-size:1.00001em}
+		.st9 {fill:#ccffcc;stroke:#000000;stroke-width:1}
+		.st10 {marker-end:url(#mrkr4-84);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st11 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.28409090909091}
+		.st12 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
 
@@ -24,169 +25,187 @@
 		<g id="lend4">
 			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
 		</g>
-		<marker id="mrkr4-81" class="st10" refX="-7.04" orient="auto" markerUnits="strokeWidth" overflow="visible">
+		<marker id="mrkr4-84" class="st11" refX="-7.04" orient="auto" markerUnits="strokeWidth" overflow="visible">
 			<use xlink:href="#lend4" transform="scale(-3.52,-3.52) "/>
 		</marker>
 	</defs>
 	<g>
 		<title>OCRec</title>
-		<g id="shape16-1" transform="translate(123.841,-178.49)">
-			<title>圆角矩形.16</title>
-			<desc>Deep Representation Learning Models</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 346.23 A11.3384 11.3384 -180 0
-						 0 102.05 334.89 L11.34 334.89 A11.3384 11.3384 -180 0 0 0 346.23 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st1"/>
-			<text x="14.9" y="388.58" class="st2">Deep Representation <tspan x="22.4" dy="1.2em" class="st3">Learning Models</tspan></text>		</g>
-		<g id="shape17-5" transform="translate(252.838,-257.301)">
-			<title>圆角矩形.17</title>
-			<desc>Feature Interaction</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 425.32 A11.3384 11.3384 -180 0
-						 0 102.05 413.98 L11.34 413.98 A11.3384 11.3384 -180 0 0 0 425.32 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st1"/>
-			<text x="18.79" y="434.13" class="st2">Feature Interaction</text>		</g>
-		<g id="shape18-8" transform="translate(252.838,-217.756)">
-			<title>圆角矩形.18</title>
-			<desc>Sequential Modeling</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 425.32 A11.3384 11.3384 -180 0
-						 0 102.05 413.98 L11.34 413.98 A11.3384 11.3384 -180 0 0 0 425.32 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st1"/>
-			<text x="14.89" y="434.13" class="st2">Sequential Modeling</text>		</g>
-		<g id="shape19-11" transform="translate(252.838,-178.49)">
-			<title>圆角矩形.19</title>
-			<desc>Graph Recommendation</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 425.32 A11.3384 11.3384 -180 0
-						 0 102.05 413.98 L11.34 413.98 A11.3384 11.3384 -180 0 0 0 425.32 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st1"/>
-			<text x="7.68" y="434.13" class="st2">Graph Recommendation</text>		</g>
-		<g id="shape20-14" transform="translate(123.921,-43.8442)">
-			<title>圆角矩形.20</title>
-			<desc>Large Semantic Alignment Models</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 346.23 A11.3384 11.3384 -180 0
-						 0 102.05 334.89 L11.34 334.89 A11.3384 11.3384 -180 0 0 0 346.23 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st4"/>
-			<text x="25.18" y="388.58" class="st2">Large Semantic <tspan x="19.06" dy="1.2em" class="st3">Alignment Models</tspan></text>		</g>
-		<g id="shape21-18" transform="translate(252.838,-122.656)">
-			<title>圆角矩形.21</title>
-			<desc>Fine‑Tuning Alignment</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 425.32 A11.3384 11.3384 -180 0
-						 0 102.05 413.98 L11.34 413.98 A11.3384 11.3384 -180 0 0 0 425.32 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st4"/>
-			<text x="9.06" y="434.13" class="st2">Fine-Tuning Alignment</text>		</g>
-		<g id="shape22-21" transform="translate(252.838,-83.1104)">
-			<title>圆角矩形.22</title>
-			<desc>Generative Alignment</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 425.32 A11.3384 11.3384 -180 0
-						 0 102.05 413.98 L11.34 413.98 A11.3384 11.3384 -180 0 0 0 425.32 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st4"/>
-			<text x="12.12" y="434.13" class="st2">Generative Alignment</text>		</g>
-		<g id="shape23-24" transform="translate(252.838,-43.565)">
-			<title>圆角矩形.23</title>
-			<desc>Agentic Alignment</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 425.32 A11.3384 11.3384 -180 0
-						 0 102.05 413.98 L11.34 413.98 A11.3384 11.3384 -180 0 0 0 425.32 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st4"/>
-			<text x="18.23" y="434.13" class="st2">Agentic Alignment</text>		</g>
-		<g id="shape24-27" transform="translate(18.9999,-43.8442)">
-			<title>圆角矩形.24</title>
-			<desc>On-Cloud Recommendation</desc>
-			<path d="M8.92 448.27 L80.31 448.27 A8.92291 8.92291 -180 0 0 89.23 439.35 L89.23 71.77 A8.92291 8.92291 -180 0 0 80.31
-						 62.84 L8.92 62.84 A8.92291 8.92291 -180 0 0 -0 71.77 L0 439.35 A8.92291 8.92291 -180 0 0 8.92 448.27 Z"
-					class="st5"/>
-			<text x="24.62" y="252.56" class="st2">On-Cloud <tspan x="9.35" dy="1.2em" class="st3">Recommendation</tspan></text>		</g>
-		<g id="shape25-31" transform="translate(381.835,-257.301)">
-			<title>圆角矩形.25</title>
-			<desc>RBM, DeepMusic*, CDL, VBPR, YouTube DNN*, Wide &#38; Deep, DeepFM...</desc>
-			<path d="M17.15 448.27 L173.62 448.27 A17.1472 17.1472 -180 0 0 190.76 431.13 A17.1472 17.1472 -180 0 0 173.62 413.98
-						 L17.15 413.98 A17.1472 17.1472 -180 0 0 -0 431.13 A17.1472 17.1472 -180 0 0 17.15 448.27 Z" class="st1"/>
-			<text x="6.77" y="428.13" class="st2">RBM, DeepMusic*, CDL, VBPR, YouTube <tspan x="7.89" dy="1.2em" class="st3">DNN</tspan>*, Wide &#38; Deep, DeepFM, NCF, DIN</text>		</g>
-		<g id="shape26-35" transform="translate(381.835,-217.756)">
-			<title>圆角矩形.26</title>
-			<desc>SASRec, BERT4Rec</desc>
-			<path d="M17.15 448.27 L173.62 448.27 A17.1472 17.1472 -180 0 0 190.76 431.13 A17.1472 17.1472 -180 0 0 173.62 413.98
-						 L17.15 413.98 A17.1472 17.1472 -180 0 0 -0 431.13 A17.1472 17.1472 -180 0 0 17.15 448.27 Z" class="st1"/>
-			<text x="52.88" y="434.13" class="st2">SASRec, BERT4Rec</text>		</g>
-		<g id="shape27-38" transform="translate(381.835,-178.211)">
-			<title>圆角矩形.27</title>
-			<desc>SR-GNN, LightGCN, SGL, LT-OCF</desc>
-			<path d="M17.15 448.27 L173.62 448.27 A17.1472 17.1472 -180 0 0 190.76 431.13 A17.1472 17.1472 -180 0 0 173.62 413.98
-						 L17.15 413.98 A17.1472 17.1472 -180 0 0 -0 431.13 A17.1472 17.1472 -180 0 0 17.15 448.27 Z" class="st1"/>
-			<text x="20.93" y="434.13" class="st2">SR-GNN, LightGCN, SGL, LT-OCF</text>		</g>
-		<g id="shape28-41" transform="translate(381.835,-122.656)">
-			<title>圆角矩形.31</title>
-			<desc>P5, TALLRec, LLMRank*, BIGRec</desc>
-			<path d="M17.15 448.27 L173.62 448.27 A17.1472 17.1472 -180 0 0 190.76 431.13 A17.1472 17.1472 -180 0 0 173.62 413.98
-						 L17.15 413.98 A17.1472 17.1472 -180 0 0 -0 431.13 A17.1472 17.1472 -180 0 0 17.15 448.27 Z" class="st4"/>
-			<text x="22.06" y="434.13" class="st2">P5, TALLRec, LLMRank*, BIGRec</text>		</g>
-		<g id="shape29-44" transform="translate(381.835,-83.1104)">
-			<title>圆角矩形.32</title>
-			<desc>DiffRec, TIGER, HSTU</desc>
-			<path d="M17.15 448.27 L173.62 448.27 A17.1472 17.1472 -180 0 0 190.76 431.13 A17.1472 17.1472 -180 0 0 173.62 413.98
-						 L17.15 413.98 A17.1472 17.1472 -180 0 0 -0 431.13 A17.1472 17.1472 -180 0 0 17.15 448.27 Z" class="st4"/>
-			<text x="46.5" y="434.13" class="st2">DiffRec, TIGER, HSTU</text>		</g>
-		<g id="shape30-47" transform="translate(381.835,-42.565)">
-			<title>圆角矩形.33</title>
-			<desc>RecMind, InteRecAgent, MemRec</desc>
-			<path d="M17.15 448.27 L173.62 448.27 A17.1472 17.1472 -180 0 0 190.76 431.13 A17.1472 17.1472 -180 0 0 173.62 413.98
-						 L17.15 413.98 A17.1472 17.1472 -180 0 0 -0 431.13 A17.1472 17.1472 -180 0 0 17.15 448.27 Z" class="st4"/>
-			<text x="25.68" y="434.13" class="st2">RecMind, InteRecAgent, MemRec</text>		</g>
-		<g id="shape31-50" transform="translate(18.9999,-18.25)">
-			<title>工作表.31</title>
-			<desc>* indicates that the method name was not explicitly mentioned...</desc>
-			<rect x="0" y="428.274" width="450.173" height="20" class="st6"/>
-			<text x="4" y="441.87" class="st7">* indicates that the method name was not explicitly mentioned in the original paper.</text>		</g>
-		<g id="shape40-53" transform="translate(123.841,-313.136)">
-			<title>圆角矩形.40</title>
-			<desc>Shallow Collaborative Filtering Models</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 346.23 A11.3384 11.3384 -180 0
-						 0 102.05 334.89 L11.34 334.89 A11.3384 11.3384 -180 0 0 0 346.23 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st8"/>
-			<text x="11.84" y="388.58" class="st2">Shallow Collaborative <tspan x="23.22" dy="1.2em" class="st3">Filtering Models</tspan></text>		</g>
-		<g id="shape46-57" transform="translate(252.838,-352.681)">
-			<title>圆角矩形.46</title>
-			<desc>Model-based CF</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 425.32 A11.3384 11.3384 -180 0
-						 0 102.05 413.98 L11.34 413.98 A11.3384 11.3384 -180 0 0 0 425.32 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st8"/>
-			<text x="23.22" y="434.13" class="st2">Model-based CF</text>		</g>
-		<g id="shape47-60" transform="translate(252.838,-392.226)">
-			<title>圆角矩形.47</title>
-			<desc>Memory-based CF</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 425.32 A11.3384 11.3384 -180 0
-						 0 102.05 413.98 L11.34 413.98 A11.3384 11.3384 -180 0 0 0 425.32 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st8"/>
-			<text x="19.06" y="434.13" class="st2">Memory-based CF</text>		</g>
-		<g id="shape49-63" transform="translate(381.835,-392.226)">
-			<title>圆角矩形.49</title>
-			<desc>GroupLens, ItemCF*, FISM</desc>
-			<path d="M17.15 448.27 L173.62 448.27 A17.1472 17.1472 -180 0 0 190.76 431.13 A17.1472 17.1472 -180 0 0 173.62 413.98
-						 L17.15 413.98 A17.1472 17.1472 -180 0 0 -0 431.13 A17.1472 17.1472 -180 0 0 17.15 448.27 Z" class="st8"/>
-			<text x="38.44" y="434.13" class="st2">GroupLens, ItemCF*, FISM</text>		</g>
-		<g id="shape50-66" transform="translate(381.835,-313.136)">
-			<title>圆角矩形.50</title>
-			<desc>BPR, CLiMF</desc>
-			<path d="M17.15 448.27 L173.62 448.27 A17.1472 17.1472 -180 0 0 190.76 431.13 A17.1472 17.1472 -180 0 0 173.62 413.98
-						 L17.15 413.98 A17.1472 17.1472 -180 0 0 -0 431.13 A17.1472 17.1472 -180 0 0 17.15 448.27 Z" class="st8"/>
-			<text x="68.43" y="434.13" class="st2">BPR, CLiMF</text>		</g>
-		<g id="shape51-69" transform="translate(252.838,-313.136)">
-			<title>圆角矩形.51</title>
-			<desc>Ranking-Optimized CF</desc>
-			<path d="M11.34 448.27 L102.05 448.27 A11.3384 11.3384 -180 0 0 113.39 436.94 L113.39 425.32 A11.3384 11.3384 -180 0
-						 0 102.05 413.98 L11.34 413.98 A11.3384 11.3384 -180 0 0 0 425.32 L0 436.94 A11.3384 11.3384 -180 0 0 11.34
-						 448.27 Z" class="st8"/>
-			<text x="9.61" y="434.13" class="st2">Ranking-Optimized CF</text>		</g>
-		<g id="shape52-72" transform="translate(381.835,-352.681)">
-			<title>圆角矩形.52</title>
-			<desc>PMF, SVD++, WRMF*, MF*, FM, SoReg*, Logistic MF</desc>
-			<path d="M17.15 448.27 L173.62 448.27 A17.1472 17.1472 -180 0 0 190.76 431.13 A17.1472 17.1472 -180 0 0 173.62 413.98
-						 L17.15 413.98 A17.1472 17.1472 -180 0 0 -0 431.13 A17.1472 17.1472 -180 0 0 17.15 448.27 Z" class="st8"/>
-			<text x="23.75" y="428.13" class="st2">PMF, SVD++, WRMF*, MF*, FM, <tspan x="52.18" dy="1.2em" class="st3">SoReg</tspan>*, Logistic MF</text>		</g>
-		<g id="shape53-76" transform="translate(173.448,-313.136)">
-			<title>动态连接线.53</title>
-			<path d="M7.09 448.27 L7.09 462.49" class="st9"/>
+		<g id="shape57-1" transform="translate(18.9995,-19)">
+			<title>圆角矩形</title>
+			<path d="M19.57 489.13 L584.78 489.13 A19.5661 19.5661 -180 0 0 604.35 469.57 L604.35 57.57 A19.5661 19.5661 -180 0 0
+						 584.78 38 L19.57 38 A19.5661 19.5661 -180 0 0 -0 57.57 L0 469.57 A19.5661 19.5661 -180 0 0 19.57 489.13
+						 Z" class="st1"/>
 		</g>
-		<g id="shape54-82" transform="translate(173.487,-178.49)">
-			<title>动态连接线.54</title>
-			<path d="M7.05 448.27 L7.05 460.95 L7.13 460.95 L7.13 462.49" class="st9"/>
+		<g id="group61-3" transform="translate(44.3734,-39.0551)">
+			<title>工作表.61</title>
+			<g id="shape16-4" transform="translate(104.841,-160.24)">
+				<title>圆角矩形.16</title>
+				<desc>Deep Representation Learning Models</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 387.09 A11.3384 11.3384 -180
+							 0 0 102.05 375.75 L11.34 375.75 A11.3384 11.3384 -180 0 0 0 387.09 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st2"/>
+				<text x="14.9" y="429.44" class="st3">Deep Representation <tspan x="22.4" dy="1.2em" class="st4">Learning Models</tspan></text>			</g>
+			<g id="shape17-8" transform="translate(233.838,-239.051)">
+				<title>圆角矩形.17</title>
+				<desc>Feature Interaction</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 466.18 A11.3384 11.3384 -180
+							 0 0 102.05 454.84 L11.34 454.84 A11.3384 11.3384 -180 0 0 0 466.18 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st2"/>
+				<text x="18.79" y="474.99" class="st3">Feature Interaction</text>			</g>
+			<g id="shape18-11" transform="translate(233.838,-199.506)">
+				<title>圆角矩形.18</title>
+				<desc>Sequential Modeling</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 466.18 A11.3384 11.3384 -180
+							 0 0 102.05 454.84 L11.34 454.84 A11.3384 11.3384 -180 0 0 0 466.18 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st2"/>
+				<text x="14.89" y="474.99" class="st3">Sequential Modeling</text>			</g>
+			<g id="shape19-14" transform="translate(233.838,-160.24)">
+				<title>圆角矩形.19</title>
+				<desc>Graph Recommendation</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 466.18 A11.3384 11.3384 -180
+							 0 0 102.05 454.84 L11.34 454.84 A11.3384 11.3384 -180 0 0 0 466.18 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st2"/>
+				<text x="7.68" y="474.99" class="st3">Graph Recommendation</text>			</g>
+			<g id="shape20-17" transform="translate(104.921,-25.5942)">
+				<title>圆角矩形.20</title>
+				<desc>Large Semantic Alignment Models</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 387.09 A11.3384 11.3384 -180
+							 0 0 102.05 375.75 L11.34 375.75 A11.3384 11.3384 -180 0 0 0 387.09 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st5"/>
+				<text x="25.18" y="429.44" class="st3">Large Semantic <tspan x="19.06" dy="1.2em" class="st4">Alignment Models</tspan></text>			</g>
+			<g id="shape21-21" transform="translate(233.838,-104.406)">
+				<title>圆角矩形.21</title>
+				<desc>Fine‑Tuning Alignment</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 466.18 A11.3384 11.3384 -180
+							 0 0 102.05 454.84 L11.34 454.84 A11.3384 11.3384 -180 0 0 0 466.18 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st5"/>
+				<text x="9.06" y="474.99" class="st3">Fine-Tuning Alignment</text>			</g>
+			<g id="shape22-24" transform="translate(233.838,-64.8604)">
+				<title>圆角矩形.22</title>
+				<desc>Generative Alignment</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 466.18 A11.3384 11.3384 -180
+							 0 0 102.05 454.84 L11.34 454.84 A11.3384 11.3384 -180 0 0 0 466.18 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st5"/>
+				<text x="12.12" y="474.99" class="st3">Generative Alignment</text>			</g>
+			<g id="shape23-27" transform="translate(233.838,-25.315)">
+				<title>圆角矩形.23</title>
+				<desc>Agentic Alignment</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 466.18 A11.3384 11.3384 -180
+							 0 0 102.05 454.84 L11.34 454.84 A11.3384 11.3384 -180 0 0 0 466.18 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st5"/>
+				<text x="18.23" y="474.99" class="st3">Agentic Alignment</text>			</g>
+			<g id="shape24-30" transform="translate(7.99361E-15,-25.5942)">
+				<title>圆角矩形.24</title>
+				<desc>On-Cloud Recommendation</desc>
+				<path d="M8.92 489.13 L80.31 489.13 A8.92291 8.92291 -180 0 0 89.23 480.21 L89.23 112.63 A8.92291 8.92291 -180 0
+							 0 80.31 103.7 L8.92 103.7 A8.92291 8.92291 -180 0 0 -0 112.63 L0 480.21 A8.92291 8.92291 -180 0 0 8.92
+							 489.13 Z" class="st6"/>
+				<text x="24.62" y="293.42" class="st3">On-Cloud <tspan x="9.35" dy="1.2em" class="st4">Recommendation</tspan></text>			</g>
+			<g id="shape25-34" transform="translate(362.835,-239.051)">
+				<title>圆角矩形.25</title>
+				<desc>RBM, DeepMusic*, CDL, VBPR, YouTube DNN*, Wide &#38; Deep, DeepFM...</desc>
+				<path d="M17.15 489.13 L173.62 489.13 A17.1472 17.1472 -180 0 0 190.76 471.99 A17.1472 17.1472 -180 0 0 173.62 454.84
+							 L17.15 454.84 A17.1472 17.1472 -180 0 0 -0 471.99 A17.1472 17.1472 -180 0 0 17.15 489.13 Z"
+						class="st2"/>
+				<text x="6.77" y="468.99" class="st3">RBM, DeepMusic*, CDL, VBPR, YouTube <tspan x="7.89" dy="1.2em" class="st4">DNN</tspan>*, Wide &#38; Deep, DeepFM, NCF, DIN</text>			</g>
+			<g id="shape26-38" transform="translate(362.835,-199.506)">
+				<title>圆角矩形.26</title>
+				<desc>SASRec, BERT4Rec</desc>
+				<path d="M17.15 489.13 L173.62 489.13 A17.1472 17.1472 -180 0 0 190.76 471.99 A17.1472 17.1472 -180 0 0 173.62 454.84
+							 L17.15 454.84 A17.1472 17.1472 -180 0 0 -0 471.99 A17.1472 17.1472 -180 0 0 17.15 489.13 Z"
+						class="st2"/>
+				<text x="52.88" y="474.99" class="st3">SASRec, BERT4Rec</text>			</g>
+			<g id="shape27-41" transform="translate(362.835,-159.961)">
+				<title>圆角矩形.27</title>
+				<desc>SR-GNN, LightGCN, SGL, LT-OCF</desc>
+				<path d="M17.15 489.13 L173.62 489.13 A17.1472 17.1472 -180 0 0 190.76 471.99 A17.1472 17.1472 -180 0 0 173.62 454.84
+							 L17.15 454.84 A17.1472 17.1472 -180 0 0 -0 471.99 A17.1472 17.1472 -180 0 0 17.15 489.13 Z"
+						class="st2"/>
+				<text x="20.93" y="474.99" class="st3">SR-GNN, LightGCN, SGL, LT-OCF</text>			</g>
+			<g id="shape28-44" transform="translate(362.835,-104.406)">
+				<title>圆角矩形.31</title>
+				<desc>P5, TALLRec, LLMRank*, BIGRec</desc>
+				<path d="M17.15 489.13 L173.62 489.13 A17.1472 17.1472 -180 0 0 190.76 471.99 A17.1472 17.1472 -180 0 0 173.62 454.84
+							 L17.15 454.84 A17.1472 17.1472 -180 0 0 -0 471.99 A17.1472 17.1472 -180 0 0 17.15 489.13 Z"
+						class="st5"/>
+				<text x="22.06" y="474.99" class="st3">P5, TALLRec, LLMRank*, BIGRec</text>			</g>
+			<g id="shape29-47" transform="translate(362.835,-64.8604)">
+				<title>圆角矩形.32</title>
+				<desc>DiffRec, TIGER, HSTU</desc>
+				<path d="M17.15 489.13 L173.62 489.13 A17.1472 17.1472 -180 0 0 190.76 471.99 A17.1472 17.1472 -180 0 0 173.62 454.84
+							 L17.15 454.84 A17.1472 17.1472 -180 0 0 -0 471.99 A17.1472 17.1472 -180 0 0 17.15 489.13 Z"
+						class="st5"/>
+				<text x="46.5" y="474.99" class="st3">DiffRec, TIGER, HSTU</text>			</g>
+			<g id="shape30-50" transform="translate(362.835,-24.315)">
+				<title>圆角矩形.33</title>
+				<desc>RecMind, InteRecAgent, MemRec</desc>
+				<path d="M17.15 489.13 L173.62 489.13 A17.1472 17.1472 -180 0 0 190.76 471.99 A17.1472 17.1472 -180 0 0 173.62 454.84
+							 L17.15 454.84 A17.1472 17.1472 -180 0 0 -0 471.99 A17.1472 17.1472 -180 0 0 17.15 489.13 Z"
+						class="st5"/>
+				<text x="25.68" y="474.99" class="st3">RecMind, InteRecAgent, MemRec</text>			</g>
+			<g id="shape31-53">
+				<title>工作表.31</title>
+				<desc>* indicates that the method name was not explicitly mentioned...</desc>
+				<rect x="0" y="469.134" width="450.173" height="20" class="st7"/>
+				<text x="4" y="482.73" class="st8">* indicates that the method name was not explicitly mentioned in the original paper.</text>			</g>
+			<g id="shape40-56" transform="translate(104.841,-294.886)">
+				<title>圆角矩形.40</title>
+				<desc>Shallow Collaborative Filtering Models</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 387.09 A11.3384 11.3384 -180
+							 0 0 102.05 375.75 L11.34 375.75 A11.3384 11.3384 -180 0 0 0 387.09 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st9"/>
+				<text x="11.84" y="429.44" class="st3">Shallow Collaborative <tspan x="23.22" dy="1.2em" class="st4">Filtering Models</tspan></text>			</g>
+			<g id="shape46-60" transform="translate(233.838,-334.431)">
+				<title>圆角矩形.46</title>
+				<desc>Model-based CF</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 466.18 A11.3384 11.3384 -180
+							 0 0 102.05 454.84 L11.34 454.84 A11.3384 11.3384 -180 0 0 0 466.18 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st9"/>
+				<text x="23.22" y="474.99" class="st3">Model-based CF</text>			</g>
+			<g id="shape47-63" transform="translate(233.838,-373.976)">
+				<title>圆角矩形.47</title>
+				<desc>Memory-based CF</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 466.18 A11.3384 11.3384 -180
+							 0 0 102.05 454.84 L11.34 454.84 A11.3384 11.3384 -180 0 0 0 466.18 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st9"/>
+				<text x="19.06" y="474.99" class="st3">Memory-based CF</text>			</g>
+			<g id="shape49-66" transform="translate(362.835,-373.976)">
+				<title>圆角矩形.49</title>
+				<desc>GroupLens, ItemCF*, FISM</desc>
+				<path d="M17.15 489.13 L173.62 489.13 A17.1472 17.1472 -180 0 0 190.76 471.99 A17.1472 17.1472 -180 0 0 173.62 454.84
+							 L17.15 454.84 A17.1472 17.1472 -180 0 0 -0 471.99 A17.1472 17.1472 -180 0 0 17.15 489.13 Z"
+						class="st9"/>
+				<text x="38.44" y="474.99" class="st3">GroupLens, ItemCF*, FISM</text>			</g>
+			<g id="shape50-69" transform="translate(362.835,-294.886)">
+				<title>圆角矩形.50</title>
+				<desc>BPR, CLiMF</desc>
+				<path d="M17.15 489.13 L173.62 489.13 A17.1472 17.1472 -180 0 0 190.76 471.99 A17.1472 17.1472 -180 0 0 173.62 454.84
+							 L17.15 454.84 A17.1472 17.1472 -180 0 0 -0 471.99 A17.1472 17.1472 -180 0 0 17.15 489.13 Z"
+						class="st9"/>
+				<text x="68.43" y="474.99" class="st3">BPR, CLiMF</text>			</g>
+			<g id="shape51-72" transform="translate(233.838,-294.886)">
+				<title>圆角矩形.51</title>
+				<desc>Ranking-Optimized CF</desc>
+				<path d="M11.34 489.13 L102.05 489.13 A11.3384 11.3384 -180 0 0 113.39 477.8 L113.39 466.18 A11.3384 11.3384 -180
+							 0 0 102.05 454.84 L11.34 454.84 A11.3384 11.3384 -180 0 0 0 466.18 L0 477.8 A11.3384 11.3384 -180 0
+							 0 11.34 489.13 Z" class="st9"/>
+				<text x="9.61" y="474.99" class="st3">Ranking-Optimized CF</text>			</g>
+			<g id="shape52-75" transform="translate(362.835,-334.431)">
+				<title>圆角矩形.52</title>
+				<desc>PMF, SVD++, WRMF*, MF*, FM, SoReg*, Logistic MF</desc>
+				<path d="M17.15 489.13 L173.62 489.13 A17.1472 17.1472 -180 0 0 190.76 471.99 A17.1472 17.1472 -180 0 0 173.62 454.84
+							 L17.15 454.84 A17.1472 17.1472 -180 0 0 -0 471.99 A17.1472 17.1472 -180 0 0 17.15 489.13 Z"
+						class="st9"/>
+				<text x="23.75" y="468.99" class="st3">PMF, SVD++, WRMF*, MF*, FM, <tspan x="52.18" dy="1.2em" class="st4">SoReg</tspan>*, Logistic MF</text>			</g>
+			<g id="shape53-79" transform="translate(154.448,-294.886)">
+				<title>动态连接线.53</title>
+				<path d="M7.09 489.13 L7.09 503.35" class="st10"/>
+			</g>
+			<g id="shape54-85" transform="translate(154.487,-160.24)">
+				<title>动态连接线.54</title>
+				<path d="M7.05 489.13 L7.05 501.81 L7.13 501.81 L7.13 503.35" class="st10"/>
+			</g>
 		</g>
 	</g>
 </svg>
