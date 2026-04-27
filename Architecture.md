@@ -170,6 +170,8 @@
 | 典型代表 | MF, BPR, FM | Wide&Deep, SASRec, LightGCN | P5, TALLRec, HSTU |
 | DC 启示 | Embedding 是核心抽象 | 序列+图需要全局视角 | 催生云大端小范式 |
 
+![OCRec](figs/OCRec.svg)
+
 ### 2.1 Shallow Collaborative Filtering Models
 
 #### 2.1.1 Memory-Based Collaborative Filtering

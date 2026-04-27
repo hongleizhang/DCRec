@@ -25,7 +25,7 @@
 
 ## 🗄️On-Cloud Recommendation
 
-![framework](/figs/oncloud_rec.png)
+![OCRec](figs/OCRec.svg)
 
 ### Shallow Collaborative Filtering Models
 
@@ -76,7 +76,7 @@
 
 ## 📱On-Device Recommendation
 
-![framework](/figs/ondevice_rec.png)
+![ODRec](figs/ODRec.svg)
 
 ### General Lightweight Methods
 >
@@ -102,7 +102,6 @@
 - PQ-VAE: Efficient Recommendation Using Quantized Embeddings, RecSys, 2019. [[PDF]](https://ceur-ws.org/Vol-2431/paper10.pdf).
 - TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models, MLSys, 2021. [[PDF]](https://arxiv.org/abs/2101.11714), [[CODE]](https://github.com/facebookresearch/FBTT-Embedding).
 - Compress, Cross and Scale: Multi-Level Compression Cross Networks for Efficient Scaling in Recommender Systems, 2026. [[PDF]](https://arxiv.org/pdf/2602.12041), [[CODE]](https://github.com/shishishu/MLCC).
-
 
 ### Efficient Adaptation Solutions
 >
