@@ -28,22 +28,40 @@
 ![OCRec](figs/OCRec.svg)
 
 ### Shallow Collaborative Filtering Models
+>
+> Shallow collaborative filtering models focus on **learning low-rank representations** of users and items from interaction data for preference prediction, mainly via:
+> (1) ***Memory-based CF***: compute user/item similarities from historical co-interactions for neighborhood-based prediction; (2) ***Model-based CF***: factorize the interaction matrix into latent vectors with pointwise/pairwise optimization; (3) ***Content-based CF***: leverage item content or side information to build preference profiles.
+
+#### Memory-based CF
 
 - GroupLens: An Open Architecture for Collaborative Filtering of Netnews, ACM CSCW, 1994. [[PDF]](https://dl.acm.org/doi/10.1145/192844.192905), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - Item-based Collaborative Filtering Recommendation Algorithms, WWW, 2001. [[PDF]](https://dl.acm.org/doi/10.1145/371920.372071), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
+- FISM: Factored Item Similarity Models for Top-N Recommender Systems, KDD, 2013. [[PDF]](https://chbrown.github.io/kdd-2013-usb/kdd/p659.pdf), [[CODE]](https://github.com/hegongshan/factored_item_similarity_models).
+
+#### Model-based CF
+
 - Probabilistic Matrix Factorization, NIPS, 2007. [[PDF]](https://proceedings.neurips.cc/paper_files/paper/2007/file/d7322ed717dedf1eb4e6e52a37ea7bcd-Paper.pdf), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
-- Collaborative Filtering for Implicit Feedback Datasets, ICDM, 2008. [[PDF]](http://ieeexplore.ieee.org/document/4781121/), [[CODE]](https://github.com/benfred/implicit).
 - Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model, KDD, 2008. [[PDF]](https://people.engr.tamu.edu/huangrh/Spring16/papers_course/matrix_factorization.pdf), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
+- Collaborative Filtering for Implicit Feedback Datasets, ICDM, 2008. [[PDF]](http://ieeexplore.ieee.org/document/4781121/), [[CODE]](https://github.com/benfred/implicit).
 - Matrix Factorization Techniques for Recommender Systems, IEEE Computer, 2009. [[PDF]](https://ieeexplore.ieee.org/document/5197422), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - BPR: Bayesian Personalized Ranking from Implicit Feedback, UAI, 2009. [[PDF]](https://arxiv.org/abs/1205.2618), [[CODE]](https://github.com/gamboviol/bpr).
 - Factor in the neighbors: Scalable and accurate collaborative filtering, ACM TKDD, 2010. [[PDF]](https://dl.acm.org/doi/abs/10.1145/1644873.1644874), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - Factorization Machines, ICDM, 2010. [[PDF]](https://analyticsconsultores.com.mx/wp-content/uploads/2019/03/Factorization-Machines-Steffen-Rendle-Osaka-University-2010.pdf), [[CODE]](https://github.com/coreylynch/pyFM).
 - Recommender Systems with Social Regularization, WSDM, 2011. [[PDF]](https://dennyzhou.github.io/papers/RSR.pdf), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - CLiMF: Learning to Maximize Reciprocal Rank with Collaborative Less-is-More Filtering, RecSys, 2012. [[PDF]](https://dl.acm.org/doi/10.1145/2365952.2365981), [[CODE]](https://github.com/gamboviol/climf).
-- FISM: Factored Item Similarity Models for Top-N Recommender Systems, KDD, 2013. [[PDF]](https://chbrown.github.io/kdd-2013-usb/kdd/p659.pdf), [[CODE]](https://github.com/hegongshan/factored_item_similarity_models).
 - Logistic Matrix Factorization for Implicit Feedback Data, NIPS, 2014. [[PDF]](https://web.stanford.edu/~rezab/nips2014workshop/submits/logmat.pdf), [[CODE]](https://github.com/MrChrisJohnson/logistic-mf).
 
+#### Content-based CF
+
+- Syskill & Webert: Identifying interesting web sites, AAAI, 1996. [[PDF]](https://cdn.aaai.org/AAAI/1996/AAAI96-008.pdf).
+- Recommendation as Classification: Using Social and Content-Based Information in Recommendation, AAAI, 1998. [[PDF]](https://cdn.aaai.org/AAAI/1998/AAAI98-101.pdf).
+
 ### Deep Representation Learning Models
+>
+> Deep representation learning models focus on **learning non-linear transformations** of user and item features through neural architectures for expressive representations, mainly via:
+> (1) ***Feature Interaction***: design deep architectures to capture high-order feature crossings from multi-source inputs; (2) ***Sequential Modeling***: model temporal dependencies in user behavior sequences for next-item prediction; (3) ***Graph Modeling***: exploit high-order connectivity in user-item interaction graphs.
+
+#### Feature Interaction
 
 - Restricted Boltzmann Machines for Collaborative Filtering, ICML, 2007. [[PDF]](https://dl.acm.org/doi/10.1145/1273496.1273596).
 - Deep Content-based Music Recommendation, NeurIPS, 2013. [[PDF]](https://papers.neurips.cc/paper/5004-deep-content-based-music-recommendation.pdf).
@@ -54,24 +72,41 @@
 - DeepFM: A Factorization-Machine based Neural Network for CTR Prediction, IJCAI, 2017. [[PDF]](https://arxiv.org/abs/1703.04247).
 - Neural Collaborative Filtering, WWW, 2017. [[PDF]](https://arxiv.org/abs/1708.05031), [[CODE]](https://github.com/hexiangnan/neural_collaborative_filtering).
 - Deep Interest Network for Click-Through Rate Prediction, KDD, 2018. [[PDF]](https://arxiv.org/abs/1706.06978), [[CODE]](https://github.com/zhougr1993/DeepInterestNetwork).
+
+#### Sequential Modeling
+
 - Self-Attentive Sequential Recommendation, ICDM, 2018. [[PDF]](https://ieeexplore.ieee.org/abstract/document/8594844), [[CODE]](https://github.com/kang205/SASRec).
-- Session-Based Recommendation with Graph Neural Networks, AAAI, 2019. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/3804), [[CODE]](https://github.com/CRIPAC-DIG/SR-GNN).
 - BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer, CIKM, 2019. [[PDF]](https://arxiv.org/abs/1904.06690), [[CODE]](https://github.com/FeiSun/BERT4Rec).
+
+#### Graph Modeling
+
+- Session-Based Recommendation with Graph Neural Networks, AAAI, 2019. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/3804), [[CODE]](https://github.com/CRIPAC-DIG/SR-GNN).
 - LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/10.1145/3397271.3401063), [[CODE]](https://github.com/gusye1234/LightGCN-PyTorch).
 - Self-supervised Graph Learning for Recommendation, SIGIR, 2021. [[PDF]](https://wujcan.github.io/papers/sigir21-sgl.pdf), [[CODE]](https://github.com/wujcan/SGL-TensorFlow).
 - LT-OCF: Learnable-Time ODE-based Collaborative Filtering, CIKM, 2021. [[PDF]](https://dl.acm.org/doi/10.1145/3459637.3482449), [[CODE]](https://github.com/jeongwhanchoi/LT-OCF).
 
 ### Large Semantic Alignment Models
+>
+> Large semantic alignment models focus on **bridging recommendation with semantic reasoning** through large-scale pre-trained models, mainly via:
+> (1) ***Instruction Alignment***: reformulate recommendation as natural language generation tasks and fine-tune LLMs with recommendation-specific instructions; (2) ***Generative Alignment***: leverage generative paradigms (diffusion, autoregressive tokenization) for item generation or retrieval; (3) ***Agentic Alignment***: employ LLMs as autonomous agents for multi-step reasoning, tool use, and interactive recommendation.
+
+#### Instruction Alignment
 
 - Recommendation as Language Processing: A Unified Pretrain, Personalized Prompt & Predict Paradigm, RecSys, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3523227.3546767), [[CODE]](https://github.com/jeykigung/P5).
-- Diffusion Recommender Model, SIGIR, 2023. [[PDF]](https://dl.acm.org/doi/10.1145/3539618.3591663), [[CODE]](https://github.com/YiyanXu/DiffRec).
 - TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation, RecSys, 2023. [[PDF]](http://arxiv.org/abs/2305.00447), [[CODE]](https://github.com/SAI990323/TALLRec).
-- Recommender Systems with Generative Retrieval, NeurIPS, 2023. [[PDF]](http://arxiv.org/abs/2305.05065).
-- RecMind: Large Language Model Powered Agent For Recommendation, NAACL Findings, 2024. [[PDF]](https://aclanthology.org/2024.findings-naacl.271.pdf).
 - Large Language Models are Zero-Shot Rankers for Recommender Systems, ECIR, 2024. [[PDF]](https://arxiv.org/abs/2305.08845), [[CODE]](https://github.com/RUCAIBox/LLMRank).
-- Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations, ICML, 2024. [[PDF]](https://arxiv.org/pdf/2402.17152), [[CODE]](https://github.com/meta-recsys/generative-recommenders).
-- Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations, ACM TOIS, 2025. [[PDF]](https://dl.acm.org/doi/10.1145/3731446), [[CODE]](https://github.com/microsoft/RecAI/tree/main/InteRecAgent).
 - A Bi-Step Grounding Paradigm for Large Language Models in Recommendation Systems, ACM TORS, 2025. [[PDF]](https://dl.acm.org/doi/full/10.1145/3716393), [[CODE]](https://github.com/SAI990323/BIGRec).
+
+#### Generative Alignment
+
+- Diffusion Recommender Model, SIGIR, 2023. [[PDF]](https://dl.acm.org/doi/10.1145/3539618.3591663), [[CODE]](https://github.com/YiyanXu/DiffRec).
+- Recommender Systems with Generative Retrieval, NeurIPS, 2023. [[PDF]](http://arxiv.org/abs/2305.05065).
+- Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations, ICML, 2024. [[PDF]](https://arxiv.org/pdf/2402.17152), [[CODE]](https://github.com/meta-recsys/generative-recommenders).
+
+#### Agentic Alignment
+
+- RecMind: Large Language Model Powered Agent For Recommendation, NAACL Findings, 2024. [[PDF]](https://aclanthology.org/2024.findings-naacl.271.pdf).
+- Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations, ACM TOIS, 2025. [[PDF]](https://dl.acm.org/doi/10.1145/3731446), [[CODE]](https://github.com/microsoft/RecAI/tree/main/InteRecAgent).
 - MemRec: Collaborative Memory-Augmented Agentic Recommender System, ACL, 2026. [[PDF]](https://arxiv.org/abs/2601.08816), [[CODE]](https://github.com/rutgerswiselab/memrec).
 
 ## 📱On-Device Recommendation
