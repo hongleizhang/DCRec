@@ -27,7 +27,7 @@
 
 ![OCRec](figs/OCRec.svg)
 
-### Shallow Collaborative Filtering Models
+### Shallow Preference Matching Models
 >
 > Shallow collaborative filtering models focus on **learning low-rank representations** of users and items from interaction data for preference prediction, mainly via:
 > (1) ***Memory-based CF***: compute user/item similarities from historical co-interactions for neighborhood-based prediction; (2) ***Model-based CF***: factorize the interaction matrix into latent vectors with pointwise/pairwise optimization; (3) ***Content-based CF***: leverage item content or side information to build preference profiles.
@@ -73,12 +73,12 @@
 - Neural Collaborative Filtering, WWW, 2017. [[PDF]](https://arxiv.org/abs/1708.05031), [[CODE]](https://github.com/hexiangnan/neural_collaborative_filtering).
 - Deep Interest Network for Click-Through Rate Prediction, KDD, 2018. [[PDF]](https://arxiv.org/abs/1706.06978), [[CODE]](https://github.com/zhougr1993/DeepInterestNetwork).
 
-#### Sequential Modeling
+#### Sequential Encoding
 
 - Self-Attentive Sequential Recommendation, ICDM, 2018. [[PDF]](https://ieeexplore.ieee.org/abstract/document/8594844), [[CODE]](https://github.com/kang205/SASRec).
 - BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer, CIKM, 2019. [[PDF]](https://arxiv.org/abs/1904.06690), [[CODE]](https://github.com/FeiSun/BERT4Rec).
 
-#### Graph Modeling
+#### Graph Propagation
 
 - Session-Based Recommendation with Graph Neural Networks, AAAI, 2019. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/3804), [[CODE]](https://github.com/CRIPAC-DIG/SR-GNN).
 - LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/10.1145/3397271.3401063), [[CODE]](https://github.com/gusye1234/LightGCN-PyTorch).
@@ -126,17 +126,17 @@
 - Single-shot Embedding Dimension Search in Recommender System, SIGIR, 2022. [[PDF]](https://dl.acm.org/doi/epdf/10.1145/3477495.3532060).
 - Lightweight Embeddings for Graph Collaborative Filtering, SIGIR, 2024. [[PDF]](https://arxiv.org/abs/2403.18479), [[CODE]](https://github.com/xurong-liang/LEGCF).
 
+#### Structure Compression
+
+- PQ-VAE: Efficient Recommendation Using Quantized Embeddings, RecSys, 2019. [[PDF]](https://ceur-ws.org/Vol-2431/paper10.pdf).
+- TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models, MLSys, 2021. [[PDF]](https://arxiv.org/abs/2101.11714), [[CODE]](https://github.com/facebookresearch/FBTT-Embedding).
+- Compress, Cross and Scale: Multi-Level Compression Cross Networks for Efficient Scaling in Recommender Systems, 2026. [[PDF]](https://arxiv.org/pdf/2602.12041), [[CODE]](https://github.com/shishishu/MLCC).
+
 #### Knowledge Distillation
 
 - Ranking Distillation: Learning Compact Ranking Models with High Performance for Recommender System, KDD, 2018. [[PDF]](https://arxiv.org/abs/1809.07428).
 - Unbiased Knowledge Distillation for Recommendation, WSDM, 2023. [[PDF]](https://arxiv.org/abs/2211.14729), [[CODE]](https://github.com/chengang95/UnKD).
 - EKD4Rec: Ensemble Knowledge Distillation from LLM-based Models to Traditional Sequential Recommenders, WWW, 2025. [[PDF]](https://dl.acm.org/doi/10.1145/3701716.3715527).
-
-#### Model Compression
-
-- PQ-VAE: Efficient Recommendation Using Quantized Embeddings, RecSys, 2019. [[PDF]](https://ceur-ws.org/Vol-2431/paper10.pdf).
-- TT-Rec: Tensor Train Compression for Deep Learning Recommendation Models, MLSys, 2021. [[PDF]](https://arxiv.org/abs/2101.11714), [[CODE]](https://github.com/facebookresearch/FBTT-Embedding).
-- Compress, Cross and Scale: Multi-Level Compression Cross Networks for Efficient Scaling in Recommender Systems, 2026. [[PDF]](https://arxiv.org/pdf/2602.12041), [[CODE]](https://github.com/shishishu/MLCC).
 
 ### Efficient Adaptation Solutions
 >
@@ -217,7 +217,7 @@
 > Model sharing is primarily enabled by **Federated Recommendation**:
 (1) ***Foundational Exploration***: basic model and scenarios, privacy and efficiency optimization; (2) ***Personalization Enhancement***: global aggregation and local adaptation; (3) ***Advanced Integration***: cross-domain, multi-modal and foundation models.
 
-#### Foundational Exploration
+#### Foundational Fusion
 
 - Federated Collaborative Filtering for Privacy-Preserving Personalized Recommendation System, Arxiv, 2019. [[PDF]](https://arxiv.org/abs/1901.09888).
 - Federated Recommendation System via Differential Privacy, IEEE ISIT, 2020. [[PDF]](https://ieeexplore.ieee.org/abstract/document/9174297).
@@ -247,7 +247,7 @@
 - FedAU2: Attribute Unlearning for User-Level Federated Recommender Systems with Adaptive and Robust Adversarial Training, AAAI, 2026. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/39500).
 - From Transfer to Collaboration: A Federated Framework for Cross-Market Sequential Recommendation, Arxiv, 2026. [[PDF]](https://arxiv.org/abs/2604.13573).
 
-#### Personalization Enhancement
+#### Personalized Aggregation
 
 - Hierarchical Personalized Federated Learning for User Modeling, WWW, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3442381.3449926), [[CODE]](https://github.com/bigdata-ustc/hierarchical-personalized-federated-learning).
 - ReFRS: Resource-efficient Federated Recommender System for Dynamic and Diversified User Preferences, ACM TOIS, 2023. [[PDF]](https://dl.acm.org/doi/full/10.1145/3560486).
