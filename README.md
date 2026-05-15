@@ -30,13 +30,14 @@
 ### Shallow Preference Matching Models
 >
 > Shallow collaborative filtering models focus on **learning low-rank representations** of users and items from interaction data for preference prediction, mainly via:
-> (1) ***Memory-based CF***: compute user/item similarities from historical co-interactions for neighborhood-based prediction; (2) ***Model-based CF***: factorize the interaction matrix into latent vectors with pointwise/pairwise optimization; (3) ***Content-based CF***: leverage item content or side information to build preference profiles.
+> (1) ***Memory-based CF***: compute user/item similarities from historical co-interactions for neighborhood-based prediction; (2) ***Model-based CF***: factorize the interaction matrix into latent vectors with pointwise/pairwise optimization; (3) ***Content-based Filtering***: leverage item content or side information to build preference profiles.
 
 #### Memory-based CF
 
 - GroupLens: An Open Architecture for Collaborative Filtering of Netnews, ACM CSCW, 1994. [[PDF]](https://dl.acm.org/doi/10.1145/192844.192905), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - Item-based Collaborative Filtering Recommendation Algorithms, WWW, 2001. [[PDF]](https://dl.acm.org/doi/10.1145/371920.372071), [[CODE]](https://github.com/hongleizhang/RSAlgorithms).
 - FISM: Factored Item Similarity Models for Top-N Recommender Systems, KDD, 2013. [[PDF]](https://chbrown.github.io/kdd-2013-usb/kdd/p659.pdf), [[CODE]](https://github.com/hegongshan/factored_item_similarity_models).
+- Slope One Predictors for Online Rating-Based Collaborative Filtering, SDM, 2005. [[PDF]](https://arxiv.org/abs/cs/0702144).
 
 #### Model-based CF
 
@@ -51,7 +52,7 @@
 - CLiMF: Learning to Maximize Reciprocal Rank with Collaborative Less-is-More Filtering, RecSys, 2012. [[PDF]](https://dl.acm.org/doi/10.1145/2365952.2365981), [[CODE]](https://github.com/gamboviol/climf).
 - Logistic Matrix Factorization for Implicit Feedback Data, NIPS, 2014. [[PDF]](https://web.stanford.edu/~rezab/nips2014workshop/submits/logmat.pdf), [[CODE]](https://github.com/MrChrisJohnson/logistic-mf).
 
-#### Content-based CF
+#### Content-based Filtering
 
 - Syskill & Webert: Identifying interesting web sites, AAAI, 1996. [[PDF]](https://cdn.aaai.org/AAAI/1996/AAAI96-008.pdf).
 - Recommendation as Classification: Using Social and Content-Based Information in Recommendation, AAAI, 1998. [[PDF]](https://cdn.aaai.org/AAAI/1998/AAAI98-101.pdf).
@@ -75,6 +76,8 @@
 
 #### Sequential Encoding
 
+- Session-Based Recommendations with Recurrent Neural Networks, ICLR, 2016. [[PDF]](https://arxiv.org/abs/1511.06939).
+- Personalized Top-N Sequential Recommendation via Convolutional Sequence Embedding, WSDM, 2018. [[PDF]](https://dl.acm.org/doi/10.1145/3159652.3159656).
 - Self-Attentive Sequential Recommendation, ICDM, 2018. [[PDF]](https://ieeexplore.ieee.org/abstract/document/8594844), [[CODE]](https://github.com/kang205/SASRec).
 - BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer, CIKM, 2019. [[PDF]](https://arxiv.org/abs/1904.06690), [[CODE]](https://github.com/FeiSun/BERT4Rec).
 
@@ -96,6 +99,7 @@
 - TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation, RecSys, 2023. [[PDF]](http://arxiv.org/abs/2305.00447), [[CODE]](https://github.com/SAI990323/TALLRec).
 - Large Language Models are Zero-Shot Rankers for Recommender Systems, ECIR, 2024. [[PDF]](https://arxiv.org/abs/2305.08845), [[CODE]](https://github.com/RUCAIBox/LLMRank).
 - A Bi-Step Grounding Paradigm for Large Language Models in Recommendation Systems, ACM TORS, 2025. [[PDF]](https://dl.acm.org/doi/full/10.1145/3716393), [[CODE]](https://github.com/SAI990323/BIGRec).
+- Recommendation as Instruction Following: A Large Language Model Empowered Recommendation Approach, ACM TOIS, 2025. [[PDF]](https://dl.acm.org/doi/10.1145/3708882).
 
 #### Generative Alignment
 
@@ -229,7 +233,7 @@
 - Federated Recommendation System via Differential Privacy, IEEE ISIT, 2020. [[PDF]](https://ieeexplore.ieee.org/abstract/document/9174297).
 - Meta Matrix Factorization for Federated Rating Predictions, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3397271.3401081), [[CODE]](https://github.com/TempSDU/MetaMF).
 - Secure Federated Matrix Factorization, IEEE IS, 2020. [[PDF]](https://ieeexplore.ieee.org/abstract/document/9162459), [[CODE]](https://github.com/Di-Chai/FedMF).
-- FedRec: Federated Recommendation With Explicit Feedback, IEEE IS, 2020. [[PDF]](https://ieeexplore.ieee.org/abstract/document/9170754).
+- FedRec: Federated Recommendation With Explicit Feedback, IEEE IS, 2021. [[PDF]](https://ieeexplore.ieee.org/abstract/document/9170754).
 - FedFast: Going Beyond Average for Faster Training of Federated Recommender Systems, KDD, 2020. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3394486.3403176).
 - FedGNN: Federated Graph Neural Network for Privacy-Preserving Recommendation, ICML Workshop, 2021. [[PDF]](https://arxiv.org/abs/2102.04925).
 - FedRec++: Lossless Federated Recommendation with Explicit Feedback, AAAI, 2021. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/16546).
@@ -251,7 +255,6 @@
 - Rethinking Byzantine Robustness in Federated Recommendation from Sparse Aggregation Perspective, AAAI, 2025. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/33455).
 - Spattack: Subgroup Poisoning Attacks on Federated Recommender Systems, WWW, 2026. [[PDF]](https://dl.acm.org/doi/10.1145/3774904.3792552).
 - FedAU2: Attribute Unlearning for User-Level Federated Recommender Systems with Adaptive and Robust Adversarial Training, AAAI, 2026. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/39500).
-- From Transfer to Collaboration: A Federated Framework for Cross-Market Sequential Recommendation, Arxiv, 2026. [[PDF]](https://arxiv.org/abs/2604.13573).
 
 #### Personalized Aggregation
 
@@ -292,6 +295,7 @@
 - Federated Vision-Language-Recommendation with Personalized Fusion, AAAI, 2026. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/39503), [[CODE]](https://github.com/mtics/FedVLR).
 - Multimodal-enhanced Federated Recommendation: A Group-wise Fusion Approach, WWW, 2026. [[PDF]](https://dl.acm.org/doi/10.1145/3774904.3792573), [[CODE]](https://github.com/Zhangwp2420/GFMFR).
 - TransFR: Transferable Federated Recommendation with Adapter Tuning on Pre-trained Language Models, AAAI, 2026. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/40048), [[CODE]](https://github.com/hongleizhang/TransFR).
+- From Transfer to Collaboration: A Federated Framework for Cross-Market Sequential Recommendation, Arxiv, 2026. [[PDF]](https://arxiv.org/abs/2604.13573).
 
 ### Task Orchestration Mechanisms
 >
