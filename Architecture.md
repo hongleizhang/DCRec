@@ -1,13 +1,15 @@
 # Device-Cloud Personalization and Collaboration in Recommender Systems: A Systematic Survey in the Large-Model Era
 
-> **Architecture v3.1**
+> **Architecture v4.0** | **Target Venue: IEEE TKDE** | **Page Budget: ≤20 pages total (≤16 pages double-column body + ~4 pages references)**
 > OC / OD / DC 三章并列；Preliminaries 紧跟 Introduction，为三章提供统一的形式化语言与挑战分析；DCRec 不再拆分为多章，与 OC、OD 平行构成三大主体内容。
 > 八章节结构：Introduction → Preliminaries → OC → OD → DC → Evaluation → Future → Conclusion。
+> **个性化框架更新**：三种推荐范式对应三种差异化个性化——OCRec（Contextual Personalization，基于全局上下文和协同信号的个性化）、ODRec（Real-Time Personalization，基于本地实时数据的毫秒级个性化）、DCRec（Utility-Privacy-Efficiency Collaborative Personalization，在端云协同中平衡推荐效用、隐私保护与系统效率的个性化）。旧版 Dual-Loop Personalization 已替换为此三维个性化框架。
 >
 > **三条编辑规则（此版新增，所有章节修改必须遵守）**：
+>
 > 1. **单一主归属**：一篇论文只能在一个章节被作为"代表性方法"展开分析。跨维度方法通过辅助标签（如 `[Computation: Early Exit]`）在其他章节交叉引用，但正文分析不重复展开。
 > 2. **Ch4 纯 OD / 以端为主**：Ch4 只保留纯端侧或"以端为主、无显式云协同"的方法。只要存在显式云侧协同角色（云端参与训练/推理/策略下发），正文主分析就放 Ch5。
-> 3. **Ch6 必选**：按 systematic survey 的方法学标准，Evaluation & Datasets 为必选章，不做 optional 预留。篇幅紧张时缩短至 3-4 页，但结构保持完整。
+> 3. **Ch6 必选，但高度压缩**：按 systematic survey 的方法学标准，Evaluation & Datasets 为必选章。TKDE 版压缩至约 1 页双栏（三段式：指标讨论 + 数据集表格 + Benchmark Gap），不做 optional 预留。
 
 ---
 
@@ -15,8 +17,8 @@
 
 - **核心要素确认**：
   1. **Problem**: 推荐系统正从纯云架构转向端云协同智能。OC 面临延迟/隐私/成本瓶颈，OD 受限于存储/算力/协同信号。
-  2. **Taxonomy**: 提出按协同目标（collaborative objective）的三机制主分类——Computation Allocation / Model Sharing / Task Orchestration——配合明确的归属规则与辅助标签系统。Dual-Loop Personalization 作为贯穿全文的跨切面设计原则统一三种机制。
-  3. **Coverage**: 系统综述 200+ 篇文献（检索窗口 2004-2026.04，覆盖 OC 三代演进、OD 部署与适配技术、以及 DCRec 的三维协同机制。
+  2. **Taxonomy**: 提出按协同目标（collaborative objective）的三机制主分类——Computation Allocation / Model Sharing / Task Orchestration——配合明确的归属规则与辅助标签系统。三种推荐范式对应三种差异化个性化：OCRec 的 Contextual Personalization、ODRec 的 Real-Time Personalization、DCRec 的 Utility-Privacy-Efficiency Collaborative Personalization。
+  3. **Coverage**: 系统综述 200+ 篇文献（检索窗口 2004-2026.04），覆盖 OC 三代演进、OD 部署与适配技术、以及 DCRec 的三维协同机制。
   4. **Directions**: 展望 LLM 时代的前沿方向（投机解码、Federated PEFT、Agentic 协作、On-Device RAG）。
 - **关键词建议**：Device-Cloud Collaborative Recommendation, Federated Recommendation, On-Device Recommendation, Large Language Models, Personalization.
 
@@ -24,16 +26,17 @@
 
 ## 论文整体结构概览
 
-| 章节 | 定位 | 预计页数占比 |
+| 章节 | 定位 | 页数 |
 |:---|:---|:---:|
-| Ch1 Introduction | 问题引入、方法论、贡献声明 | ~14% |
-| Ch2 Preliminaries | 统一形式化语言与推荐系统独特挑战 | ~10% |
-| Ch3 On-Cloud Recommendation | ★ 主体贡献：系统性分类梳理 OC 三代演进 | ~16% |
-| Ch4 On-Device Recommendation | ★ 主体贡献：以适配为中心的 OD 分类体系 | ~14% |
-| Ch5 Device-Cloud Collaborative Recommendation | ★ 主体贡献：DCRec 范式定义、划界与机制分类 | ~22% |
-| Ch6 Evaluation & Datasets | 实验生态 | ~6% |
-| Ch7 Challenges and Future Directions | 前瞻 | ~6% |
-| Ch8 Conclusion | 总结 | ~2% |
+| Ch1 Introduction | 问题引入、方法学、贡献声明 | ~2.5 |
+| Ch2 Preliminaries | 统一形式化语言、推荐系统独特挑战、三种个性化范式 | ~1.5 |
+| Ch3 On-Cloud Recommendation | ★ 主体贡献：OC 三代演进系统化重组 | ~2.5 |
+| Ch4 On-Device Recommendation | ★ 主体贡献：OD 部署+适配分类体系 | ~2.0 |
+| Ch5 Device-Cloud Collaborative Recommendation | ★ 主体贡献：DCRec 范式定义、划界与三机制分类 | ~3.5 |
+| Ch6 Evaluation & Datasets | 实验生态 | ~1.0 |
+| Ch7 Challenges and Future Directions | 前瞻 | ~1.5 |
+| Ch8 Conclusion | 总结 | ~0.5 |
+| **Total** | | **~15.0 页正文 + ~4 页参考文献** |
 
 > **设计理念**：
 >
@@ -41,15 +44,16 @@
 > 2. **Preliminaries 紧接引言**：不再将形式化定义和挑战分析局限于 DC 范畴。Preliminaries 提供贯穿全文的统一符号体系、推荐系统独有的三大挑战分析，以及对 OC / OD / DC 均适用的底层设计原则。OC、OD 两章的行文也会在相应位置呼应这些 Preliminaries 中的概念。
 > 3. **DCRec 不再拆分**：旧架构将 DCRec 拆为 Taxonomy + 三大机制 + Evaluation + Future 共六章，导致 DC 在章节数量上"压倒"OC/OD，但正文内容分散。新架构将 DCRec 的主体内容（定义、划界、三机制分类、代表性方法、工业实践）整合为一章，与 OC、OD 并列，突出三者同为本文核心贡献的平等地位。
 > 4. **OC 与 OD 不再是"背景"**：旧架构将 OC/OD 标记为 Background，暗示其仅为基础铺垫。新架构将这两章定位为高质量系统化重组（systematic reorganization），为新人提供完整的入门路径。最强的原创性（范式定义、划界、机制分类）保留给 Ch5。
-> 5. **Ch6 为必选章**：按 systematic survey 的方法学要求，评估生态综述为必选。篇幅紧张时可压缩至 3-4 页，但不降为 optional 或附录。
-> 6. **Ch3/Ch4 的定位**：不是弱原创，而是"高质量系统化重组"（systematic reorganization）。措辞用 `new organizing lens` / `systematic taxonomy`，但最强的原创性（范式定义、划界、机制分类）保留给 Ch5。这样既能保护贡献感，又不会被审稿人质问 OC/OD 分类是否 novelty overclaim。
+> 5. **Ch6 为必选章，但高度精简**：按 systematic survey 的方法学要求，评估生态综述为必选。TKDE 版压缩至 1 页双栏（数据集表格 + 指标讨论 + Benchmark Gap 三段式），不做 appendix 预留。
+> 6. **Ch3/Ch4 的定位**：不是弱原创，而是"高质量系统化重组"（systematic reorganization）。措辞用 `new organizing lens` / `systematic taxonomy`，但最强的原创性（范式定义、划界、机制分类）保留给 Ch5。鉴于 TKDE 页数限制，这两章每节约写 0.7-0.8 页双栏，以代表性方法抓主干、3-4 篇 per subsection 展开。
 > 7. **Introduction 中显式声明** "Chapters 3-5 form the core contributions, with Ch3-4 providing systematic reorganizations of established paradigms and Ch5 formally defining the emerging DCRec paradigm" 作为叙事锚点。
+> 8. **TKDE 页数策略**：正文 15 页双栏 + 参考文献 4 页 = 19 页（留 1 页 buffer）。正文中图表占用约 3-4 页，纯文字 11-12 页约 9000-10000 词。每章写作务必控制在该页数预算内，超出部分移入 Appendix（arXiv 版本保留完整细节，TKDE 版本精简）。
 
 ---
 
 ## Chapter 1. Introduction
 
-> **目标**：8-10 页，交代推荐系统背景、与已有综述的定位差异、OC/OD 瓶颈、DC 范式动机、本文三元并列的贡献概览、Contributions 列表、全文组织结构。
+> **目标**：~2.5 页双栏（约 2000 词 + 1 图），交代推荐系统背景、与已有综述的定位差异、OC/OD 瓶颈、DC 范式动机、本文三元并列的贡献概览、Contributions 列表、全文组织结构。注：Coverage Map 对比表占用约 1/4 页，需预留空间。
 
 ### 1.1 Scope, Related Surveys, and Survey Methodology
 
@@ -167,7 +171,7 @@
 
 ## Chapter 2. Preliminaries
 
-> **目标**：7-8 页。为全文建立统一的形式化语言、定义推荐系统区别于 CV/NLP 的独特挑战，并引入贯穿 OC/OD/DC 三章的共同设计原则。本章是所有后续章节的概念基础——Ch3-5 将反复引用此处的符号、定义与挑战。
+> **目标**：~1.5 页双栏（约 1200 词 + 1 矩阵表）。为全文建立统一的形式化语言、定义推荐系统区别于 CV/NLP 的独特挑战，并引入 OC/OD/DC 三种个性化范式。本章是所有后续章节的概念基础——Ch3-5 将反复引用此处的符号、定义与挑战。
 >
 > **设计理念**：
 >
@@ -247,19 +251,36 @@
     2. 它解释了为什么 OD 需要轻量化技术（因为 Embedding 瓶颈最突出），为什么 DC 需要三维联动（因为没有单一机制能同时覆盖全部挑战的三列全 ●），以及为什么 OC 的演进史实质上是不断升级基础设施以应对 Embedding 规模与用户并发量的历史。
     3. DC 是唯一在三个挑战维度都面临系统级约束的范式——这正是它需要 Computation + Model + Task 三维机制的根本原因。
 
-### 2.3 Dual-Loop Personalization: A Cross-Cutting Design Principle
+### 2.3 Personalization Paradigms Across OC, OD, and DC
 
-> 双循环个性化（Dual-Loop Personalization）是理解推荐系统从纯云到端云协同演进的概念透镜。它不仅出现在 DC 中，其雏形在 OC 和 OD 中也有体现。
+> 个性化是推荐系统的核心目标，但在三种范式中的实现方式有本质差异。我们按个性化所依赖的核心资源将其区分为三种类型——Contextual、Real-Time、Collaborative——分别对应 OC、OD、DC 三大范式。
 
 - **写作要点**：
-  - **慢循环（Slow Loop）**：基于全局/历史数据，小时至天级更新周期。提供全局协同信号、海量候选粗筛、跨用户泛化知识。
-  - **快循环（Fast Loop）**：基于本地/实时数据，秒至分钟级更新周期。提供本地微调、实时上下文感知、隐私敏感特征消费。
-  - **双循环在三种范式中的不同表现**：
-    - 在 **OC（纯云）** 中，双循环体现为"离线训练 + 在线推理"的分时架构——模型离线全量训练（Slow），在线仅做轻量推理（Fast）。这种模式下的"快循环"仅做特征拼接与前向传播，不做模型更新，因此无法实时适应用户兴趣漂移。
-    - 在 **OD（纯端）** 中，双循环是缺失的——端侧仅有快循环（本地实时适应），缺乏慢循环提供的全局协同信号与跨用户泛化知识。
-    - 在 **DC** 中，双循环获得其最完整的形态：云侧 Slow Loop 与端侧 Fast Loop 各有专属数据、专属模型与专属更新频率，通过协同机制交换信息。这正是 DCRec 相比纯云和纯端的核心优势。
-  - **个性化强度的可调性**：设端侧自适应深度为 $d_{\text{local}}$，云端干预频率为 $f_{\text{cloud}}$，则个性化强度 $P = f(d_{\text{local}}, f_{\text{cloud}}^{-1})$。DCRec 相比纯 OC 或纯 OD 的核心优势在于 $P$ 可动态调节——兴趣稳定时增大 $f_{\text{cloud}}$ 依赖全局知识，兴趣漂移时增大 $d_{\text{local}}$ 强化实时适应。
-   - **配图建议**：双循环示意图，标注 Slow Loop 与 Fast Loop 在 OC / OD / DC 中的不同信息流类型与更新频率。
+
+  - **Contextual Personalization（OCRec，上下文个性化）**：
+    - 核心资源：全局交互历史 + 跨用户协同信号 + 物品内容/语义知识。
+    - 个性化方式：在全局数据上训练统一模型，用户的个性化表示通过其历史交互在全局 Embedding 空间中被编码。个性化是"从全局信号中推导出的个体差异"，而非针对单个用户的独立优化。
+    - 核心优势：受益于海量数据和强表达能力，能捕获长尾兴趣和深层语义关联。
+    - 核心局限：离线训练 + 在线推理的分时架构导致个性化响应滞后（分钟至小时级），无法捕捉秒级兴趣漂移；隐私数据集中在云端。
+    - 实例化形式：User Embedding / 用户历史序列作为全局模型输入 → 全局模型输出个性化排序。
+
+  - **Real-Time Personalization（ODRec，实时个性化）**：
+    - 核心资源：本地实时行为流 + 端侧传感器上下文 + 零网络延迟决策。
+    - 个性化方式：端侧模型以用户本地数据为唯一优化目标，每次交互后毫秒级更新表征。个性化是"针对单一用户的持续在线适应"，不存在"被全局平均化"的问题。
+    - 核心优势：零延迟推理与模型更新、数据绝对隐私、离线可用。
+    - 核心局限：缺乏跨用户协同信号（信息茧房）、模型容量受设备严格限制、候选空间局限于端侧缓存。
+    - 实例化形式：本地模型 $θ_u$ 仅从 $D_u^{\text{local}}$ 学习 → 纯端侧推理与更新。
+
+  - **Utility-Privacy-Efficiency Collaborative Personalization（DCRec，协同个性化）**：
+    - 核心资源：云端全局知识 + 端侧实时上下文，通过协同机制动态组合。
+    - 个性化方式：将个性化拆分为云侧与端侧两个可协同的子问题——云侧负责"全局理解"（Contextual 的基础），端侧负责"实时响应"（Real-Time 的基础），通过 Computation / Model / Task 三类协同机制在二者之间建立信息桥梁。个性化强度 $P$ 由端侧自适应深度 $d_{\text{local}}$ 与云端干预频率 $f_{\text{cloud}}$ 共同决定。
+    - 核心优势：$P$ 可动态调节——兴趣稳定时增大 $f_{\text{cloud}}$ 依赖全局上下文，兴趣漂移时增大 $d_{\text{local}}$ 强化实时适应。隐私预算 $\epsilon$、通信预算 $B$、延迟预算 $T$ 作为三维约束共同界定个性化可行域。
+    - 核心局限：协同机制引入额外的通信开销与系统复杂度；个性化质量高度依赖协同协议的设计。
+    - 实例化形式：云侧模型 $\Phi$ 端侧模型 $\{\theta_u\}$ 通过协同协议交换信息 → 联合优化的个性化。
+
+  - **三种个性化的关系**：Contextual Personalization 和 Real-Time Personalization 分别是 Collaborative Personalization 的两个极端特例——当端侧贡献降为零时 DCRec 退化为 OC，当云端贡献降为零时 DCRec 退化为 OD。三种个性化构成一个连续谱，DCRec 的价值在于提供了在谱上任意位置定制个性化方案的能力。
+
+  - **配图建议**：三维个性化对比表，列出 Contextual / Real-Time / Collaborative 在核心资源、响应延迟、隐私水平、协同信号覆盖四个维度的定性对比。
 
 ### 2.4 Chapter Summary and Usage Guide for Subsequent Chapters
 
@@ -267,31 +288,30 @@
 
 - **Ch3（OC）回钩点**：
   - §3.1-3.3 每代结尾标注该代际主要应对 Ch2.2.4 交叉矩阵中的哪些挑战（如 Shallow CF 的 Embedding 瓶颈较轻，Deep 和 Large Semantic 时代 Embedding 规模成为驱动分布式存储的关键因素 → Ch2.2.2）。
-  - §3.4 章末回归 Ch2.3 的 Dual-Loop：OC 仅实现了 Slow Loop，Fast Loop 的缺失是其核心局限。
+  - §3.4 章末回归 Ch2.3 的 Contextual Personalization：OC 擅长基于全局上下文的个性化，但缺乏实时响应能力是其核心局限。
 
 - **Ch4（OD）回钩点**：
   - §4.1 开头显式标注 OD 面临的三大约束分别对应 Ch2.2 的哪项挑战（存储约束 → Embedding-Centric，算力约束 → Embedding-Centric + Massively Distributed，协同缺失 → Data Heterogeneity 的正反面）。
   - §4.2 在讨论各路适配方案时，标注其优化目标在 Ch2.2.4 矩阵中的位置。
-  - §4.3 章末回归 Ch2.3 的 Dual-Loop：OD 仅实现了 Fast Loop，Slow Loop 的缺失是其核心局限。
+  - §4.3 章末回归 Ch2.3 的 Real-Time Personalization：OD 擅长基于本地数据的实时个性化，但缺乏全局协同信号是其核心局限。
 
 - **Ch5（DC）回钩点**：
   - §5.1 形式化定义直接引用 Ch2.1 的联合优化框架，并标注 DCRec 的特化形式。
   - §5.2 分类框架显式引用 Ch2.2.4 的 DC 列，说明三个主分类各应对哪些挑战。
-  - §5.3-5.5 每节开头标注该机制的 Dual-Loop 实例化形式（引用 Ch2.3）。
+  - §5.3-5.5 每节开头标注该机制的 Collaborative Personalization 实例化形式（引用 Ch2.3），说明该机制如何结合 Contextual 与 Real-Time 的个人化资源达成协同个性化。
   - §5.6 章末回归 Ch2.2.4 矩阵：DC 是唯一能在三列全 ● 的范式，三维机制协同是其必然选择。
 
 ---
 
 ## Chapter 3. On-Cloud Recommendation
 
-> **目标**：12-14 页。对云侧推荐系统近三十年技术演进进行系统化重组，按三大技术代际组织，每代内部按技术范式做子分类。本章的核心价值在于提供了一个 **new organizing lens**——将分散的 OC 文献纳入统一的三代-子分类框架，使新人能够快速建立完整的认知路径。
+> **目标**：~2.5 页双栏（约 2000 词 + 1 三代表）。对云侧推荐系统近三十年技术演进进行系统化重组，按三大技术代际组织，每代内部按技术范式做子分类。TKDE 版每子节约 200-300 词覆盖 3-4 篇代表性工作，以设计思想驱动而非方法罗列。
 >
 > **写作原则**：
 >
-> - 每节首先定义该代际的核心建模范式与优化目标，再按子类逐一展开代表性工作。
-> - 每代结尾设"优势与局限"小结，提炼设计思想而非堆砌方法名。在此处显式标注该代际主要应对 Ch2.2.4 交叉矩阵中的哪些挑战，以及 Embedding 规模增长如何驱动技术代际跃迁（回钩 Ch2.2.2）。
-> - 始终从"这对端云协同意味着什么"的视角反观（回钩 Ch2.3 Dual-Loop），但不过度展开（DC 分析集中在 Ch5）。
-> - §3.4 章末回归 Ch2.3 的 Dual-Loop：OC 仅实现了 Slow Loop，Fast Loop 的缺失是其核心局限。
+> - 每代1段总起（建模范式与优化目标），子类每类压缩至 2-3 句代表工作 + 1 句 DC 关联，不再展开个人方法细节。3.1-3.3 各约 0.6-0.7 页双栏。
+> - 每代结尾用 1-2 句标注应对哪些挑战（回钩 Ch2.2.4）及 Embedding 规模增长驱动。
+> - §3.4 章末 3-4 句回归 Contextual Personalization（Ch2.3）：OC 核心局限是离线训练-在线推理分时架构无法实现实时个性化响应。
 
 | 维度 | Shallow CF (1994-2014) | Deep Representation (2015-2022) | Large Semantic (2022-2026) |
 |:---|:---|:---|:---|
@@ -304,7 +324,7 @@
 
 ![OCRec](figs/OCRec.svg)
 
-### 3.1 Shallow Collaborative Filtering Models
+### 3.1 Shallow Preference Matching Models
 
 > 浅层协同过滤的核心在于利用用户-物品交互矩阵，通过统计学习方法挖掘潜在偏好模式。按建模范式分为三类：基于记忆的启发式方法、基于模型的学习方法和基于内容的方法。
 
@@ -323,7 +343,7 @@
   - MF/PMF/BPR/SVD++：将 User-Item 矩阵分解为低维 Latent Vectors。
   - 核心思想：用 Embedding 捕获用户偏好与物品属性的潜在模式。
   - FM（Factorization Machines）：扩展至任意特征交互，成为 CTR 预估的基础组件。
-  - 代表工作：PMF (2007), SVD++ (2008), BPR (2009), FM (2010), Logistic MF (2014)。
+  - 代表工作：PMF (2007), SVD++ (2008), WRMF (2008), BPR (2009), MF (2009), FM (2010), CLiMF (2012), Logistic MF (2014)。
   - 优势：良好的泛化能力、相对紧凑的表示。局限：线性交互能力有限、难以建模时序与高阶特征。
   - 与 DC 的关联：MF 的低维 Embedding 天然适合分布式存储与通信。Federated MF 是最早的 DC 实践形态之一。
 
@@ -331,7 +351,7 @@
 
 - **写作要点**：
   - 利用物品内容或辅助信息构建用户偏好画像。
-  - 代表工作：Syskill & Webert (1996), Content-Based Recommendation (1998)。
+  - 代表工作：Syskill & Webert (1996), Recommendation as Classification (1998)。
   - 与 DC 的关联：内容特征作为"端云公共信息"的原始雏形——物品属性可以在云端和端侧同时访问，不受隐私限制。
 
 #### 3.1.4 Summary: What Shallow Models Established
@@ -341,31 +361,30 @@
 
 ### 3.2 Deep Representation Learning Models
 
-> 深度表征学习标志着推荐从线性模型向非线性表示学习的跃迁。按神经网络架构的技术范式分为三类：特征交互、序列建模和图建模。
+> 深度表征学习标志着推荐从线性模型向非线性表示学习的跃迁。按神经网络架构的技术范式分为三类：特征交互、序列编码和图传播。
 
 #### 3.2.1 Feature Interaction
 
 - **写作要点**：
   - 用神经网络替代 MF 内积，建模非线性特征交互。
   - 工业里程碑：YouTube DNN（召回+精排双塔架构）、Wide&Deep（记忆+泛化）。
-  - 代表工作：RBM-CF (2007), YouTube DNN (2016), Wide&Deep (2016), DeepFM (2017), NCF (2017), DIN (2018)。
+  - 代表工作：RBM (2007), DeepMusic (2013), CDL (2015), VBPR (2016), YouTube DNN (2016), Wide&Deep (2016), DeepFM (2017), NCF (2017), DIN (2018)。
   - 优势：端到端学习，自动特征交叉。局限：参数规模显著增长，单一路径的特征交互缺乏结构归纳偏置。
   - 与 DC 的关联：深度模型参数规模使传输/更新/部署成本成为 DC 的实际瓶颈。
 
-#### 3.2.2 Sequential Modeling
+#### 3.2.2 Sequential Encoding
 
 - **写作要点**：
   - 从"静态偏好"到"动态意图"的范式转换。
-  - 核心创新：用自注意力/Transformer 捕捉行为序列中的时序依赖。
-  - 代表工作：SASRec (2018), BERT4Rec (2019), SR-GNN (2019)。
-  - 与 DC 的关联：序列建模的实时性刚需天然适合端侧部署（行为序列在本地最完整），但模型复杂度与 Embedding 规模需要云端支持——这构成了 DC 中"端侧序列+云端候选"的自然分工。
+  - 核心创新：用自注意力/Transformer 捕捉行为序列中的时序依赖。早期 RNN/CNN 方法（GRU4Rec, Caser）奠定了序列化建模基础，SASRec 和 BERT4Rec 将自注意力引入推荐序列建模。
+  - 代表工作：GRU4Rec (2016), Caser (2018), SASRec (2018), BERT4Rec (2019)。
+  - 与 DC 的关联：序列编码的实时性刚需天然适合端侧部署（行为序列在本地最完整），但模型复杂度与 Embedding 规模需要云端支持——这构成了 DC 中"端侧序列+云端候选"的自然分工。
 
-#### 3.2.3 Graph Modeling
+#### 3.2.3 Graph Propagation
 
 - **写作要点**：
-  - 利用 User-Item 二分图传播协同信号。高阶邻域信息的显式建模。
-  - 代表工作：PinSage (2018), NGCF (2019), LightGCN (2020), SGL (2021), LT-OCF (2021)。
-  - 优势：超越直接交互的协同信号发现。LightGCN 通过去除非线性激活证明图推荐的本质在于邻域聚合本身。
+  - 利用 User-Item 二分图传播协同信号。高阶邻域信息的显式建模。SR-GNN 开创了图神经网络在会话推荐中的应用，LightGCN 通过去除非线性激活证明图推荐的本质在于邻域聚合本身。
+  - 代表工作：SR-GNN (2019), LightGCN (2020), SGL (2021), LT-OCF (2021)。
   - 局限：图结构依赖全局数据，天然与端侧隔离矛盾。
   - 与 DC 的关联：Decentralized GNN 工作尝试将全局图分解为 Ego-graph 子图在端侧运行，是 DC 中"图分解"思路的起源。
 
@@ -412,36 +431,35 @@
 
 - **写作要点**：
   - OC 三十年的演进史呈现清晰的"表达能力递增、模型规模递增、推理延迟递增"的三角张力。每一代技术都在前一代的基础上突破表达能力的上限，但同时也加剧了实时性与隐私的短板。
-  - 从 DC 视角反观：OC 积累的三代技术——Shallow 的 Embedding 抽象、Deep 的序列与图建模能力、Large Semantic 的零样本泛化——构成了端云协同中"云侧能力"的完整工具箱。Ch5 中的 DC 方法正是在这个工具箱之上设计端云分工策略。
+  - 从 DC 视角反观：OC 积累的三代技术——Shallow 的 Embedding 抽象、Deep 的序列编码与图传播能力、Large Semantic 的零样本泛化——构成了端云协同中"云侧能力"的完整工具箱。Ch5 中的 DC 方法正是在这个工具箱之上设计端云分工策略。
   - 过渡句：OC 的瓶颈催生了 OD 的发展——端侧能否接管部分推荐任务，解决延迟与隐私问题？
 
 ---
 
 ## Chapter 4. On-Device Recommendation
 
-> **目标**：10-12 页。对端侧推荐技术进行系统化重组，按"部署（把模型装进设备）→ 适配（让模型在设备上持续进化）"两阶段组织。本章的核心价值在于提供了一个 **systematic reorganization**——将端侧适配按优化目标细分为 Privacy / Latency / Resource 三个维度，为新人提供清晰的 OD 分类框架。
+> **目标**：~2.0 页双栏（约 1600 词 + 1 分类图）。对端侧推荐技术进行系统化重组，按"部署（把模型装进设备）→ 适配（让模型在设备上持续进化）"两阶段组织，适配阶段按优化目标细分为 Privacy / Latency / Resource 三个维度。
 >
 > **写作原则**：
 >
-> - Embedding 表是贯穿全章的核心瓶颈，需反复强调（回钩 Ch2.2.2）。
-> - §4.1 开头显式标注 OD 面临的三大约束分别对应 Ch2 的哪项挑战：存储约束 → Embedding-Centric（Ch2.2.2），算力约束 → Embedding-Centric + Massively Distributed（Ch2.2.3），协同信号缺失 → Data Heterogeneity 的反面（Ch2.2.1）。
-> - 每节小结优势/局限与 DC 关联，为 Ch5 铺设动机。
-> - **边界纪律**：Ch4 只保留纯 OD 或以端为主、无显式云协同的方法。只要存在显式云侧协同角色（云端参与训练/推理/策略下发），正文主分析就放 Ch5。Ch4 中仅在章末以一到两句过渡提及这些桥接方法。
-> - §4.3 章末回归 Ch2.3 的 Dual-Loop：OD 仅实现了 Fast Loop，Slow Loop 的缺失是其核心局限。
+> - §4.1 开头 1-2 句标注三大约束对应的挑战（回钩 Ch2.2.2-2.2.3），Embedding 瓶颈贯穿全章。
+> - 每子类 2-3 篇代表方法 + 1 句 DC 关联，不展开方法细节。
+> - **边界纪律**：Ch4 只保留纯 OD 或以端为主、无显式云协同的方法。有显式云协同的放 Ch5。
+> - §4.3 章末 3-4 句回归 Real-Time Personalization（Ch2.3）：OD 核心局限是缺乏全局协同信号。
 
-| 维度 | Embedding Slimming | Knowledge Distillation | Model Compression | Privacy Adapt. | Latency Adapt. | Resource Adapt. |
+| 维度 | Embedding Slimming | Structure Compression | Knowledge Distillation | Privacy Adapt. | Latency Adapt. | Resource Adapt. |
 |:---|:---|:---|:---|:---|:---|:---|
-| 目标 | 缩减 Embedding 体积 | 保留教师模型质量 | 压缩全模型 | 数据不出设备 | 纯端侧低延迟推理 | 弹性适配硬件 |
-| 技术手段 | 混合维度/组合 Hash/无表生成 | Ranking/Unbiased/LLM→Small | 量化/张量分解/跨层 | 纯本地/去中心化/遗忘 | 轻量架构/实时追踪/预取 | 弹性 Embedding/按需通信 |
-| 压缩率 | 10-100× | 5-50× (参数) | 4-32× | N/A | N/A | 动态 |
-| 精度代价 | 中 | 低-中 | 中-高 | 高（缺协同） | 中 | 中 |
-| 与 DC 的边界 | 云托管全量表+按需下发 | 云侧教师→端侧学生 | 云指导压缩策略 | 纯端→需去中心化协同 | 端侧为主；引入云协同 → Ch5 | 云弹性配置 |
+| 目标 | 缩减 Embedding 体积 | 量化/分解/跨层压缩 | 保留教师模型质量 | 数据不出设备 | 纯端侧低延迟推理 | 弹性适配硬件 |
+| 技术手段 | 混合维度/组合 Hash/无表生成 | 量化/张量分解/跨层 | Ranking/Unbiased/LLM→Small | 纯本地/去中心化/遗忘 | 轻量架构/实时追踪/预取 | 弹性 Embedding/按需通信 |
+| 压缩率 | 10-100× | 4-32× | 5-50× (参数) | N/A | N/A | 动态 |
+| 精度代价 | 中 | 中-高 | 低-中 | 高（缺协同） | 中 | 中 |
+| 与 DC 的边界 | 云托管全量表+按需下发 | 云指导压缩策略 | 云侧教师→端侧学生 | 纯端→需去中心化协同 | 端侧为主；引入云协同 → Ch5 | 云弹性配置 |
 
 ![ODRec](figs/ODRec.svg)
 
 ### 4.1 General Lightweight Methods: Deployable Inference
 
-> **章节引言**：核心问题——如何将一个已经训练好的推荐模型"瘦身"到可以在端侧设备上以可接受的延迟和功耗运行？答案分三条路线：压缩 Embedding、知识蒸馏、模型压缩。
+> **章节引言**：核心问题——如何将一个已经训练好的推荐模型"瘦身"到可以在端侧设备上以可接受的延迟和功耗运行？答案分三条路线：压缩 Embedding、结构压缩、知识蒸馏。
 
 #### 4.1.1 Embedding Slimming
 
@@ -454,18 +472,7 @@
   - 代表工作：Compositional Embeddings (2020), Learnable Embedding Sizes (2021), No Embedding Table (2021), SSEDS (2022), LEGCF (2024)。
   - 与 DC 的关联：端侧不需要存储全量 Embedding → 云侧托管完整表并按需下发子集。
 
-#### 4.1.2 Knowledge Distillation
-
-- **写作要点**：
-  - 问题定义：如何在模型大幅缩小的前提下，尽可能保留原始大模型的排序/推荐质量？
-  - 技术路线：
-    1. **Ranking Distillation**：从大模型（教师）的完整排序列表中学习。
-    2. **Unbiased Distillation**：解决蒸馏过程中的曝光偏差问题。
-    3. **LLM→Small Model Distillation**（EKD4Rec）：从 LLM 蒸馏知识到传统小推荐模型。
-  - 代表工作：Ranking Distillation (2018), Unbiased KD (2023), EKD4Rec (2025)。
-  - 与 DC 的关联：KD 是 DC 中最自然的"知识传输"机制——云侧教师模型持续产出软标签，端侧学生模型实时消费并适配。
-
-#### 4.1.3 Model Compression
+#### 4.1.2 Structure Compression
 
 - **写作要点**：
   - 问题定义：除了 Embedding，推荐模型的其他部分（特征交互层、排序网络）如何压缩？
@@ -475,6 +482,17 @@
     3. **跨层压缩**（MLCC）：Embedding + 特征交互 + 输出层的协同优化。
   - 代表工作：PQ-VAE (2019), TT-Rec (2021), MLCC (2026)。
   - 与 DC 的关联：压缩后的小模型是端侧推理的"引擎"，但压缩策略可能需要云端的全局统计指导。
+
+#### 4.1.3 Knowledge Distillation
+
+- **写作要点**：
+  - 问题定义：如何在模型大幅缩小的前提下，尽可能保留原始大模型的排序/推荐质量？
+  - 技术路线：
+    1. **Ranking Distillation**：从大模型（教师）的完整排序列表中学习。
+    2. **Unbiased Distillation**：解决蒸馏过程中的曝光偏差问题。
+    3. **LLM→Small Model Distillation**（EKD4Rec）：从 LLM 蒸馏知识到传统小推荐模型。
+  - 代表工作：Ranking Distillation (2018), Unbiased KD (2023), EKD4Rec (2025)。
+  - 与 DC 的关联：KD 是 DC 中最自然的"知识传输"机制——云侧教师模型持续产出软标签，端侧学生模型实时消费并适配。
 
 #### 4.1.4 Summary of General Lightweight Methods
 
@@ -542,14 +560,14 @@
 
 ## Chapter 5. Device-Cloud Collaborative Recommendation
 
-> **目标**：16-18 页。DC 部分的主体，不再拆分为多章。包含 DCRec 的范式定义、三机制分类法，以及三大机制的综述。这是全文篇幅最长的章节，承载了 DCRec 的"定义、划界、分类、展望"四大功能。也是本文**最强原创性**的所在——首次将 DCRec 作为独立范式进行形式化定义，并提出互斥的三机制主分类。
+> **目标**：~3.5 页双栏（约 2800 词 + 2 图/表）。DC 部分的主体，不再拆分为多章。包含 DCRec 的范式定义、三机制分类法，以及三大机制的综述。这是全文篇幅最长的章节，承载了 DCRec 的"定义、划界、分类、展望"四大功能。也是本文**最强原创性**的所在——首次将 DCRec 作为独立范式进行形式化定义，并提出互斥的三机制主分类。TKDE 版大幅精简：5.1-5.2 约 0.7 页，三大机制各约 0.8-1.0 页。
 >
 > **写作原则**：
 >
 > - 从"范式定义"开始（直接引用 Ch2.1 的联合优化框架，标注 DCRec 的特化形式），让不熟悉 DC 的读者在进入方法综述前先建立清晰的边界认知。
 > - 分类框架（5.2）是三机制综述的导航图。此处的 `Mechanism × Challenge` 矩阵（5.2.5）需显式引用 Ch2.2.4 的 DC 列，说明三个主分类各应对哪些挑战。
-> - 三大机制（5.3-5.5）每节开头标注该机制的 Dual-Loop 实例化形式（引用 Ch2.3）和主要应对的挑战（引用 Ch2.2.4）。
-> - 三大机制大幅精简，每节约 4-5 页，以代表性方法与关键设计思想为主，不再逐篇展开。
+> - 三大机制（5.3-5.5）每节开头标注该机制的 Collaborative Personalization 实例化形式（引用 Ch2.3）和主要应对的挑战（引用 Ch2.2.4）。
+> - 三大机制各约 0.8-1.0 页双栏，以代表性方法与关键设计思想为主，不再逐篇展开。TKDE 版每机制精选 5-8 篇代表性工作，完整列表见 README。
 > - **边界纪律**：跨维度方法（如 EdgeRec、Meta Controller、MPDA）以 Ch5 为主归属章节，不在 Ch4 中重复展开。在 Ch5 内部的跨机制引用通过辅助标签（如 `[Computation: Early Exit]`）处理，不在多个节重复作为代表性方法分析。
 > - §5.6 章末回归 Ch2.2.4 矩阵：DC 是唯一在三个挑战维度都面临系统级约束的范式——这正是它需要 Computation + Model + Task 三维机制的根本原因。
 
@@ -569,14 +587,14 @@
 
 > **设计原则**：DCRec 方法的**本质差异不在于用了什么技术，而在于协作机制主要优化什么目标**。因此我们按每个方法的 **primary optimization objective** 将 DCRec 方法分为三个互斥的主分类。
 >
-> **与 Ch2 挑战的映射**：三个主分类分别从不同层面回应 Ch2.3 中定义的 DC 三大系统级挑战——Computation Allocation 从基础设施层解决异构算力的分配问题，Model Sharing 从知识层解决数据异质性下的协同学习问题，Task Orchestration 从应用层解决海量设备下的任务调度问题。
+> **与 Ch2 挑战的映射**：三个主分类分别从不同层面回应 Ch2.2 中定义的三大系统级挑战——Computation Allocation 从基础设施层解决异构算力的分配问题，Model Sharing 从知识层解决数据异质性下的协同学习问题，Task Orchestration 从应用层解决海量设备下的任务调度问题。三种机制各对应 Ch2.3 的 Collaborative Personalization 的不同侧重维度。
 
 #### 5.2.1 Computation Allocation Mechanisms (5.3)
 
 - **核心优化目标**：训练/推理的计算负载在端云之间的**格局**（topology）与**节奏**（synchronization）。核心问题是"谁来维护推荐知识的全局一致性，以及计算任务如何据此分配"。
 - **两个子类**（按全局知识的治理方式区分）：
   1. **Coordinated Parallelism**（5.3.1）：由一个显式的中心协调者（Parameter Server / Master / Pipeline Scheduler）维护统一的全局模型状态；Workers 执行数据并行、模型并行或流水线并行子任务并向协调者汇报。核心挑战在于同步约束下的通信-效率权衡。
-  2. **Emergent Collaboration**（5.3.2）：无中心权威节点，推荐知识通过 Peer-to-Peer 交互（Gossip、共识算法、区块链协调）在节点间扩散涌现。每个节点维护本地模型，全局知识从局部交换中涌现。核心挑战在于数据异质性和部分信息条件下的收敛。
+  2. **Decentralized Partitioning**（5.3.2）：无中心权威节点，推荐知识通过 Peer-to-Peer 交互（Gossip、共识算法、区块链协调）在节点间扩散涌现。每个节点维护本地模型，全局知识从局部交换中涌现。核心挑战在于数据异质性和部分信息条件下的收敛。
 - **归属判定**：如果论文的主要贡献是设计新的分布式拓扑/同步协议、Pipeline 调度策略或 Peer-to-Peer 协同收敛协议，则归入此类。
 
 #### 5.2.2 Model Sharing Mechanisms (5.4)
@@ -589,9 +607,9 @@
 
 - **核心优化目标**：推荐流水线中端云之间的**任务级分工**——云端构建/指导/协同端侧执行推荐子任务。核心问题是"云和端在推荐流水线中各自承担什么角色，以及何时、以何种方式交互"。
 - **三个子类**（按云侧介入时机与方式区分）：
-  1. **Model Generation**（5.5.1）：云端**离线**为端侧构建定制化模型——生成个性化参数或架构规格，端侧使用云构建的模型独立推理，部署后不再依赖云端实时信号。
-  2. **Knowledge Guidance**（5.5.2）：云端在端侧模型**部署期间**持续提供监督信号（软标签、域校正、语义校准），引导端侧模型适应本地数据。云端不替代端侧推理，只提供知识层面的纠正信号。
-  3. **Inference Collaboration**（5.5.3）：云端和端侧在**推理时刻**联合分解并执行推荐流水线中的互补子任务——云端承担重语义推理/候选检索，端侧执行响应式个性化重排。
+  1. **Module Scheduling**（5.5.1）：云端**离线**为端侧构建定制化模型——生成个性化参数或架构规格，端侧使用云构建的模型独立推理，部署后不再依赖云端实时信号。
+  2. **Knowledge Routing**（5.5.2）：云端在端侧模型**部署期间**持续提供监督信号（软标签、域校正、语义校准），引导端侧模型适应本地数据。云端不替代端侧推理，只提供知识层面的纠正信号。
+  3. **Inference Dispatching**（5.5.3）：云端和端侧在**推理时刻**联合分解并执行推荐流水线中的互补子任务——云端承担重语义推理/候选检索，端侧执行响应式个性化重排。
 - **归属判定**：如果论文的主要贡献是设计端云任务级分工协议、动态触发机制、或协同推理的交互接口，则归入此类。
 
 #### 5.2.4 Multi-Dimensional Methods and Placement Rules
@@ -599,14 +617,14 @@
 > 部分方法天然跨多个维度。我们按以下规则做仲裁：
 
 - **仲裁规则 1（核心创新优先）**：以核心创新点所在的维度为准。
-  - Meta Controller 的核心创新在于"云端持续监控端侧质量并触发知识纠正"→ **归入 Task: Knowledge Guidance**（5.5.2），而非 Computation。
-  - EdgeRec 的核心创新在于"端侧实时重排的完整流水线设计"→ **归入 Task: Inference Collaboration**（5.5.3），而非 Computation。
-  - DUET 的核心创新在于"云端离线生成端侧模型参数"→ **归入 Task: Model Generation**（5.5.1），而非 Model Sharing。
+  - Meta Controller 的核心创新在于"云端持续监控端侧质量并触发知识纠正"→ **归入 Task: Knowledge Routing**（5.5.2），而非 Computation。
+  - EdgeRec 的核心创新在于"端侧实时重排的完整流水线设计"→ **归入 Task: Inference Dispatching**（5.5.3），而非 Computation。
+  - DUET 的核心创新在于"云端离线生成端侧模型参数"→ **归入 Task: Module Scheduling**（5.5.1），而非 Model Sharing。
 - **仲裁规则 2（同类边界案例统一裁定）**：
   - EdgeRec / MC2-SF 的 Slow-Fast 架构模式：其分布式计算拓扑的讨论在 Comp: Coordinated Parallelism（5.3.1）中交叉引用，但完整的流水线分析在 Task (5.5)。
-  - LLM-SLM 协同（LSC4Rec, CDA4Rec）：调度协议归入 Task: Inference Collaboration（5.5.3），LLM 的知识融合方面在 Model (5.4.3) 中交叉引用。
+  - LLM-SLM 协同（LSC4Rec, CDA4Rec）：调度协议归入 Task: Inference Dispatching（5.5.3），LLM 的知识融合方面在 Model (5.4.3) 中交叉引用。
   - Federated + Task 交叉方法（如 FedRec 框架下的个性化部署策略）：主体按核心贡献归属 Model Sharing (5.4)，部署层面在 Task (5.5) 交叉引用。
-- **辅助标签系统**：每个跨维度方法标注 `[Computation: Coordinated]` / `[Task: Model Gen]` 等标签，方便研究者按交叉维度检索。
+- **辅助标签系统**：每个跨维度方法标注 `[Computation: Coordinated]` / `[Task: Module Sched]` 等标签，方便研究者按交叉维度检索。
 
 #### 5.2.5 Mechanism × Challenge Cross-Matrix
 
@@ -622,11 +640,11 @@
 
 ### 5.3 Computation Allocation Mechanisms
 
-> **目标**：4-5 页。"谁来计算"是 DC 的基础设施层问题。根据**全局推荐知识的治理方式**分为两个子类：Coordinated Parallelism（中心协调）和 Emergent Collaboration（去中心涌现）。
+> **目标**：~1.0 页双栏。DC 基础设施层——"谁来计算"。分为两个子类：Coordinated Parallelism（中心协调）和 Decentralized Partitioning（去中心化分区）。
 >
 > **与 Ch2 的衔接**：本机制主要应对 Ch2.2.4 交叉矩阵 DC 列中的计算负载分配与 Embedding 表放置问题。Coordinated 和 Emergent 分别从不同角度回应 Massively Distributed 挑战。
 >
-> **Dual-Loop 实例化**：在 Coordinated Parallelism 中，双循环表现为云端中心节点维护全局模型状态（Slow）+ Workers 执行并行子任务（Fast）；在 Emergent Collaboration 中，双循环表现为局部 Gossip 交换（Fast）+ 渐进全局一致（Slow）。
+> **Collaborative Personalization 实例化**：在 Coordinated Parallelism 中，协同个性化体现为云侧中心节点维护 Contextual 全局模型状态 + Workers 贡献局部计算并消费全局知识；在 Decentralized Partitioning 中，协同个性化体现为局部 Peer 交换（Real-Time 本地交互）+ 渐进全局一致（涌现式 Contextual 知识）。
 
 #### 5.3.1 Coordinated Parallelism
 
@@ -645,9 +663,9 @@
     | Pipeline Parallel | 模型/流水线并行 | Bounded Async | 中（分段传输） | NestPipe, Ekko |
     | Comm-Efficient | 数据并行 | 混合 | 低（压缩/量化） | CoLR-FedRec, DEST |
 
-#### 5.3.2 Emergent Collaboration
+#### 5.3.2 Decentralized Partitioning
 
-> 涌现式协同方法无需中心权威节点，推荐知识通过 Peer-to-Peer 交互在节点间扩散涌现。数据保留在源节点；每个 Peer 维护本地模型，全局推荐知识通过 Gossip 协议、共识算法或区块链协调从局部交换中涌现。核心挑战在于数据异质性和部分信息条件下的收敛。
+> 去中心化分区方法无需中心权威节点，推荐知识通过 Peer-to-Peer 交互在节点间扩散涌现。数据保留在源节点；每个 Peer 维护本地模型，全局推荐知识通过 Gossip 协议、共识算法或区块链协调从局部交换中涌现。核心挑战在于数据异质性和部分信息条件下的收敛。
 
 - **写作要点**：
   - **Gossip-Based 推荐**（PEPPER, GDSRec, Decentralized POI Rec）：节点随机选择邻居交换模型参数，通过流行病传播达到渐进一致性。天然适应设备不可靠的移动边缘网络，无单点故障风险。
@@ -662,25 +680,25 @@
     | Graph-Based | 子图扩散 | Ego-graph 邻域扩展 | Decentralized GNN, DecKG |
     | Blockchain-Based | 共识/智能合约 | 链上知识审计 | D-RecSys |
 
-  > **注**：DCL4Rec / MAC 等纯端侧去中心化方法的主体分类为 OD 隐私适配（Ch4.2.1），此处仅从计算拓扑角度交叉引用。两者边界：Emergent Collaboration 的方法仍属于 DCRec（存在显式端云或端端知识交换协议），纯 OD 的去中心化工作则以隐私保护为首要目标。
+  > **注**：DCL4Rec / MAC 等纯端侧去中心化方法的主体分类为 OD 隐私适配（Ch4.2.1），此处仅从计算拓扑角度交叉引用。两者边界：Decentralized Partitioning 的方法仍属于 DCRec（存在显式端云或端端知识交换协议），纯 OD 的去中心化工作则以隐私保护为首要目标。
 
 ### 5.4 Model Sharing Mechanisms
 
-> **目标**：5-6 页。"知识如何流动与聚合"是 DC 的知识层问题。对应旧架构 Ch6，内容大幅精简。联邦推荐（Federated Recommendation）是主要技术载体。按技术演进组织：Foundational → Personalization → Advanced Integration。
+> **目标**：~1.0 页双栏。DC 知识层——"知识如何流动与聚合"。联邦推荐（Federated Recommendation）是主要技术载体。按技术演进组织：Foundational Fusion → Personalized Aggregation → Advanced Integration。
 >
 > **与 Ch2 的衔接**：本机制主要应对 Ch2.2.4 交叉矩阵 DC 列中的 Client Drift / 数据异质性问题、Embedding 安全同步问题，以及部分参与/通信失败问题。
 >
-> **Dual-Loop 实例化**：在 Model Sharing 中，双循环表现为全局聚合（Cloud Slow Loop）与本地适应（Device Fast Loop）的迭代——FedAvg 聚合 → 端侧 Fine-Tune → 再聚合。个性化强度的调节通过端侧自适应深度 $d_{\text{local}}$ 与聚合频率 $f_{\text{aggregate}}$ 实现。
+> **Collaborative Personalization 实例化**：在 Model Sharing 中，协同个性化表现为全局聚合（Contextual 知识汇聚）与本地适应（Real-Time 微调）的迭代——FedAvg 聚合后分发全局知识 → 端侧基于本地数据个性化 → 再聚合。个性化强度的调节通过端侧自适应深度 $d_{\text{local}}$ 与聚合频率 $f_{\text{aggregate}}$ 实现。
 
-#### 5.4.1 Foundational Federated Recommendation (Foundational Exploration)
+#### 5.4.1 Foundational Fusion
 
 - **写作要点**（精简至核心脉络）：
-  - **Federated MF**（FedMF, MetaMF, LightFR）：最早、最基本的 FedRec 方案。客户端持有 User Embedding，服务端聚合 Item Embedding 梯度。隐私增强：DP 噪声 + 安全聚合。
+  - **Federated MF**（FedMF, MetaMF, LightFR, FCF, FedRec）：最早、最基本的 FedRec 方案。客户端持有 User Embedding，服务端聚合 Item Embedding 梯度。隐私增强：DP 噪声 + 安全聚合（FR-FMSS 等）。
   - **Federated Deep Models**（FedNCF, FedGNN, FedFast）：扩展到深度模型和图模型。图联邦的特殊性——缺失全局图结构需要匿名子图扩展。
-  - **隐私与安全攻防**：DP + SecAgg 基础机制；投毒攻击（PipAttack, PoisonFedDLRS）与拜占庭鲁棒性（Byzantine Robust FedRec）；模型窃取与无参数传输方案（Hide Your Model）。
+  - **隐私与安全攻防**：DP + SecAgg 基础机制；投毒攻击（PipAttack, PoisonFedDLRS）与拜占庭鲁棒性（NotOneLess, PrivFR）；模型窃取与无参数传输方案（PTF-FedRec）；联邦遗忘（FedAU2）。
   - 核心局限：个性化不足（用户被均质化）→ 推动下一阶段。
 
-#### 5.4.2 Personalization Enhancement
+#### 5.4.2 Personalized Aggregation
 
 - **写作要点**（以分类为主，精简代表工作讨论）：
   - 个性化策略分类：
@@ -695,70 +713,70 @@
 #### 5.4.3 Advanced Integration: Cross-Domain, Multi-Modal, and Foundation Models
 
 - **写作要点**（高度精简）：
-  - **跨域联邦**（FedCDR 系列）：隐私约束下利用互补的跨域用户行为。
-  - **多模态联邦**（FedVLR, GFMFR）：图像/文本特征作为"端云共享公共空间"，绕过部分隐私限制。
+  - **跨域联邦**（FedCDR, Win-Win, PFCR）：隐私约束下利用互补的跨域用户行为。
+  - **多模态联邦**（FedVLR, GFMFR, FFMSR）：图像/文本特征作为"端云共享公共空间"，绕过部分隐私限制。
   - **基础模型集成**：联邦 Adapter/Prompt 学习（FedPA, TransFR, MRFF）——冻结云端基础模型，端侧仅微调 Adapter，云端聚合轻量模块。这是 LLM 时代 FedRec 的关键范式转变：从"同步全参数"到"同步轻量适配器"。
   - **LLM 作为外部服务**（FELLAS）：LLM 提供语义增强，FedRec 框架负责个性化聚合。
 
 ### 5.5 Task Orchestration Mechanisms
 
-> **目标**：5-6 页。"端和云在推荐流水线中各自承担什么角色"是 DC 的应用层问题。根据**云侧介入时机与方式**分为三个子类：Model Generation（离线构建）、Knowledge Guidance（在线引导）、Inference Collaboration（推理协同）。这是 DCRec 中最新、最活跃的方向（大部分工作集中在 2022-2026）。
+> **目标**：~1.0 页双栏。DC 应用层——"云和端在推荐流水线中各自承担什么角色"。根据**云侧介入时机与方式**分为三个子类：Module Scheduling（离线构建）、Knowledge Routing（在线引导）、Inference Dispatching（推理协同）。TKDE 版仅以 2-3 篇代表性方法 per 子类展开。
 >
 > **与 Ch2 的衔接**：本机制主要应对 Ch2.2.4 交叉矩阵 DC 列中的 Massively Distributed Devices（设备粒度的异构任务分配），同时涉及跨场景调度的数据异质性和 Embedding 下发时机。
 >
-> **Dual-Loop 实例化**：Model Generation 的 Slow Loop 为云端离线构建，Fast Loop 为端侧独立推理；Knowledge Guidance 的 Slow Loop 为云端持续产出监督信号，Fast Loop 为端侧实时消费纠正；Inference Collaboration 中 Slow Loop 为云端重语义推理、Fast Loop 为端侧响应式重排。
+> **Collaborative Personalization 实例化**：Module Scheduling 中云侧提供 Contextual 的知识（离线构建个性化模型），端侧消费此知识进行 Real-Time 独立推理；Knowledge Routing 中云侧持续产出 Contextual 监督信号，端侧以此信号实时纠正本地个性化；Inference Dispatching 中云侧承担 Contextual 重语义推理，端侧执行 Real-Time 响应式重排。
 
-#### 5.5.1 Model Generation
+#### 5.5.1 Module Scheduling
 
-> 模型生成方法的核心特征是**云端离线为端侧构建定制化模型**——生成个性化参数或架构规格后，端侧使用云构建的模型独立推理，部署后不再依赖云端实时信号。核心挑战在于生成模型的个性化精度与通用性的平衡，以及端侧模型与云端模型的结构兼容性。
+> 模块调度方法的核心特征是**云端离线为端侧构建定制化模块**——生成个性化参数或架构规格后，端侧使用云构建的模块独立推理，部署后不再依赖云端实时信号。核心挑战在于生成模块的个性化精度与通用性的平衡，以及端侧模块与云端模块的结构兼容性。
 
 - **写作要点**：
   - **参数生成**（DUET, WWW 2023）：云端直接为端侧生成完整或部分模型参数，端侧无需本地训练即获得个性化能力。核心创新在"免调参"——端侧不需要任何梯度计算。
-  - **架构生成与超网适配**（DIET, KDD 2024; Forward Once, KDD 2025; CHORD, MM 2025）：云端维护一个覆盖多种设备能力的超网（Supernet），端侧设备通过结构参数从中提取适合自身算力/存储的子网。解决"不同设备运行不同模型架构"的异构部署问题。
+  - **架构生成与超网适配**（DIET, KDD 2024; Forward-OFA, KDD 2025; CHORD, MM 2025）：云端维护一个覆盖多种设备能力的超网（Supernet），端侧设备通过结构参数从中提取适合自身算力/存储的子网。解决"不同设备运行不同模型架构"的异构部署问题。
   - **协同学习框架**（DCCL, KDD 2021）：最早的端云协同学习框架，提出"千人千模"概念——云端吸收海量端侧个性化模型知识后生成更优的全局模型。
   - **跨域模型生成**（DeCoCDR, SIGIR 2024; DualRec, IEEE TMC 2025）：将模型生成扩展至跨域和双模型场景。
   - 设计核心：云侧生成的模型参数可以是全量的、适配器模块的、或仅指定架构的——粒度越细个性化越强但通信成本越高。
 
-#### 5.5.2 Knowledge Guidance
+#### 5.5.2 Knowledge Routing
 
-> 知识引导方法的核心特征是**云端在端侧模型部署期间持续提供监督信号**——软标签、域校正、语义校准等——引导端侧模型适应本地数据。与 Model Generation 不同，云端不直接生成端侧模型参数，而是以"教师/裁判"角色提供知识层面的纠正信号。核心挑战在于引导信号的时效性（何时介入）与精度（纠正了什么）。
+> 知识路由方法的核心特征是**云端在端侧模块部署期间持续提供监督信号**——软标签、域校正、语义校准等——路由到端侧模块以适应本地数据。与 Module Scheduling 不同，云端不直接生成端侧模块参数，而是以"教师/裁判"角色提供知识层面的纠正信号。核心挑战在于路由信号的时效性（何时介入）与精度（纠正了什么）。
 
 - **写作要点**：
   - **云协调域自适应**（MPDA, KDD 2022）：云端提供域适应策略，端侧在策略指导下进行本地个性化，平衡全局一致性与本地个性化。
   - **元控制与智能触发**（Meta Controller, KDD 2022; IntellectReq, WWW 2024）：云端部署控制器持续监控端侧推荐质量，仅在检测到候选不足或模型"不自信"时触发知识纠正，避免不必要的云端通信。
   - **协同纠错**（CoCorrRec, IJCAI 2025）：云端识别并纠正端侧模型的系统性偏差，提供纠正信号而非替代端侧决策。
-  - **无反向传播引导**（ACM TOMM 2025; RelayRec, IPSN 2024）：云端通过正向传播或中继机制传递知识，端侧完全不需要反向传播，大幅降低端侧训练开销。
+  - **无反向传播引导**（CDC-MMPG, TOMM 2025; RelayRec, IPSN 2024）：云端通过正向传播或中继机制传递知识，端侧完全不需要反向传播，大幅降低端侧训练开销。
   - **语义校准**（SCaLRec, Arxiv 2026）：在 LLM 时代，云端 LLM 的通用知识与端侧推荐模型的协同过滤表示之间存在语义鸿沟，SCaLRec 提出语义校准框架解决此问题。
   - 设计核心：引导信号的设计——可以是软标签（Teacher-Student）、域校正信号、或自然语言语义指导。触发策略——持续引导 vs 按需引导，权衡通信成本与推荐质量。
 
-#### 5.5.3 Inference Collaboration
+#### 5.5.3 Inference Dispatching
 
-> 推理协同方法的核心特征是**云和端在推理时刻联合分解并执行推荐流水线中的互补子任务**。云端承担重语义推理和候选检索（大模型、全量候选库），端侧执行响应式个性化重排（实时上下文、隐私敏感特征）。核心挑战在于延迟预算内的端云任务切分与信息交换协议。
+> 推理分发方法的核心特征是**云和端在推理时刻联合分解并执行推荐流水线中的互补子任务**。云端承担重语义推理和候选检索（大模型、全量候选库），端侧执行响应式个性化重排（实时上下文、隐私敏感特征）。核心挑战在于延迟预算内的端云任务切分与信息交换协议。
 
 - **写作要点**：
   - **云召回 + 端重排**（工业标准模式）：
     - EdgeRec (CIKM 2020)：淘宝移动端重排系统，展示工业级方案的延迟（<10ms）、功耗与效果统计。
     - Real-time Short Video Rec (CIKM 2022)：短视频场景的端侧实时偏好追踪与云端候选补充。
-    - On-Device Integrated Re-ranking (KDD 2023)：端侧重排中的异质行为建模（点击、购买、停留等多信号融合）。
+    - On-Device Integrated Re-ranking (DIR, KDD 2023)：端侧重排中的异质行为建模（点击、购买、停留等多信号融合）。
     - 核心设计：候选集大小 K 的选择、云端下发信息粒度（ID/Embedding/完整特征）、端侧重排延迟预算。
   - **LLM-SLM 协同推理**（LSC4Rec, KDD 2025）：端侧 SLM 先尝试处理，不确定时调用云端 LLM。核心创新在协作触发策略（何时调用 LLM）、提示构造（端侧状态如何转化为 LLM 可理解的输入）、结果融合（LLM 输出如何与端侧模型输出整合）。
-  - **扩散式协同推理**（Diffusion-Based POI Rec, KDD 2024）：利用扩散模型在云端生成候选，端侧进行采样和个性化筛选。
-  - **Agentic 协同**（CDA4Rec, Arxiv 2025）：云侧 Global Orchestrator 与端侧 Personal Assistant 通过标准化协议交互——这是 Inference Collaboration 的最高级形态，当前仍处早期探索阶段。
+  - **扩散式协同推理**（DCPR, KDD 2024）：利用扩散模型在云端生成候选，端侧进行采样和个性化筛选。
+  - **Agentic 协同**（CDA4Rec, Arxiv 2025）：云侧 Global Orchestrator 与端侧 Personal Assistant 通过标准化协议交互——这是 Inference Dispatching 的最高级形态，当前仍处早期探索阶段。
 
 #### 5.5.4 Production Systems and Industrial Practice
 
 - **写作要点**（精简，贯穿三个子类）：
-  - 淘宝技术演进线：EdgeRec (Inference Collaboration) → Meta Controller (Knowledge Guidance) → IntellectReq (Knowledge Guidance) → LSC4Rec (Inference Collaboration)。展示了 Task Orchestration 从端侧重排到 LLM 协同的完整进化路径。
-  - 快手/抖音：端侧重排 + 实时更新（Inference Collaboration）。
-  - 关键经验：工业系统追求"在给定延迟/成本约束下最大化推荐质量"；DC 在工业界的采纳是渐进式的——从 Model Generation（离线构建→部署），到 Knowledge Guidance（部署后云端持续引导），再到 Inference Collaboration（推理时实时协同）。
+  - 淘宝技术演进线：EdgeRec (Inference Dispatching) → Meta Controller (Knowledge Routing) → IntellectReq (Knowledge Routing) → LSC4Rec (Inference Dispatching)。展示了 Task Orchestration 从端侧重排到 LLM 协同的完整进化路径。
+  - 快手/抖音：端侧重排 + 实时更新（Inference Dispatching）。
+  - 关键经验：工业系统追求"在给定延迟/成本约束下最大化推荐质量"；DC 在工业界的采纳是渐进式的——从 Module Scheduling（离线构建→部署），到 Knowledge Routing（部署后云端持续引导），再到 Inference Dispatching（推理时实时协同）。
 
 ### 5.6 Chapter Summary
 
 - **写作要点**：
   - DCRec 的三维机制（Computation → Model → Task）及其子分类构成从基础设施到应用的完整设计栈：
-    - **Computation Allocation**：Coordinated（中心协调）和 Emergent（去中心涌现）分别代表两种截然不同的全局知识治理哲学——前者追求效率与一致性，后者追求去中心鲁棒性与隐私。
-    - **Model Sharing**：从 Foundational（基础联邦）到 Personalized（个性化增强）再到 Advanced（跨域/多模态/FM 集成），展现了联邦推荐从"可行性"到"高质量"的完整演进路径。
-    - **Task Orchestration**：Model Generation（离线构建）→ Knowledge Guidance（在线引导）→ Inference Collaboration（推理协同）构成云侧介入程度递进的三个层次——从"生成完就不管"到"持续指导"再到"实时并肩"。
+    - **Computation Allocation**：Coordinated（中心协调）和 Decentralized（去中心化分区）分别代表两种截然不同的全局知识治理哲学——前者追求效率与一致性，后者追求去中心鲁棒性与隐私。
+    - **Model Sharing**：从 Foundational Fusion（基础联邦融合）到 Personalized Aggregation（个性化聚合）再到 Advanced Integration（跨域/多模态/FM 集成），展现了联邦推荐从"可行性"到"高质量"的完整演进路径。
+    - **Task Orchestration**：Module Scheduling（离线构建）→ Knowledge Routing（在线引导）→ Inference Dispatching（推理协同）构成云侧介入程度递进的三个层次——从"离线调度"到"持续路由"再到"实时分发"。
   - 三者不是替代关系而是递进依赖：好的 Task Orchestration 需要高效的计算分配（Comp）和合理的模型共享策略（Model）作为基础设施。
   - Ch3（OC）和 Ch4（OD）分别为 DCRec 提供了"云侧能力工具箱"和"端侧部署约束集"，DCRec 的本质任务是在这两个集合之间设计协同协议。
   - LLM 时代正在重塑所有三个机制：Computation 从"参数同步"到"推理卸载"（投机解码），Model 从"全参同步"到"Adapter 聚合"，Task 从"端云流水线"到"Agent 对话"。
@@ -768,7 +786,7 @@
 
 ## Chapter 6. Evaluation, Platforms, and Datasets
 
-> **目标**：3-4 页。综述 DCRec 研究的实验生态，为后续研究者提供可复现的基础设施参考。按 systematic survey 的方法学标准，本章为必选章——篇幅紧张时压缩但不删除。
+> **目标**：~1.0 页双栏（约 800 词 + 1 数据集/平台表）。综述 DCRec 研究的实验生态，按 systematic survey 标准为必选章。三段式：指标讨论 + 数据集表格 + Benchmark Gap。
 
 | 数据集/平台 | 类型 | 规模 | 时间戳 | DC 适配方案 | 不足 |
 |:---|:---|:---|:---|:---|:---|
@@ -822,7 +840,7 @@
 
 ## Chapter 7. Challenges and Future Directions
 
-> **目标**：4-5 页。分两层结构——Part A 回答"领域已经出现哪些稳定的前沿趋势"，Part B 回答"更远期的范式变革可能是什么"。避免将所有方向平铺在同一层级。
+> **目标**：~1.5 页双栏（约 1200 词）。分两层结构：Part A 有文献簇支撑的新兴趋势（≥3 篇代表性工作），Part B 早期阶段的范式变革构想。避免平铺所有方向。
 >
 > **写作原则**：
 >
@@ -874,7 +892,7 @@
 
 #### 7.2.4 Beyond Recommendation: General Cloud-Device Collaborative Intelligence
 
-- **文献状态**：本文的方法论贡献（PEFT Fed、Slow-Fast Learning、端云任务编排）可溢出到更广泛的端云 AI 场景。以下为推理性展望，非实证结论。
+- **文献状态**：本文的方法论贡献（PEFT Federated Learning、Device-Cloud Task Orchestration、Collaborative Personalization）可溢出到更广泛的端云 AI 场景。以下为推理性展望，非实证结论。
 - **潜在迁移**：个性化教育（端侧学习行为/云侧全局课程图谱）、健康监测（本地生理数据隐私/云侧医学知识库）、自动驾驶（本地实时决策/云端全局地图规划）。
 - **呼吁**：DCRec 社区为更广泛的端云协作智能提供可迁移的方法论框架。
 
@@ -882,7 +900,7 @@
 
 ## Chapter 8. Conclusion
 
-> **目标**：1-2 页，简洁有力。
+> **目标**：~0.5 页双栏（约 400 词），简洁有力。
 
 ### 8.1 Summary of Contributions
 
@@ -891,7 +909,7 @@
     - **OC（Ch3）**：三代入演进 + 每代内子分类（Memory/Model/Content-based → Feature/Sequential/Graph → Instruction/Generative/Agentic），为新人提供完整的云端推荐认知路径。
     - **OD（Ch4）**：部署轻量化（Embedding Slimming / KD / Compression）+ 在线适配（Privacy / Latency / Resource 三分），为端侧推荐建立清晰的分类框架。
     - **DCRec（Ch5）**：首次将该领域作为独立范式进行定义与划界，提出按协同目标的三机制主分类（Computation / Model / Task），制定明确的归属仲裁规则与辅助标签。
-  - 强调"双循环个性化"作为全文的概念主线——在 OC 中体现为离线训练+在线推理的分时架构，在 OD 中体现为端侧自适应，在 DCRec 中获得最完整的端云双层实例化。
+  - 强调三种个性化范式作为全文的概念主线：OC 实现 Contextual Personalization（基于全局上下文的差异化），OD 实现 Real-Time Personalization（基于本地数据的实时自适应），DCRec 通过 Computation / Model / Task 三类协同机制实现 Utility-Privacy-Efficiency Collaborative Personalization（端云协同的最优个性化）。
   - 系统综述 200+ 篇文献，识别 LLM 时代的前沿趋势与远期范式变革。
 
 ### 8.2 Key Takeaways
