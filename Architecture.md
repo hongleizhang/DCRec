@@ -26,17 +26,17 @@
 
 ## 论文整体结构概览
 
-| 章节 | 定位 | 页数 |
-|:---|:---|:---:|
-| Ch1 Introduction | 问题引入、方法学、贡献声明 | ~2.5 |
-| Ch2 Preliminaries | 统一形式化语言、推荐系统独特挑战、三种个性化范式 | ~1.5 |
-| Ch3 On-Cloud Recommendation | ★ 主体贡献：OC 三代演进系统化重组 | ~2.5 |
-| Ch4 On-Device Recommendation | ★ 主体贡献：OD 部署+适配分类体系 | ~2.0 |
-| Ch5 Device-Cloud Collaborative Recommendation | ★ 主体贡献：DCRec 范式定义、划界与三机制分类 | ~3.5 |
-| Ch6 Evaluation & Datasets | 实验生态 | ~1.0 |
-| Ch7 Challenges and Future Directions | 前瞻 | ~1.5 |
-| Ch8 Conclusion | 总结 | ~0.5 |
-| **Total** | | **~15.0 页正文 + ~4 页参考文献** |
+| 章节 | 定位 | 页数 | 分工 |
+|:---|:---|:---:|:---:|
+| Ch1 Introduction | 问题引入、方法学、贡献声明 | ~2.5 | 张 |
+| Ch2 Preliminaries | 统一形式化语言、推荐系统独特挑战、三种个性化范式 | ~1.5 | 刘 |
+| Ch3 On-Cloud Recommendation | ★ 主体贡献：OC 三代演进系统化重组 | ~2.5 | 刘 |
+| Ch4 On-Device Recommendation | ★ 主体贡献：OD 部署+适配分类体系 | ~2.0 | 符 |
+| Ch5 Device-Cloud Collaborative Recommendation | ★ 主体贡献：DCRec 范式定义、划界与三机制分类 | ~3.5 | 陈 |
+| Ch6 Evaluation & Datasets | 实验生态 | ~1.0 | 符 |
+| Ch7 Challenges and Future Directions | 前瞻 | ~1.5 | 张 |
+| Ch8 Conclusion | 总结 | ~0.5 | 张 |
+| **Total** | | **~15.0 页正文 + ~4 页参考文献** | 刘 |
 
 > **设计理念**：
 >
