@@ -33,7 +33,7 @@
 | Ch3 On-Cloud Recommendation | ★ 主体贡献：OC 三代演进系统化重组 | ~2.5 | 刘 |
 | Ch4 On-Device Recommendation | ★ 主体贡献：OD 部署+适配分类体系 | ~2.0 | 符 |
 | Ch5 Device-Cloud Collaborative Recommendation | ★ 主体贡献：DCRec 范式定义、划界与三机制分类 | ~3.5 | 陈 |
-| Ch6 Evaluation & Datasets | 实验生态 | ~1.0 | 符 |
+| Ch6 Evaluation & Datasets | 实验生态 | ~1.0 | 刘 |
 | Ch7 Challenges and Future Directions | 前瞻 | ~1.5 | 张 |
 | Ch8 Conclusion | 总结 | ~0.5 | 张 |
 | **Total** | | **~15.0 页正文 + ~4 页参考文献** | 刘 |
