@@ -352,7 +352,7 @@
 - MIND: A Large-Scale Dataset for News Recommendation, ACL, 2020. [[PDF]](https://aclanthology.org/2020.acl-main.331/).
 - KuaiRec: A Fully-Observed Dataset and Insights for Evaluating Recommender Systems, CIKM, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3511808.3557220).
 
-## Others
+## Supplementary Materials
 
 ### Introduction Context
 
@@ -380,3 +380,7 @@
 - A Comprehensive Survey of Forgetting in Deep Learning Beyond Continual Learning, IEEE TPAMI, 2025. [[PDF]](https://doi.org/10.1109/TPAMI.2024.3498346).
 - Latent Inter-User Difference Modeling for LLM Personalization, EMNLP, 2025. [[PDF]](https://aclanthology.org/2025.emnlp-main.536/).
 - A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence, TMLR, 2026. [[PDF]](https://arxiv.org/abs/2507.21046).
+
+## RSPapers
+
+Our team has also open-sourced [**RSPapers**](https://github.com/hongleizhang/RSPapers), a comprehensive and continuously updated collection of representative papers, surveys, and tutorials spanning classical methods, deep learning, privacy and security, large language models, and agentic recommendation. We hope this repository will provide researchers and practitioners with a convenient resource for exploring the literature and tracking recent advances in recommender systems.
