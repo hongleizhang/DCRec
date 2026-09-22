@@ -342,14 +342,6 @@
 - Cloud-Device Collaborative Agents for Sequential Recommendation, arXiv, 2025. [[PDF]](https://arxiv.org/abs/2509.01551).
 - Collaboration of Large Language Models and Small Recommendation Models for Device-Cloud Recommendation, KDD, 2025. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3690624.3709335), [[CODE]](https://github.com/HelloZicky/LSC4Rec).
 
-### Other DCRec Papers
-
-- Federated Recommendation System via Differential Privacy, IEEE ISIT, 2020. [[PDF]](https://ieeexplore.ieee.org/abstract/document/9174297).
-- Horizontal Cross-Silo Federated Recommender Systems, RecSys, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3460231.3478863).
-- Poisoning Deep Learning based Recommender Model in Federated Learning Scenarios, IJCAI, 2022. [[PDF]](https://www.ijcai.org/proceedings/2022/306), [[CODE]](https://github.com/rdz98/PoisonFedDLRS).
-- Rethinking Byzantine Robustness in Federated Recommendation from Sparse Aggregation Perspective, AAAI, 2025. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/33455).
-- Spattack: Subgroup Poisoning Attacks on Federated Recommender Systems, WWW, 2026. [[PDF]](https://dl.acm.org/doi/10.1145/3774904.3792552).
-
 ## 📊Evaluation & Datasets
 
 - Friendship and Mobility: User Movement in Location-Based Social Networks, KDD, 2011. [[PDF]](https://dl.acm.org/doi/10.1145/2020408.2020579).
@@ -366,6 +358,15 @@
 
 - TWIN: TWo-Stage Interest Network for Lifelong User Behavior Modeling in CTR Prediction at Kuaishou, KDD, 2023. [[PDF]](https://dl.acm.org/doi/10.1145/3580305.3599922).
 - Scaling Law of Large Sequential Recommendation Models, RecSys, 2024. [[PDF]](https://dl.acm.org/doi/10.1145/3640457.3688129).
+
+
+### Privay & Robustness
+
+- Federated Recommendation System via Differential Privacy, IEEE ISIT, 2020. [[PDF]](https://ieeexplore.ieee.org/abstract/document/9174297).
+- Horizontal Cross-Silo Federated Recommender Systems, RecSys, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3460231.3478863).
+- Poisoning Deep Learning based Recommender Model in Federated Learning Scenarios, IJCAI, 2022. [[PDF]](https://www.ijcai.org/proceedings/2022/306), [[CODE]](https://github.com/rdz98/PoisonFedDLRS).
+- Rethinking Byzantine Robustness in Federated Recommendation from Sparse Aggregation Perspective, AAAI, 2025. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/33455).
+- Spattack: Subgroup Poisoning Attacks on Federated Recommender Systems, WWW, 2026. [[PDF]](https://dl.acm.org/doi/10.1145/3774904.3792552).
 
 ### Policy & Regulation
 
