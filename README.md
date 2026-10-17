@@ -310,7 +310,7 @@
 
 ### Task Orchestration Mechanisms
 >
-> Task orchestration is primarily enabled by **Collaborative Learning**:
+> Task orchestration is primarily enabled by **Collaborative Learning** between devices and cloud:
 (1) ***Module Scheduling***: cloud constructs customized device modules offline for independent on-device inference; (2) ***Knowledge Routing***: cloud provides continuous supervisory signals during device model deployment; (3) ***Inference Dispatching***: cloud and device jointly decompose complementary sub-tasks at inference time.
 
 #### Module Scheduling
