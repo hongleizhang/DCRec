@@ -196,7 +196,7 @@
 
 ### Computation Allocation Mechanisms
 >
-> Computation allocation is primarily enabled by **Distributed Recommendation**:
+> Computation allocation is primarily enabled by **Distributed Computing**:
 (1) ***Coordinated Parallelism***: distribute computation under an explicit central coordinator; (2) ***Decentralized Partitioning***: diffuse knowledge through peer-to-peer interactions without any authoritative center.
 
 #### Coordinated Parallelism
@@ -241,7 +241,7 @@
 
 ### Model Sharing Mechanisms
 >
-> Model sharing is primarily enabled by **Federated Recommendation**:
+> Model sharing is primarily enabled by **Federated Learning**:
 (1) ***Foundational Fusion***: basic model and scenarios, privacy and efficiency optimization; (2) ***Personalized Aggregation***: global aggregation and local adaptation; (3) ***Advanced Integration***: cross-domain, multi-modal and foundation models.
 
 #### Foundational Fusion
@@ -310,7 +310,7 @@
 
 ### Task Orchestration Mechanisms
 >
-> Task orchestration is primarily enabled by **Device-Cloud Recommendation**:
+> Task orchestration is primarily enabled by **Collaborative Learning**:
 (1) ***Module Scheduling***: cloud constructs customized device modules offline for independent on-device inference; (2) ***Knowledge Routing***: cloud provides continuous supervisory signals during device model deployment; (3) ***Inference Dispatching***: cloud and device jointly decompose complementary sub-tasks at inference time.
 
 #### Module Scheduling
