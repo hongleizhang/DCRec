@@ -25,7 +25,8 @@
 
 ## ☁️On-Cloud Recommendation
 
-![OCRec](figs/OCRec.svg)
+<!-- ![OCRec](figs/OCRec.svg) -->
+<img src="figs/OCRec.svg" alt="OCRec" width="100%">
 
 ### Shallow Preference Matching Models
 >
@@ -131,7 +132,8 @@
 
 ## 📱On-Device Recommendation
 
-![ODRec](figs/ODRec.svg)
+<!-- ![ODRec](figs/ODRec.svg) -->
+<img src="figs/ODRec.svg" alt="ODRec" width="100%">
 
 ### General Lightweight Methods
 >
@@ -192,7 +194,8 @@
 ## 🔄Device-Cloud Collaborative Recommendation
 
 <!-- ![framework](figs/devicecloud_rec.png) -->
-![DCRec](figs/DCRec.svg)
+<!-- ![DCRec](figs/DCRec.svg) -->
+<img src="figs/DCRec.svg" alt="DCRec" width="100%">
 
 ### Computation Allocation Mechanisms
 >
