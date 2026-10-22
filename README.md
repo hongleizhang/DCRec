@@ -203,7 +203,7 @@
 > Computation allocation is primarily enabled by **Distributed Computing**:
 (1) ***Coordinated Parallelism***: distribute computation under an explicit central coordinator; (2) ***Decentralized Partitioning***: diffuse knowledge through peer-to-peer interactions without any authoritative center.
 
-<img src="figs/ComputationAllocation.svg" alt="ComputationAllocation" width="100%">
+<img src="figs/ComputationAllocation.SVG" alt="ComputationAllocation" width="100%">
 
 #### Coordinated Parallelism
 
@@ -257,7 +257,7 @@
 > Model sharing is primarily enabled by **Federated Learning**:
 (1) ***Foundational Fusion***: basic model and scenarios, privacy and efficiency optimization; (2) ***Personalized Aggregation***: global aggregation and local adaptation; (3) ***Advanced Integration***: cross-domain, multi-modal and foundation models.
 
-<img src="figs/ModelSharing.svg" alt="ModelSharing" width="100%">
+<img src="figs/ModelSharing.SVG" alt="ModelSharing" width="100%">
 
 #### Foundational Fusion
 
@@ -384,7 +384,7 @@
 > Task orchestration is primarily enabled by **Collaborative Learning** between devices and cloud:
 (1) ***Module Scheduling***: cloud constructs customized device modules offline for independent on-device inference; (2) ***Knowledge Routing***: cloud provides continuous supervisory signals during device model deployment; (3) ***Inference Dispatching***: cloud and device jointly decompose complementary sub-tasks at inference time.
 
-<img src="figs/TaskOrchestration.svg" alt="TaskOrchestration" width="100%">
+<img src="figs/TaskOrchestration.SVG" alt="TaskOrchestration" width="100%">
 
 #### Module Scheduling
 
