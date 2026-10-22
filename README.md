@@ -2,7 +2,8 @@
 
 **Abstract**: Recommender systems (RSs) are evolving beyond purely cloud-centric architectures toward device-cloud collaborative intelligence, particularly in the large model era. Conventional on-cloud recommendation (OCRec) adopts a periodically centralized learning paradigm, in which user data are uploaded to cloud servers for contextual understanding and preference modeling. In parallel, on-device recommendation (ODRec) deploys lightweight models on user devices for real-time interest capturing with instant local behaviors. These complementary strengths have motivated an emerging yet insufficiently explored paradigm, i.e., device-cloud collaborative recommendation (DCRec), which integrates cloud-side contextual understanding with device-side real-time preference through dedicated collaboration mechanisms. In this survey, we first formulate OCRec, ODRec, and DCRec within a unified framework, and characterize their respective personalization objectives. We then review the architecture evolution of OCRec, from shallow preference matching and deep embedding models to large semantic reasoning models, and summarize the efficient adaptation mechanisms of ODRec, including privacy-oriented, latency-oriented, and resource-oriented adaptation. We further present a collaboration-centric taxonomy of DCRec, covering computation allocation, model sharing, and task orchestration. Finally, we summarize representative methods, evaluation protocols, and open research directions, establishing a unified foundation for next-generation RSs with improved utility, privacy, and efficiency.
 
-![framework](figs/ecosystem.png)
+<!-- ![framework](figs/ecosystem.png) -->
+<img src="figs/ecosystem.png" alt="framework" width="100%">
 
 ## 📖Related Surveys
 
@@ -202,6 +203,8 @@
 > Computation allocation is primarily enabled by **Distributed Computing**:
 (1) ***Coordinated Parallelism***: distribute computation under an explicit central coordinator; (2) ***Decentralized Partitioning***: diffuse knowledge through peer-to-peer interactions without any authoritative center.
 
+<img src="figs/ComputationAllocation.svg" alt="ComputationAllocation" width="100%">
+
 #### Coordinated Parallelism
 
 - TiVo: Making Show Recommendations Using A Distributed Collaborative Filtering Architecture, KDD, 2004. [[PDF]](https://dl.acm.org/doi/abs/10.1145/1014052.1014097).
@@ -253,6 +256,8 @@
 >
 > Model sharing is primarily enabled by **Federated Learning**:
 (1) ***Foundational Fusion***: basic model and scenarios, privacy and efficiency optimization; (2) ***Personalized Aggregation***: global aggregation and local adaptation; (3) ***Advanced Integration***: cross-domain, multi-modal and foundation models.
+
+<img src="figs/ModelSharing.svg" alt="ModelSharing" width="100%">
 
 #### Foundational Fusion
 
@@ -378,6 +383,8 @@
 >
 > Task orchestration is primarily enabled by **Collaborative Learning** between devices and cloud:
 (1) ***Module Scheduling***: cloud constructs customized device modules offline for independent on-device inference; (2) ***Knowledge Routing***: cloud provides continuous supervisory signals during device model deployment; (3) ***Inference Dispatching***: cloud and device jointly decompose complementary sub-tasks at inference time.
+
+<img src="figs/TaskOrchestration.svg" alt="TaskOrchestration" width="100%">
 
 #### Module Scheduling
 
