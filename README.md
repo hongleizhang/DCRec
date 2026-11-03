@@ -1,6 +1,6 @@
 # Device-Cloud Collaborative Intelligence in Recommender Systems: A Systematic Survey in the Large Model Era
 
-**Abstract**: Recommender systems (RSs) are evolving beyond purely cloud-centric architectures toward device-cloud collaborative intelligence, particularly in the large model era. Conventional on-cloud recommendation (OCRec) adopts a periodically centralized learning paradigm, in which user data are uploaded to cloud servers for contextual understanding and preference modeling. In parallel, on-device recommendation (ODRec) deploys lightweight models on user devices for real-time interest capturing with instant local behaviors. These complementary strengths have motivated an emerging yet insufficiently explored paradigm, i.e., device-cloud collaborative recommendation (DCRec), which integrates cloud-side contextual understanding with device-side real-time preference through dedicated collaboration mechanisms. In this survey, we first formulate OCRec, ODRec, and DCRec within a unified framework, and characterize their respective personalization objectives. We then review the architecture evolution of OCRec, from shallow preference matching and deep embedding models to large semantic reasoning models, and summarize the efficient adaptation mechanisms of ODRec, including privacy-oriented, latency-oriented, and resource-oriented adaptation. We further present a collaboration-centric taxonomy of DCRec, covering computation allocation, model sharing, and task orchestration. Finally, we summarize representative methods, evaluation protocols, and open research directions, establishing a unified foundation for next-generation RSs with improved utility, privacy, and efficiency.
+**Abstract**: Recommender systems (RSs) are evolving beyond purely cloud-centric architectures toward device-cloud collaborative intelligence, particularly in the large model era. Conventional on-cloud recommendation (OCRec) adopts a periodically centralized learning paradigm, harnessing collective intelligence from rich user-item interactions for broad contextual understanding. In parallel, on-device recommendation (ODRec) deploys lightweight models on devices for low-latency interest capturing with instant local behaviors. These complementary strengths have motivated an emerging yet insufficiently explored paradigm, i.e., device-cloud collaborative recommendation (DCRec), which integrates cloud-side contextual understanding with device-side instant preference through dedicated collaboration mechanisms. In this survey, we first formulate OCRec, ODRec, and DCRec within a unified framework, and characterize their respective personalization objectives. We then review the architecture evolution of OCRec, from shallow preference matching and deep embedding models to large semantic reasoning models, and summarize the efficient adaptation mechanisms of ODRec, including privacy-oriented, latency-oriented, and resource-oriented adaptation. We further present a collaboration-centric taxonomy of DCRec, covering computation allocation, model sharing, and task orchestration. Finally, we summarize representative methods, evaluation protocols, and open research directions, establishing a unified foundation for next-generation RSs with improved utility, privacy, and efficiency.
 
 <!-- ![framework](figs/ecosystem.png) -->
 <img src="figs/ecosystem.svg" alt="framework" width="100%">
@@ -255,7 +255,7 @@
 ### Model Sharing Mechanisms
 >
 > Model sharing is primarily enabled by **Federated Learning**:
-(1) ***Foundational Fusion***: basic model and scenarios, privacy and efficiency optimization; (2) ***Personalized Aggregation***: global aggregation and local adaptation; (3) ***Advanced Integration***: cross-domain, multi-modal and foundation models.
+(1) ***Foundational Fusion***: basic model and scenarios, privacy and efficiency optimization; (2) ***Personalized Aggregation***: global aggregation and local adaptation; (3) ***Multifaceted Augmentation***: cross-domain, multi-modal and foundation models.
 
 <img src="figs/ModelSharing.SVG" alt="ModelSharing" width="100%">
 
@@ -344,7 +344,7 @@
 - Proxy Model-Guided Reinforcement Learning for Client Selection in Federated Recommendation, IEEE Trans. Knowl. Data Eng., 2026. [[PDF]](https://doi.org/10.1109/TKDE.2026.3732645).
 - Sharpness-Aware Minimization for Generalized Embedding Learning in Federated Recommendation, WWW, 2026. [[PDF]](https://dl.acm.org/doi/10.1145/3774904.3792579).
 
-#### Advanced Integration
+#### Multifaceted Augmentation
 
 - Differential Private Knowledge Transfer for Privacy-Preserving Cross-Domain Recommendation, WWW, 2022. [[PDF]](https://doi.org/10.1145/3485447.3512192).
 - FedCDR: Federated Cross-Domain Recommendation for Privacy-Preserving Rating Prediction, CIKM, 2022. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3511808.3557320).
