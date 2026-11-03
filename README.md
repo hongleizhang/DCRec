@@ -255,7 +255,7 @@
 ### Model Sharing Mechanisms
 >
 > Model sharing is primarily enabled by **Federated Learning**:
-(1) ***Foundational Fusion***: basic model and scenarios, privacy and efficiency optimization; (2) ***Personalized Aggregation***: global aggregation and local adaptation; (3) ***Advanced Integration***: cross-domain, multi-modal and foundation models.
+(1) ***Foundational Fusion***: basic model and scenarios, privacy and efficiency optimization; (2) ***Personalized Aggregation***: global aggregation and local adaptation; (3) ***Multifaceted Augmentation***: cross-domain, multi-modal and foundation models.
 
 <img src="figs/ModelSharing.SVG" alt="ModelSharing" width="100%">
 
@@ -344,7 +344,7 @@
 - Proxy Model-Guided Reinforcement Learning for Client Selection in Federated Recommendation, IEEE Trans. Knowl. Data Eng., 2026. [[PDF]](https://doi.org/10.1109/TKDE.2026.3732645).
 - Sharpness-Aware Minimization for Generalized Embedding Learning in Federated Recommendation, WWW, 2026. [[PDF]](https://dl.acm.org/doi/10.1145/3774904.3792579).
 
-#### Advanced Integration
+#### Multifaceted Augmentation
 
 - Differential Private Knowledge Transfer for Privacy-Preserving Cross-Domain Recommendation, WWW, 2022. [[PDF]](https://doi.org/10.1145/3485447.3512192).
 - FedCDR: Federated Cross-Domain Recommendation for Privacy-Preserving Rating Prediction, CIKM, 2022. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3511808.3557320).
