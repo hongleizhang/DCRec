@@ -29,6 +29,8 @@
 <!-- ![OCRec](figs/OCRec.svg) -->
 <img src="figs/OCRec.svg" alt="OCRec" width="100%">
 
+*\* indicates that a displayed label is not the method name explicitly used in the original paper.*
+
 ### Shallow Preference Matching Models
 >
 > Shallow preference matching models estimate **user-item preferences from centralized interactions or item attributes**, mainly via:
@@ -39,7 +41,6 @@
 - GroupLens: An Open Architecture for Collaborative Filtering of Netnews, ACM CSCW, 1994. [[PDF]](https://dl.acm.org/doi/10.1145/192844.192905).
 - Item-based Collaborative Filtering Recommendation Algorithms, WWW, 2001. [[PDF]](https://dl.acm.org/doi/10.1145/371920.372071).
 - Slope One Predictors for Online Rating-Based Collaborative Filtering, SDM, 2005. [[PDF]](https://arxiv.org/abs/cs/0702144).
-- FISM: Factored Item Similarity Models for Top-N Recommender Systems, KDD, 2013. [[PDF]](https://chbrown.github.io/kdd-2013-usb/kdd/p659.pdf).
 
 #### Content-based Filtering
 
@@ -54,21 +55,19 @@
 - Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model, KDD, 2008. [[PDF]](https://people.engr.tamu.edu/huangrh/Spring16/papers_course/matrix_factorization.pdf).
 - BPR: Bayesian Personalized Ranking from Implicit Feedback, UAI, 2009. [[PDF]](https://arxiv.org/abs/1205.2618).
 - Matrix Factorization Techniques for Recommender Systems, IEEE Computer, 2009. [[PDF]](https://ieeexplore.ieee.org/document/5197422).
-- Factor in the neighbors: Scalable and accurate collaborative filtering, ACM TKDD, 2010. [[PDF]](https://dl.acm.org/doi/abs/10.1145/1644873.1644874).
 - Factorization Machines, ICDM, 2010. [[PDF]](https://analyticsconsultores.com.mx/wp-content/uploads/2019/03/Factorization-Machines-Steffen-Rendle-Osaka-University-2010.pdf).
-- Recommender Systems with Social Regularization, WSDM, 2011. [[PDF]](https://dennyzhou.github.io/papers/RSR.pdf).
 - CLiMF: Learning to Maximize Reciprocal Rank with Collaborative Less-is-More Filtering, RecSys, 2012. [[PDF]](https://dl.acm.org/doi/10.1145/2365952.2365981).
+- FISM: Factored Item Similarity Models for Top-N Recommender Systems, KDD, 2013. [[PDF]](https://chbrown.github.io/kdd-2013-usb/kdd/p659.pdf).
 - Logistic Matrix Factorization for Implicit Feedback Data, NIPS, 2014. [[PDF]](https://web.stanford.edu/~rezab/nips2014workshop/submits/logmat.pdf), [[CODE]](https://github.com/MrChrisJohnson/logistic-mf).
 
 ### Deep Representation Learning Models
 >
 > Deep representation learning models capture **complex feature, sequential, and relational patterns from centralized recommendation data**, mainly via:
-> (1) ***Feature Interaction***: learn expressive feature representations and nonlinear dependencies among features; (2) ***Sequential Encoding***: capture behavioral order and temporal dependencies in user sequences; (3) ***Graph Propagation***: learn high-order collaborative relations by propagating information over user-item or session graphs.
+> (1) ***Feature Interaction***: learn feature representations and interactions, including early neural recommendation models; (2) ***Sequential Encoding***: capture behavioral order and temporal dependencies in user sequences; (3) ***Graph Propagation***: learn high-order collaborative relations by propagating information over user-item or session graphs.
 
 #### Feature Interaction
 
 - Restricted Boltzmann Machines for Collaborative Filtering, ICML, 2007. [[PDF]](https://dl.acm.org/doi/10.1145/1273496.1273596).
-- Deep Content-based Music Recommendation, NeurIPS, 2013. [[PDF]](https://papers.neurips.cc/paper/5004-deep-content-based-music-recommendation.pdf).
 - Collaborative Deep Learning for Recommender Systems, KDD, 2015. [[PDF]](https://arxiv.org/pdf/1409.2944), [[CODE]](https://github.com/js05212/CDL).
 - Deep Neural Networks for YouTube Recommendations, RecSys, 2016. [[PDF]](https://dl.acm.org/doi/10.1145/2959100.2959190).
 - VBPR: Visual Bayesian Personalized Ranking from Implicit Feedback, AAAI, 2016. [[PDF]](https://dl.acm.org/doi/10.5555/3015812.3015834).
@@ -95,7 +94,6 @@
 - Neural Graph Collaborative Filtering, SIGIR, 2019. [[PDF]](https://dl.acm.org/doi/10.1145/3331184.3331267).
 - Session-Based Recommendation with Graph Neural Networks, AAAI, 2019. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/3804), [[CODE]](https://github.com/CRIPAC-DIG/SR-GNN).
 - LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/10.1145/3397271.3401063).
-- LT-OCF: Learnable-Time ODE-based Collaborative Filtering, CIKM, 2021. [[PDF]](https://dl.acm.org/doi/10.1145/3459637.3482449), [[CODE]](https://github.com/jeongwhanchoi/LT-OCF).
 - Self-supervised Graph Learning for Recommendation, SIGIR, 2021. [[PDF]](https://wujcan.github.io/papers/sigir21-sgl.pdf), [[CODE]](https://github.com/wujcan/SGL-TensorFlow).
 - Are Graph Augmentations Necessary? Simple Graph Contrastive Learning for Recommendation, SIGIR, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3477495.3531937).
 
@@ -135,6 +133,8 @@
 
 <!-- ![ODRec](figs/ODRec.svg) -->
 <img src="figs/ODRec.svg" alt="ODRec" width="100%">
+
+*\* indicates that a displayed label is not the method name explicitly used in the original paper.*
 
 ### General Lightweight Methods
 >
@@ -198,6 +198,8 @@
 <!-- ![DCRec](figs/DCRec.svg) -->
 <img src="figs/DCRec.svg" alt="DCRec" width="100%">
 
+*\* indicates that a displayed label is not the method name explicitly used in the original paper.*
+
 ### Computation Allocation Mechanisms
 >
 > Computation allocation is primarily enabled by **Distributed Computing**:
@@ -230,8 +232,8 @@
 - Accelerating Neural Recommendation Training with Embedding Scheduling, NSDI, 2024. [[PDF]](https://www.usenix.org/conference/nsdi24/presentation/zeng), [[CODE]](https://github.com/HKUST-SING/herald).
 - Disaggregated Multi-Tower: Topology-aware Modeling Technique for Efficient Large Scale Recommendation, MLSys, 2024. [[PDF]](https://proceedings.mlsys.org/paper_files/paper/2024/hash/78834433edc3291f4c6cbbd2759324db-Abstract-Conference.html).
 - FairSync: Ensuring Amortized Group Exposure in Distributed Recommendation Retrieval, WWW, 2024. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3589334.3645413).
-- FCER: A Federated Cloud-Edge Recommendation Framework With Cluster-Based Edge Selection, IEEE Trans. Mobile Comput., 2024. [[PDF]](https://doi.org/10.1109/tmc.2024.3484493).
 - Faster Distributed Inference-Only Recommender Systems via Bounded Lag Synchronous Collectives, arXiv, 2025. [[PDF]](https://arxiv.org/abs/2512.19342).
+- FCER: A Federated Cloud-Edge Recommendation Framework With Cluster-Based Edge Selection, IEEE Trans. Mobile Comput., 2025. [[PDF]](https://doi.org/10.1109/tmc.2024.3484493).
 - Primus: Unified Training System for Large-Scale Deep Learning Recommendation Models, USENIX ATC, 2025. [[PDF]](https://www.usenix.org/conference/atc25/presentation/shan-jixi).
 - FusedRec: Fused Embedding Communication for Distributed Recommendation Training on GPUs, AAAI, 2026. [[PDF]](https://doi.org/10.1609/aaai.v40i17.38512).
 - NestPipe: Large-Scale Recommendation Training on 1,500+ Accelerators via Nested Pipelining, arXiv, 2026. [[PDF]](https://arxiv.org/abs/2604.06956).
@@ -264,7 +266,6 @@
 - Federated Collaborative Filtering for Privacy-Preserving Personalized Recommendation System, arXiv, 2019. [[PDF]](https://arxiv.org/abs/1901.09888).
 - FedFast: Going Beyond Average for Faster Training of Federated Recommender Systems, KDD, 2020. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3394486.3403176).
 - Meta Matrix Factorization for Federated Rating Predictions, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3397271.3401081), [[CODE]](https://github.com/TempSDU/MetaMF).
-- FedCT: Federated Collaborative Transfer for Recommendation, SIGIR, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3404835.3462825).
 - FedRec++: Lossless Federated Recommendation with Explicit Feedback, AAAI, 2021. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/16546).
 - FedRec: Federated Recommendation With Explicit Feedback, IEEE IS, 2021. [[PDF]](https://ieeexplore.ieee.org/abstract/document/9170754).
 - FR-FMSS: Federated Recommendation via Fake Marks and Secret Sharing, RecSys, 2021. [[PDF]](https://dl.acm.org/doi/10.1145/3460231.3478855).
@@ -273,7 +274,6 @@
 - Fast-adapting and privacy-preserving federated recommender system, The VLDB Journal, 2022. [[PDF]](https://doi.org/10.1007/s00778-021-00700-6).
 - Federated Neural Collaborative Filtering, KBS, 2022. [[PDF]](https://www.sciencedirect.com/science/article/abs/pii/S0950705122001812).
 - PipAttack: Poisoning Federated Recommender Systems for Manipulating Item Promotion, WSDM, 2022. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3488560.3498386).
-- Fine-Grained Preference-Aware Personalized Federated POI Recommendation with Data Sparsity, SIGIR, 2023. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3539618.3591688), [[CODE]](https://github.com/Leavesy/PrefFedPOI).
 - LightFR: Lightweight Federated Recommendation with Privacy-preserving Matrix Factorization, ACM TOIS, 2023. [[PDF]](https://dl.acm.org/doi/full/10.1145/3578361), [[CODE]](https://github.com/hongleizhang/LightFR).
 - PrivateRec: Differentially Private Model Training and Online Serving for Federated News Recommendation, KDD, 2023. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3580305.3599889).
 - Semi-decentralized Federated Ego Graph Learning for Recommendation, WWW, 2023. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3543507.3583337).
@@ -289,11 +289,10 @@
 - Certified Unlearning for Federated Recommendation, ACM Trans. Inf. Syst., 2025. [[PDF]](https://doi.org/10.1145/3706419).
 - Cross-User Federated Recommendation Unlearning, ACM Trans. Intel. Syst. Tec., 2025. [[PDF]](https://doi.org/10.1145/3749990).
 - Gradients as An Action: Towards Communication-Efficient Federated Recommender Systems via Adaptive Action Sharing, SIGKDD, 2025. [[PDF]](https://doi.org/10.1145/3711896.3736987).
-- Learning to Unlearn for Bayesian Personalized Ranking via Influence Function, Chinese Journal of Electronics, 2025. [[PDF]](https://doi.org/10.23919/cje.2023.00.417).
 - Ownership Verification for Federated Recommendation, ACM Trans. Inf. Syst., 2025. [[PDF]](https://doi.org/10.1145/3715320).
 - PrivFR: Privacy-Enhanced Federated Recommendation With Shared Hash Embedding, IEEE TNNLS, 2025. [[PDF]](https://ieeexplore.ieee.org/abstract/document/10506199).
 - PTF-FSR: A Parameter Transmission-Free Federated Sequential Recommender System, ACM Trans. Inf. Syst., 2025. [[PDF]](https://doi.org/10.1145/3708344).
-- Dynamic Feature-Embedding Communication via Codebook Distillation for Federated Recommendation, arXiv (CIKM accepted), 2026. [[PDF]](https://arxiv.org/abs/2601.18570v2), [[CODE]](https://github.com/Mingzhe-Han/RQFedRec).
+- Dynamic Feature-Embedding Communication via Codebook Distillation for Federated Recommendation, CIKM (accepted), 2026. [[PDF]](https://arxiv.org/abs/2601.18570v2), [[CODE]](https://github.com/Mingzhe-Han/RQFedRec).
 - FedAU2: Attribute Unlearning for User-Level Federated Recommender Systems with Adaptive and Robust Adversarial Training, AAAI, 2026. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/39500).
 - FedHoG: Federated Homogeneous Graph Neural Network for Privacy-Preserving Recommendation, ACM Trans. Inf. Syst., 2026. [[PDF]](https://doi.org/10.1145/3787468).
 - Plug-and-Play Parameter-Efficient Tuning of Embeddings for Federated Recommendation, AAAI, 2026. [[PDF]](https://doi.org/10.1609/aaai.v40i19.38660).
@@ -303,9 +302,10 @@
 - Hierarchical Personalized Federated Learning for User Modeling, WWW, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3442381.3449926), [[CODE]](https://github.com/bigdata-ustc/hierarchical-personalized-federated-learning).
 - Personalized Federated Recommendation via Joint Representation Learning, User Clustering, and Model Adaptation, CIKM, 2022. [[PDF]](https://doi.org/10.1145/3511808.3557668).
 - Towards Fair Federated Recommendation Learning: Characterizing the Inter-Dependence of System and Data Heterogeneity, RecSys, 2022. [[PDF]](https://doi.org/10.1145/3523227.3546759).
-- Adaptive Clustering Based Personalized Federated Learning Framework for Next POI Recommendation With Location Noise, IEEE Trans. Knowl. Data Eng., 2023. [[PDF]](https://doi.org/10.1109/tkde.2023.3312511).
 - Dual Personalization on Federated Recommendation, IJCAI, 2023. [[PDF]](https://www.ijcai.org/proceedings/2023/0507), [[CODE]](https://github.com/Zhangcx19/IJCAI-23-PFedRec).
+- Fine-Grained Preference-Aware Personalized Federated POI Recommendation with Data Sparsity, SIGIR, 2023. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3539618.3591688), [[CODE]](https://github.com/Leavesy/PrefFedPOI).
 - ReFRS: Resource-efficient Federated Recommender System for Dynamic and Diversified User Preferences, ACM TOIS, 2023. [[PDF]](https://dl.acm.org/doi/full/10.1145/3560486).
+- Adaptive Clustering Based Personalized Federated Learning Framework for Next POI Recommendation With Location Noise, IEEE Trans. Knowl. Data Eng., 2024. [[PDF]](https://doi.org/10.1109/tkde.2023.3312511).
 - Co-clustering for Federated Recommender System, WWW, 2024. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3589334.3645626), [[CODE]](https://github.com/Xinrui17/CoFedRec).
 - Discrete Federated Multi-behavior Recommendation for Privacy-Preserving Heterogeneous One-Class Collaborative Filtering, ACM Trans. Inf. Syst., 2024. [[PDF]](https://doi.org/10.1145/3652853).
 - Federated Recommendation with Additive Personalization, ICLR, 2024. [[PDF]](https://iclr.cc/virtual/2024/poster/17446), [[CODE]](https://github.com/mtics/FedRAP).
@@ -316,8 +316,6 @@
 - Towards Personalized Privacy: User-Governed Data Contribution for Federated Recommendation, WWW, 2024. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3589334.3645690).
 - When Federated Recommendation Meets Cold-Start Problem: Separating Item Attributes and User Interactions, WWW, 2024. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3589334.3645525), [[CODE]](https://github.com/Zhangcx19/IFedRec).
 - Beyond Personalization: Federated Recommendation with Calibration via Low-rank Decomposition, arXiv, 2025. [[PDF]](https://arxiv.org/abs/2506.09525), [[CODE]](https://github.com/jundongchen13/PFedCLR).
-- Efficient Knowledge Transfer in Federated Recommendation for Joint Venture Ecosystem, NeurIPS, 2025. [[PDF]](https://neurips.cc/virtual/2025/loc/mexico-city/poster/117351).
-- Fairness-Aware Federated Recommender Design With Heterogeneous Privacy Budgets, IEEE Trans. Serv. Comput., 2025. [[PDF]](https://doi.org/10.1109/tsc.2025.3630641).
 - FedCIA: Federated Collaborative Information Aggregation for Privacy-Preserving Recommendation, SIGIR, 2025. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3726302.3729977), [[CODE]](https://github.com/Mingzhe-Han/FedCIA).
 - Federated Continual Recommendation, CIKM, 2025. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3746252.3761268), [[CODE]](https://github.com/Jaehyung-Lim/F3CRec-CIKM-25).
 - Federated Recommendation with Explicitly Encoding Item Bias, AAAI, 2025. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/33395).
@@ -334,22 +332,23 @@
 - Beyond Single Embedding: Modeling User Preferences as Distribution in Federated Recommendation, ICML, 2026. [[PDF]](https://proceedings.mlr.press/v306/zhang26in.html).
 - Breaking the Aggregation Bottleneck in Federated Recommendation: A Personalized Model Merging Approach, AAAI, 2026. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/38472), [[CODE]](https://github.com/jundongchen13/FedEM).
 - CanonFedRec: A Canonical Geometric Framework for Personalized Federated Recommendation, SIGKDD, 2026. [[PDF]](https://doi.org/10.1145/3770855.3817845).
+- Fairness-Aware Federated Recommender Design With Heterogeneous Privacy Budgets, IEEE Trans. Serv. Comput., 2026. [[PDF]](https://doi.org/10.1109/tsc.2025.3630641).
 - Federated Recommendation via Stochastic Aggregation and Consistency Inference, ACM TOIS, 2026. [[PDF]](https://dl.acm.org/doi/full/10.1145/3795526),[[CODE]](https://www.sdu-idea.cn/codes.php?name=FedSC).
 - FedHUR: Learning Hierarchical Utility-Guided Client Relations for Personalized Federated Recommendation, arXiv:2609.11632, 2026. [[PDF]](https://arxiv.org/abs/2609.11632), [[CODE]](https://github.com/Mingzhe-Han/FedHUR).
 - FedMed: Federated Learning-Based Personalized and Safe Medication Recommendation, SIGKDD, 2026. [[PDF]](https://doi.org/10.1145/3770855.3818934).
 - KE-FedRS: Tackling Data Sparsity in Federated Recommendation via Knowledge Enhancement, WWW, 2026. [[PDF]](https://doi.org/10.1145/3774904.3792267).
 - Learning Evolving Preferences: A Federated Continual Framework for User-Centric Recommendation, WWW, 2026. [[PDF]](https://doi.org/10.1145/3774904.3792575).
-- Low-pass Personalized Subgraph Federated Recommendation, ICLR, 2026. [[PDF]](https://openreview.net/pdf?id=SSd3GENRAU), [[CODE]](https://github.com/dntjr41/LPSFed).
+- Low-pass Personalized Subgraph Federated Recommendation, ICLR, 2026. [[PDF]](https://proceedings.iclr.cc/paper_files/paper/2026/file/13707aad517ddd6c09ea02e0f55e1e7a-Paper-Conference.pdf), [[CODE]](https://github.com/dntjr41/LPSFed).
 - MDiffFR: Modality-Guided Diffusion Generation for Cold-start Items in Federated Recommendation, ACM Trans. Inf. Syst., 2026. [[PDF]](https://doi.org/10.1145/3843228).
 - Proxy Model-Guided Reinforcement Learning for Client Selection in Federated Recommendation, IEEE Trans. Knowl. Data Eng., 2026. [[PDF]](https://doi.org/10.1109/TKDE.2026.3732645).
 - Sharpness-Aware Minimization for Generalized Embedding Learning in Federated Recommendation, WWW, 2026. [[PDF]](https://dl.acm.org/doi/10.1145/3774904.3792579).
 
 #### Multifaceted Augmentation
 
+- FedCT: Federated Collaborative Transfer for Recommendation, SIGIR, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3404835.3462825).
 - Differential Private Knowledge Transfer for Privacy-Preserving Cross-Domain Recommendation, WWW, 2022. [[PDF]](https://doi.org/10.1145/3485447.3512192).
 - FedCDR: Federated Cross-Domain Recommendation for Privacy-Preserving Rating Prediction, CIKM, 2022. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3511808.3557320).
 - Differentially Private Sparse Mapping for Privacy-Preserving Cross Domain Recommendation, ACM MM, 2023. [[PDF]](https://doi.org/10.1145/3581783.3611924).
-- Manipulating Visually-aware Federated Recommender Systems and Its Countermeasures, ACM TOIS, 2023. [[PDF]](https://dl.acm.org/doi/full/10.1145/3630005).
 - Privacy-Preserving Cross-Domain Sequential Recommendation, ICDM, 2023. [[PDF]](https://doi.org/10.1109/icdm58522.2023.00138).
 - Win-Win: A Privacy-Preserving Federated Framework for Dual-Target Cross-Domain Recommendation, AAAI, 2023. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/25531).
 - A privacy-preserving framework with multi-modal data for cross-domain recommendation, Knowledge-Based Systems, 2024. [[PDF]](https://doi.org/10.1016/j.knosys.2024.112529).
@@ -358,11 +357,13 @@
 - FedDCSR: Federated Cross-Domain Sequential Recommendation via Disentangled Representation Learning, SDM, 2024. [[PDF]](https://doi.org/10.1137/1.9781611978032.62), [[CODE]](https://github.com/orion-orion/FedDCSR).
 - Federated Adaptation for Foundation Model-based Recommendations, IJCAI, 2024. [[PDF]](https://www.ijcai.org/proceedings/2024/603), [[CODE]](https://github.com/Zhangcx19/IJCAI-24-FedPA).
 - Federated Graph Learning for Cross-Domain Recommendation, NeurIPS, 2024. [[PDF]](https://doi.org/10.52202/079017-2070).
+- Manipulating Visually-aware Federated Recommender Systems and Its Countermeasures, ACM TOIS, 2024. [[PDF]](https://dl.acm.org/doi/full/10.1145/3630005).
 - Prompt-enhanced Federated Content Representation Learning for Cross-domain Recommendation, WWW, 2024. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3589334.3645337), [[CODE]](https://github.com/Ckano/PFCR).
 - ReFer: Retrieval-Enhanced Vertical Federated Recommendation for Full Set User Benefit, SIGIR, 2024. [[PDF]](https://doi.org/10.1145/3626772.3657763).
 - Towards Resource-Efficient and Secure Federated Multimedia Recommendation, ICASSP, 2024. [[PDF]](https://doi.org/10.1109/icassp48485.2024.10448131).
-- A Federated Framework for LLM-based Recommendation, Findings of ACL, 2025. [[PDF]](https://doi.org/10.18653/v1/2025.findings-naacl.155).
+- A Federated Framework for LLM-based Recommendation, Findings of ACL: NAACL, 2025. [[PDF]](https://doi.org/10.18653/v1/2025.findings-naacl.155).
 - DT-FedSDC: A Dual-Target Federated Framework with Semantic Enhancement and Disentangled Contrastive Learning for Cross-Domain Recommendation, CIKM, 2025. [[PDF]](https://doi.org/10.1145/3746252.3761270).
+- Efficient Knowledge Transfer in Federated Recommendation for Joint Venture Ecosystem, NeurIPS, 2025. [[PDF]](https://proceedings.neurips.cc/paper_files/paper/2025/file/b4f9b809750373d111728b8a5f649ece-Paper-Conference.pdf).
 - FedCSR: A Federated Framework for Multi-Platform Cross-Domain Sequential Recommendation with Dual Contrastive Learning, COLING, 2025. [[PDF]](https://aclanthology.org/2025.coling-main.581/).
 - Federated Semantic Learning for Privacy-preserving Cross-domain Recommendation, ACM TOIS, 2025. [[PDF]](https://dl.acm.org/doi/full/10.1145/3728359), [[CODE]](https://github.com/Sapphire-star/FFMSR).
 - FELLAS: Enhancing Federated Sequential Recommendation with LLM as External Services, ACM TOIS, 2025. [[PDF]](https://dl.acm.org/doi/10.1145/3709138).
@@ -390,7 +391,6 @@
 
 - Device-Cloud Collaborative Learning for Recommendation, KDD, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3447548.3467097).
 - DUET: A Tuning-Free Device-Cloud Collaborative Parameters Generation Framework for Efficient Device Model Generalization, WWW, 2023. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3543507.3583451), [[CODE]](https://github.com/HelloZicky/DUET).
-- DeCoCDR: Deployable Cloud-Device Collaboration for Cross-Domain Recommendation, SIGIR, 2024. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3626772.3657786).
 - DIET: Customized Slimming for Incompatible Networks in Sequential Recommendation, KDD, 2024. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3637528.3671669).
 - Diffusion-Based Cloud-Edge-Device Collaborative Learning for Next POI Recommendations, KDD, 2024. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3637528.3671743).
 - CHORD: Customizing Hybrid-precision On-Device Model for Sequential Recommendation with Device-Cloud Collaboration, MM, 2025. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3746027.3755632).
@@ -398,7 +398,7 @@
 
 #### Knowledge Routing
 
-- On-Device Learning for Model Personalization with Large-Scale Cloud-Coordinated Domain Adaption, KDD, 2022. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3534678.3539263), [[CODE]](https://github.com/mikudehuane/MPDA).
+- On-Device Learning for Model Personalization with Large-Scale Cloud-Coordinated Domain Adaption, KDD, 2022. [[PDF]](https://doi.org/10.1145/3534678.3539263), [[CODE]](https://github.com/mikudehuane/MPDA).
 - On-Device Learning with Cloud-Coordinated Data Augmentation for Extreme Model Personalization in Recommender Systems, arXiv preprint arXiv:2201.10382, 2022. [[PDF]](https://doi.org/10.48550/arXiv.2201.10382).
 - Intelligent Model Update Strategy for Sequential Recommendation, WWW, 2024. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3589334.3645316), [[CODE]](https://github.com/HelloZicky/IntellectReq).
 - RelayRec: Empowering Privacy-Preserving CTR Prediction via Cloud-Device Relay Learning, IPSN, 2024. [[PDF]](https://ieeexplore.ieee.org/abstract/document/10577321).
@@ -410,12 +410,11 @@
 #### Inference Dispatching
 
 - Device-Cloud Collaborative Recommendation via Meta Controller, KDD, 2022. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3534678.3539181).
-- Real-time Short Video Recommendation on Mobile Devices, CIKM, 2022. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3511808.3557065).
 - CoRec: An Efficient Internet Behavior-based Recommendation Framework with Edge-cloud Collaboration on Deep Convolution Neural Networks, ACM TOSN, 2023. [[PDF]](https://dl.acm.org/doi/full/10.1145/3526191).
 - On-Device Integrated Re-ranking with Heterogeneous Behavior Modeling, KDD, 2023. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3580305.3599878).
+- DeCoCDR: Deployable Cloud-Device Collaboration for Cross-Domain Recommendation, SIGIR, 2024. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3626772.3657786).
 - Cloud-Device Collaborative Agents for Sequential Recommendation, arXiv, 2025. [[PDF]](https://arxiv.org/abs/2509.01551).
 - Collaboration of Large Language Models and Small Recommendation Models for Device-Cloud Recommendation, KDD, 2025. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3690624.3709335), [[CODE]](https://github.com/HelloZicky/LSC4Rec).
-- FeDecider: An LLM-Based Framework for Federated Cross-Domain Recommendation, WWW, 2026. [[PDF]](https://doi.org/10.1145/3774904.3792294).
 - PriCoRec: A Privacy-Aware Cloud–Device Collaborative Framework for Ad Recommendation under Feature Constraints, arXiv preprint arXiv:2608.14429, 2026. [[PDF]](https://doi.org/10.1145/3773078.3831838).
 
 ## 📊Evaluation & Datasets
@@ -432,7 +431,7 @@
 
 ### Foundational Methods
 
-- LoRA: Low-Rank Adaptation of Large Language Models, arXiv preprint arXiv:2106.09685, 2021. [[PDF]](https://doi.org/10.48550/arXiv.2106.09685), [[CODE]](https://github.com/microsoft/LoRA).
+- LoRA: Low-Rank Adaptation of Large Language Models, ICLR, 2022. [[PDF]](https://openreview.net/forum?id=nZeVKeeFYf9), [[CODE]](https://github.com/microsoft/LoRA).
 - Model Merging in LLMs, MLLMs, and Beyond: Methods, Theories, Applications, and Opportunities, ACM Computing Surveys, 2026. [[PDF]](https://doi.org/10.1145/3787849).
 
 ### Introduction Context
@@ -445,6 +444,7 @@
 - Federated Recommendation System via Differential Privacy, IEEE ISIT, 2020. [[PDF]](https://ieeexplore.ieee.org/abstract/document/9174297).
 - Horizontal Cross-Silo Federated Recommender Systems, RecSys, 2021. [[PDF]](https://dl.acm.org/doi/abs/10.1145/3460231.3478863).
 - Poisoning Deep Learning based Recommender Model in Federated Learning Scenarios, IJCAI, 2022. [[PDF]](https://www.ijcai.org/proceedings/2022/306), [[CODE]](https://github.com/rdz98/PoisonFedDLRS).
+- Learning to Unlearn for Bayesian Personalized Ranking via Influence Function, Chinese Journal of Electronics, 2025. [[PDF]](https://doi.org/10.23919/cje.2023.00.417).
 - Rethinking Byzantine Robustness in Federated Recommendation from Sparse Aggregation Perspective, AAAI, 2025. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/33455).
 - Spattack: Subgroup Poisoning Attacks on Federated Recommender Systems, WWW, 2026. [[PDF]](https://dl.acm.org/doi/10.1145/3774904.3792552).
 
@@ -455,9 +455,9 @@
 
 ### Future Directions
 
-- A Survey on Trustworthy Recommender Systems, ACM TORS, 2024. [[PDF]](https://dl.acm.org/doi/10.1145/3652891).
 - Uncovering the Propensity Identification Problem in Debiased Recommendations, ICDE, 2024. [[PDF]](https://doi.org/10.1109/ICDE60146.2024.00056).
 - A Comprehensive Survey of Forgetting in Deep Learning Beyond Continual Learning, IEEE TPAMI, 2025. [[PDF]](https://doi.org/10.1109/TPAMI.2024.3498346).
+- A Survey on Trustworthy Recommender Systems, ACM TORS, 2025. [[PDF]](https://dl.acm.org/doi/10.1145/3652891).
 - Latent Inter-User Difference Modeling for LLM Personalization, EMNLP, 2025. [[PDF]](https://aclanthology.org/2025.emnlp-main.536/).
 - A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence, TMLR, 2026. [[PDF]](https://arxiv.org/abs/2507.21046).
 
