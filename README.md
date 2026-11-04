@@ -55,7 +55,9 @@
 - Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model, KDD, 2008. [[PDF]](https://people.engr.tamu.edu/huangrh/Spring16/papers_course/matrix_factorization.pdf).
 - BPR: Bayesian Personalized Ranking from Implicit Feedback, UAI, 2009. [[PDF]](https://arxiv.org/abs/1205.2618).
 - Matrix Factorization Techniques for Recommender Systems, IEEE Computer, 2009. [[PDF]](https://ieeexplore.ieee.org/document/5197422).
+- Factor in the neighbors: Scalable and accurate collaborative filtering, ACM TKDD, 2010. [[PDF]](https://dl.acm.org/doi/abs/10.1145/1644873.1644874).
 - Factorization Machines, ICDM, 2010. [[PDF]](https://analyticsconsultores.com.mx/wp-content/uploads/2019/03/Factorization-Machines-Steffen-Rendle-Osaka-University-2010.pdf).
+- Recommender Systems with Social Regularization, WSDM, 2011. [[PDF]](https://dennyzhou.github.io/papers/RSR.pdf).
 - CLiMF: Learning to Maximize Reciprocal Rank with Collaborative Less-is-More Filtering, RecSys, 2012. [[PDF]](https://dl.acm.org/doi/10.1145/2365952.2365981).
 - FISM: Factored Item Similarity Models for Top-N Recommender Systems, KDD, 2013. [[PDF]](https://chbrown.github.io/kdd-2013-usb/kdd/p659.pdf).
 - Logistic Matrix Factorization for Implicit Feedback Data, NIPS, 2014. [[PDF]](https://web.stanford.edu/~rezab/nips2014workshop/submits/logmat.pdf), [[CODE]](https://github.com/MrChrisJohnson/logistic-mf).
@@ -63,11 +65,12 @@
 ### Deep Representation Learning Models
 >
 > Deep representation learning models capture **complex feature, sequential, and relational patterns from centralized recommendation data**, mainly via:
-> (1) ***Feature Interaction***: learn feature representations and interactions, including early neural recommendation models; (2) ***Sequential Encoding***: capture behavioral order and temporal dependencies in user sequences; (3) ***Graph Propagation***: learn high-order collaborative relations by propagating information over user-item or session graphs.
+> (1) ***Feature Interaction***: learn expressive feature representations and nonlinear dependencies among features; (2) ***Sequential Encoding***: capture behavioral order and temporal dependencies in user sequences; (3) ***Graph Propagation***: learn high-order collaborative relations by propagating information over user-item or session graphs.
 
 #### Feature Interaction
 
 - Restricted Boltzmann Machines for Collaborative Filtering, ICML, 2007. [[PDF]](https://dl.acm.org/doi/10.1145/1273496.1273596).
+- Deep Content-Based Music Recommendation, NeurIPS, 2013. [[PDF]](https://proceedings.neurips.cc/paper_files/paper/2013/file/b3ba8f1bee1238a2f37603d90b58898d-Paper.pdf).
 - Collaborative Deep Learning for Recommender Systems, KDD, 2015. [[PDF]](https://arxiv.org/pdf/1409.2944), [[CODE]](https://github.com/js05212/CDL).
 - Deep Neural Networks for YouTube Recommendations, RecSys, 2016. [[PDF]](https://dl.acm.org/doi/10.1145/2959100.2959190).
 - VBPR: Visual Bayesian Personalized Ranking from Implicit Feedback, AAAI, 2016. [[PDF]](https://dl.acm.org/doi/10.5555/3015812.3015834).
@@ -94,6 +97,7 @@
 - Neural Graph Collaborative Filtering, SIGIR, 2019. [[PDF]](https://dl.acm.org/doi/10.1145/3331184.3331267).
 - Session-Based Recommendation with Graph Neural Networks, AAAI, 2019. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/3804), [[CODE]](https://github.com/CRIPAC-DIG/SR-GNN).
 - LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation, SIGIR, 2020. [[PDF]](https://dl.acm.org/doi/10.1145/3397271.3401063).
+- LT-OCF: Learnable-Time ODE-based Collaborative Filtering, CIKM, 2021. [[PDF]](https://dl.acm.org/doi/10.1145/3459637.3482449), [[CODE]](https://github.com/jeongwhanchoi/LT-OCF).
 - Self-supervised Graph Learning for Recommendation, SIGIR, 2021. [[PDF]](https://wujcan.github.io/papers/sigir21-sgl.pdf), [[CODE]](https://github.com/wujcan/SGL-TensorFlow).
 - Are Graph Augmentations Necessary? Simple Graph Contrastive Learning for Recommendation, SIGIR, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3477495.3531937).
 
@@ -374,7 +378,7 @@
 - Federated Vision-Language-Recommendation with Personalized Fusion, AAAI, 2026. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/39503), [[CODE]](https://github.com/mtics/FedVLR).
 - FedMMSR: Federated Multi-modal Recommendation with Structural Guidance and Robust Integration, IEEE Trans. Knowl. Data Eng., 2026. [[PDF]](https://doi.org/10.1109/tkde.2026.3736499).
 - FedUTR: Federated Recommendation with Augmented Universal Textual Representation for Sparse Interaction Scenarios, arXiv:2604.07351, 2026. [[PDF]](https://doi.org/10.48550/arXiv.2604.07351).
-- From Transfer to Collaboration: A Federated Framework for Cross-Market Sequential Recommendation, arXiv, 2026. [[PDF]](https://arxiv.org/abs/2604.13573).
+- From Transfer to Collaboration: A Federated Framework for Cross-Market Sequential Recommendation, ACM MM, 2026. [[PDF]](https://arxiv.org/abs/2604.13573), [[DOI]](https://doi.org/10.1145/3767308.3835464).
 - Modality-Incomplete Multimodal Federated Recommendation With Bidirectional Modality Reconstruction, IEEE Trans. Multimedia, 2026. [[PDF]](https://doi.org/10.1109/tmm.2026.3689434).
 - Multimodal-enhanced Federated Recommendation: A Group-wise Fusion Approach, WWW, 2026. [[PDF]](https://dl.acm.org/doi/10.1145/3774904.3792573).
 - TransFR: Transferable Federated Recommendation with Adapter Tuning on Pre-trained Language Models, AAAI, 2026. [[PDF]](https://ojs.aaai.org/index.php/AAAI/article/view/40048), [[CODE]](https://github.com/hongleizhang/TransFR).
@@ -421,11 +425,16 @@
 
 - Friendship and Mobility: User Movement in Location-Based Social Networks, KDD, 2011. [[PDF]](https://dl.acm.org/doi/10.1145/2020408.2020579).
 - Second Workshop on Information Heterogeneity and Fusion in Recommender Systems (HetRec2011), RecSys, 2011. [[PDF]](https://dl.acm.org/doi/10.1145/2043932.2044016).
+- Display Advertising Challenge (2014), Criteo dataset, 2014. [[DATASET]](https://www.kaggle.com/c/criteo-display-ad-challenge/data).
 - The MovieLens Datasets: History and Context, ACM TiiS, 2015. [[PDF]](https://dl.acm.org/doi/10.1145/2827872).
+- Amazon Review Data (2018), UC San Diego dataset, 2018. [[DATASET]](https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/).
 - UserBehavior Dataset from Taobao, Alibaba Tianchi dataset, 2018. [[DATASET]](https://tianchi.aliyun.com/dataset/649).
 - Justifying Recommendations Using Distantly-Labeled Reviews and Fine-Grained Aspects, EMNLP-IJCNLP, 2019. [[PDF]](https://aclanthology.org/D19-1018/).
 - MIND: A Large-Scale Dataset for News Recommendation, ACL, 2020. [[PDF]](https://aclanthology.org/2020.acl-main.331/).
+- On Sampled Metrics for Item Recommendation, KDD, 2020. [[PDF]](https://doi.org/10.1145/3394486.3403226).
 - KuaiRec: A Fully-Observed Dataset and Insights for Evaluating Recommender Systems, CIKM, 2022. [[PDF]](https://dl.acm.org/doi/10.1145/3511808.3557220).
+- Amazon Reviews'23, McAuley Lab dataset, 2024. [[DATASET]](https://amazon-reviews-2023.github.io/main.html).
+- A Thorough Performance Benchmarking on Lightweight Embedding-Based Recommender Systems, ACM Trans. Inf. Syst., 2025. [[PDF]](https://doi.org/10.1145/3712589).
 
 ## Supplementary Materials
 
@@ -450,6 +459,7 @@
 
 ### Policy & Regulation
 
+- The EU General Data Protection Regulation (GDPR): A Practical Guide, Springer, 2017. [[SOURCE]](https://doi.org/10.1007/978-3-319-57959-7).
 - Provisions on the Administration of Algorithmic Recommendations in Internet Information Services, China Internet Information Office, 2021. [[SOURCE]](https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm).
 - Regulation (EU) 2022/2065 of the European Parliament and of the Council of 19 October 2022 on a Single Market for Digital Services and Amending Directive 2000/31/EC (Digital Services Act), Official Journal of the European Union, 2022. [[SOURCE]](https://eur-lex.europa.eu/eli/reg/2022/2065/oj).
 
@@ -460,6 +470,7 @@
 - A Survey on Trustworthy Recommender Systems, ACM TORS, 2025. [[PDF]](https://dl.acm.org/doi/10.1145/3652891).
 - Latent Inter-User Difference Modeling for LLM Personalization, EMNLP, 2025. [[PDF]](https://aclanthology.org/2025.emnlp-main.536/).
 - A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence, TMLR, 2026. [[PDF]](https://arxiv.org/abs/2507.21046).
+- Try Before You Evolve: Ranking-Scored Trials for Recursive Self-Improvement of Recommender Systems, arXiv, 2026. [[PDF]](https://arxiv.org/abs/2610.39352).
 
 ## RSPapers
 
